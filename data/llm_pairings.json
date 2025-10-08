@@ -1,0 +1,87 @@
+{
+  "entree": "New York Strip Steak",
+  "courseType": "salads",
+  "timestamp": "2025-10-02T18:20:57.372Z",
+  "flavorBibleMatches": [
+    {
+      "name": "beef",
+      "compatibilityCount": 68
+    },
+    {
+      "name": "beef — steak: rib eye",
+      "compatibilityCount": 8
+    },
+    {
+      "name": "Italian cuisine — in general",
+      "compatibilityCount": 43
+    }
+  ],
+  "coursePairings": [
+    {
+      "itemNumber": 5,
+      "name": "Antipasto Salad",
+      "description": "Assorted Italian meats, provolone, kalamata olives, pepperoncini, onions and peppers, red wine vinaigrette"
+    },
+    {
+      "itemNumber": 18,
+      "name": "Apple, Cherry & Fennel Salad",
+      "description": "Roasted Vidalia onions mixed with fresh apples, fennel, cabbage, blueberries and dried cherries"
+    },
+    {
+      "itemNumber": 19,
+      "name": "Apple, Farro and  Arugula Salad",
+      "description": "Farro, arugula and apple with a honey Dijon dressing and crispy fried onion"
+    },
+    {
+      "itemNumber": 49,
+      "name": "Autumn Cobb Salad",
+      "description": "Roast turkey, dried cranberries, blue cheese, roasted sweet potato, bacon, romaine and hard cooked eggs"
+    },
+    {
+      "itemNumber": 50,
+      "name": "Autumn Cranberry and Kale Salad",
+      "description": "Roasted sweet potatoes, kale, pecans, dried cranberries tossed with fresh mint and thyme and a creme fraiche vinaigrette"
+    },
+    {
+      "itemNumber": 51,
+      "name": "Autumn Pear & Sweet Potato Salad",
+      "description": "Baby arugula with pears, roast sweet potato, dried cranberries and balsamic vinaigrette and crispy spiced chickpeas"
+    },
+    {
+      "itemNumber": 76,
+      "name": "Baby Spinach and Gorgonzola Salad",
+      "description": "Spinach with candied pecans, pickled onions, dried cranberries, black olives, gorgonzola cheese and balsamic dressing"
+    },
+    {
+      "itemNumber": 125,
+      "name": "Bosc Pear, Pecan & Blue Cheese Salad",
+      "description": "Mesclun greens tossed with fresh sliced pears, candied pecans, blue cheese, cranberries and a Dijon cider vinaigrette"
+    },
+    {
+      "itemNumber": 132,
+      "name": "Broccoli Slaw Salad",
+      "description": "Crunchy, savory and sweet broccoli slaw with green onions, raisins, almonds, pepers and ramen noodles"
+    },
+    {
+      "itemNumber": 912,
+      "name": "Strawberry & Spinach Salad",
+      "description": "Fresh spinach salad with toasted pecans, strawberries and oranges"
+    },
+    {
+      "itemNumber": 914,
+      "name": "Strawberry and Spinach Salad",
+      "description": "Fresh spinach salad with toasted pecans, strawberries and oranges"
+    },
+    {
+      "itemNumber": 915,
+      "name": "Strawberry and Spinach Salad",
+      "description": "A fluffy bed of baby spinach topped with juicy strawberries, oranges, and crunchy pecan pieces"
+    }
+  ],
+  "summary": {
+    "flavorBibleMatches": 3,
+    "totalCourseOptions": 1113,
+    "recommendedPairings": 12,
+    "courseType": "Salads"
+  }
+}

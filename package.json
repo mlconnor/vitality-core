@@ -1,0 +1,24 @@
+{
+  "name": "vitality-core-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for the Vitality Core application",
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend start",
+    "build:frontend": "npm --prefix frontend run build",
+    "start": "npm run dev:backend"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "markdown-it": "^14.1.0"
+  }
+}
