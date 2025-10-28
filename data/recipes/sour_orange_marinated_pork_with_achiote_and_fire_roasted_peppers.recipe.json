@@ -1,0 +1,368 @@
+{
+  "title": "Sour Orange Marinated Pork with Achiote and Fire-Roasted Peppers",
+  "description": "Lean pork tenderloin gets a vibrant sour orange–achiote marinade that stains the meat a deep brick red and keeps it juicy. Fire-roasted peppers and red onion bring sweet smokiness, while a quick sherry vinegar finish adds the bright, tangy snap common across Spanish–Latin cooking. It’s a fresh, citrus-forward, spice-bright entrée with olive oil, herbs, and plenty of vegetables for a lighter, health-conscious plate.",
+  "ingredients": [
+    {
+      "name": "Pork tenderloin, trimmed",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 700,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Two small tenderloins, silver skin removed"
+    },
+    {
+      "name": "Achiote (annatto) paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Use paste for ease; if using seeds, grind to a paste"
+    },
+    {
+      "name": "Extra-virgin olive oil, divided",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 54,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 4,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "2 tbsp for marinade (bloom), 1 tbsp for searing, 1 tbsp for peppers"
+    },
+    {
+      "name": "Garlic cloves, minced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 20,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 5,
+          "unit": "cloves"
+        }
+      ]
+    },
+    {
+      "name": "Sour orange juice (naranja agria)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "cups"
+        }
+      ],
+      "note": "If unavailable, use 1/3 cup fresh orange juice + 3 tbsp fresh lime juice"
+    },
+    {
+      "name": "Fresh lime juice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Lime zest (from 1 lime)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 5,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Dried oregano (preferably Mexican)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Kosher salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Divided; season to taste"
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Honey (optional, to balance bitterness)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 7,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Red bell peppers",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 450,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "large peppers"
+        }
+      ]
+    },
+    {
+      "name": "Red onion",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 150,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Sherry vinegar",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Jalapeño, thinly sliced (optional)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "small pepper"
+        }
+      ]
+    },
+    {
+      "name": "Fresh cilantro (leaves and tender stems), chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "cups"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Bloom achiote and build the marinade",
+      "description": "Wash citrus under running water before juicing. Warm 2 tablespoons olive oil in a small skillet over medium until it shimmers. Stir in the achiote paste and cook 30–45 seconds, stirring, just until the oil turns vivid brick red and smells earthy—do not let it darken or smoke. Add the minced garlic and cook 30 seconds until fragrant but not browned. Transfer to a blender; add sour orange juice, lime juice, cumin, oregano, 1 teaspoon kosher salt, black pepper, and honey (if using). Blend until smooth and emulsified; the marinade should be tangy, aromatic, and brightly colored.",
+      "activeTimeMinutes": 12,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "small skillet",
+        "blender",
+        "spatula",
+        "knife",
+        "cutting board",
+        "citrus juicer",
+        "measuring spoons"
+      ]
+    },
+    {
+      "title": "Marinate the pork",
+      "description": "Pat the trimmed pork dry. Reserve about 1/3 cup of the marinade in a covered container for a cooked sauce later—keep it separate and refrigerate. Place pork and remaining marinade in a zipper bag or shallow dish, coat all sides, and refrigerate 2–12 hours. Set the bag on a tray to prevent leaks. Food safety: keep the pork chilled and never serve the raw marinade; the reserved portion will be boiled before using.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 120,
+      "equipment": [
+        "zip-top bag or shallow dish",
+        "tray",
+        "refrigerator",
+        "paper towels"
+      ]
+    },
+    {
+      "title": "Fire-roast peppers and onion",
+      "description": "Wash peppers and onion. For broiler: set rack near the top and preheat broiler. Place whole peppers and onion wedges on a sheet pan. Broil, turning with tongs, until skins are blistered and mostly black and the flesh feels softened when pressed with tongs. For gas flame: roast directly over the flame, turning, until evenly charred and tender. Transfer to a bowl and cover 10 minutes to steam; this loosens skins. Peel off charred skins, remove seeds and cores, and slice peppers into strips; slice onion into thick crescents. Toss with 1 tablespoon olive oil, 1 tablespoon sherry vinegar, a pinch of salt, and half the cilantro. The vegetables should taste sweet-smoky with tender but intact texture.",
+      "activeTimeMinutes": 20,
+      "totalTimeMinutes": 30,
+      "equipment": [
+        "broiler or gas burner",
+        "sheet pan",
+        "tongs",
+        "mixing bowl",
+        "knife"
+      ]
+    },
+    {
+      "title": "Sear and roast the pork",
+      "description": "Heat oven to 400°F (200°C). Remove pork from marinade and let excess drip off; pat lightly so surfaces are dry—this helps a good crust. Heat 1 tablespoon olive oil in an oven-safe skillet over medium-high until it shimmers. Sear pork, turning, until all sides develop a deep mahogany crust and the edges look lightly caramelized. Move the skillet to the oven and roast until the center feels springy, juices run mostly clear, and an instant-read thermometer in the thickest part registers 145°F (63°C). Rest on a board 5–10 minutes so the juices settle.",
+      "activeTimeMinutes": 12,
+      "totalTimeMinutes": 25,
+      "equipment": [
+        "oven",
+        "oven-safe skillet",
+        "tongs",
+        "instant-read thermometer",
+        "cutting board"
+      ]
+    },
+    {
+      "title": "Reduce the reserved marinade into a sauce",
+      "description": "Pour the reserved marinade into a small saucepan and bring to a rolling boil over medium-high. Boil 1–2 minutes, stirring, until slightly thickened, glossy, and it coats the back of a spoon with a thin film—no raw garlic smell should remain. Stir in 1 tablespoon sherry vinegar and any pork roasting juices from the skillet to taste; the sauce should be tangy, savory, and lightly syrupy.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 7,
+      "equipment": [
+        "small saucepan",
+        "spoon",
+        "heatproof measuring cup"
+      ]
+    },
+    {
+      "title": "Slice and serve",
+      "description": "Slice pork across the grain into 1/2-inch medallions; the centers should show a faint blush with clear juices. Fan onto a warm platter, spoon over the reduced sauce, and pile the fire-roasted peppers and onion alongside. Scatter remaining cilantro and the lime zest, add jalapeño for heat if desired, and finish with a small splash of sherry vinegar or a squeeze of lime to brighten. Taste and adjust salt at the table.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 8,
+      "equipment": [
+        "chef's knife",
+        "serving platter",
+        "tongs"
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 18,
+  "cookTimeMinutes": 74,
+  "totalTimeMinutes": 202,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Marinated",
+      "Pan-Seared/Sauteed",
+      "Roasted",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic",
+      "Spicy"
+    ],
+    "temperature": "Hot",
+    "theme": "Spanish-Latin Fusion"
+  }
+}

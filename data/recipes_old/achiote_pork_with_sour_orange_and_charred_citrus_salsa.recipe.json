@@ -1,0 +1,362 @@
+{
+  "title": "Achiote Pork with Sour Orange and Charred Citrus Salsa",
+  "description": "This dish channels Enrique Olvera’s refined yet rustic Mexican regional style, merging earthy achiote-marinated pork with a vibrant, brain-boosting charred citrus salsa. The pork is infused with sour orange and warm spices, then roasted for juicy tenderness, while the salsa layers brightness and antioxidant-rich herbs with smoky, caramelized citrus. True to Olvera’s approach, the recipe honors tradition but encourages adaptability—using sensory cues over rigid timing, integrating healthy whole foods, and inviting you to taste, adjust, and make the dish your own. The 'Latin Spice-Bright' flavor profile shines through zesty acids, savory pork, and charred fruit, balanced by fresh herbs. This is a healthful, celebratory entree to anchor your table, best shared family-style.",
+  "ingredients": [
+    {
+      "name": "Boneless pork shoulder",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 900,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "pounds"
+        }
+      ],
+      "note": "Trimmed of excess fat, cut into 5 cm (2-inch) cubes"
+    },
+    {
+      "name": "Achiote paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 70,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2.5,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Yucatán-style, look for a brick or block"
+    },
+    {
+      "name": "Fresh sour orange juice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 120,
+          "unit": "ml"
+        }
+      ],
+      "note": "Substitute with a blend of orange juice and lime juice if unavailable"
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 20,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "High-smoke point and neutral flavor"
+    },
+    {
+      "name": "Garlic cloves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 3,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Crushed"
+    },
+    {
+      "name": "Dried Mexican oregano",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground allspice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Freshly cracked black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare the Pork Marinade",
+      "description": "Combine achiote paste, fresh sour orange juice, avocado oil, crushed garlic, Mexican oregano, allspice, sea salt, and black pepper in a bowl. Whisk or mash until a thick, even marinade forms. Add pork cubes and toss with clean hands, ensuring every piece is well coated. Cover and refrigerate for at least 4 hours or overnight—the color should intensify and the pork will feel tacky. Wash hands and all surfaces that touch raw pork thoroughly.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 250,
+      "equipment": [
+        "Large mixing bowl",
+        "Whisk or fork",
+        "Plastic wrap or lid"
+      ]
+    },
+    {
+      "title": "Roast the Marinated Pork",
+      "description": "Preheat your oven to 190°C (375°F). Line a roasting pan with parchment or banana leaves (optional for aroma). Spread the marinated pork in a single layer. Roast uncovered until the pork is deeply colored, edges are caramelized, and juices run clear when pierced—about 45-60 minutes, but adjust based on your oven and pork cube size. Pork should reach at least 145°F (63°C) and feel firm, with little pink remaining. Let rest briefly before serving.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 60,
+      "equipment": [
+        "Oven",
+        "Roasting pan",
+        "Parchment paper or banana leaves",
+        "Meat thermometer (optional)"
+      ]
+    },
+    {
+      "title": "Rest and Serve",
+      "description": "Remove pork from the oven and let it rest, loosely covered, for 10 minutes to reabsorb juices. Slice or shred to your preferred size—pork should be moist and pull apart easily. Taste and sprinkle with a touch more salt if desired. Serve with the charred citrus salsa, warm tortillas, or rice.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Cutting board",
+        "Sharp knife",
+        "Serving platter"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Charred Citrus Salsa",
+      "ingredients": [
+        {
+          "name": "Oranges",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 180,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 2,
+              "unit": "pieces"
+            }
+          ],
+          "note": "Preferably Valencia or Cara Cara; wash thoroughly"
+        },
+        {
+          "name": "Limes",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 80,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 2,
+              "unit": "pieces"
+            }
+          ],
+          "note": "Wash thoroughly"
+        },
+        {
+          "name": "Red onion",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 60,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "cup"
+            }
+          ],
+          "note": "Finely diced"
+        },
+        {
+          "name": "Fresh cilantro leaves",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "cup"
+            }
+          ],
+          "note": "Roughly chopped"
+        },
+        {
+          "name": "Fresh mint leaves",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 6,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "tablespoons"
+            }
+          ],
+          "note": "Roughly chopped"
+        },
+        {
+          "name": "Jalapeño or serrano chile",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 12,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 1,
+              "unit": "piece"
+            }
+          ],
+          "note": "Finely minced, seeds removed for less heat"
+        },
+        {
+          "name": "Avocado oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Sea salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoon"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Char the Citrus",
+          "description": "Halve oranges and limes crosswise. Heat a cast-iron skillet or grill pan over high until it shimmers. Place citrus halves cut-side down and press gently. Char until the surface is deeply caramelized and fragrant—edges will blacken and juices will sizzle. Remove and cool slightly before juicing. Adjust char time based on your pan and fruit size.",
+          "activeTimeMinutes": 7,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Cast-iron skillet or grill pan",
+            "Tongs",
+            "Cutting board",
+            "Citrus juicer or reamer"
+          ]
+        },
+        {
+          "title": "Prepare the Salsa",
+          "description": "Juice the charred citrus into a bowl, catching seeds. Add diced red onion, chopped cilantro, mint, minced chile, and avocado oil. Stir to combine, then season with sea salt. Let sit for 5–10 minutes for flavors to meld. Taste and adjust salt, herbs, or citrus as needed. Salsa should be bright, herbal, and slightly smoky. Wash hands after handling chile.",
+          "activeTimeMinutes": 8,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Mixing bowl",
+            "Spoon",
+            "Chef's knife"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 23,
+  "cookTimeMinutes": 70,
+  "totalTimeMinutes": 320,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Roasted",
+      "Grilled"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Mexican Regional"
+  }
+}

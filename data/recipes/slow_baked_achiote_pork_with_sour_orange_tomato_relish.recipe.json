@@ -1,0 +1,579 @@
+{
+  "title": "Slow-Baked Achiote Pork with Sour Orange & Tomato Relish",
+  "description": "This slow-baked pork brings together earthy achiote and the bright acidity of sour orange, a combination loved across Latin American kitchens. The pork is marinated for deep color and savoriness, then baked low and slow until fork‑tender and juicy. A fresh tomato relish with sour orange, cilantro, and jalapeño cuts through the richness for a clean, lively finish that matches the Latin Spice-Bright flavor profile. The recipe uses wholesome ingredients, extra-virgin/avocado oils, and minimal sweetener for a balanced, health-minded entree.",
+  "ingredients": [
+    {
+      "name": "Pork shoulder, boneless (trimmed of excess surface fat)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1200,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "piece"
+        }
+      ],
+      "note": "Shoulder (butt) for shredding tenderness"
+    },
+    {
+      "name": "Kosher salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "For seasoning the pork surface"
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Low-sodium chicken stock or water",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 240,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 240,
+          "unit": "milliliters"
+        }
+      ],
+      "note": "Moisture for the bake"
+    },
+    {
+      "name": "Banana leaves or heavy-duty foil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 100,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "large sheets"
+        }
+      ],
+      "note": "Banana leaves add aroma; foil works too"
+    },
+    {
+      "name": "Bay leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "leaves"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Trim and season the pork",
+      "description": "Pat the pork dry with paper towels. Trim only thick exterior fat so the meat stays moist but not greasy. Season all sides evenly with kosher salt and black pepper. Use separate cutting boards for raw pork and vegetables, and wash hands and tools after handling raw meat.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Cutting board",
+        "Chef’s knife",
+        "Paper towels",
+        "Small bowl"
+      ]
+    },
+    {
+      "title": "Marinate",
+      "description": "Place the seasoned pork in a nonreactive dish or zip-top bag and pour over the Achiote Sour Orange Marinade (see sub-recipe). Press out air so the meat is well-coated. Refrigerate 8 hours or overnight. The surface should stain a deep brick-red and smell citrusy-garlicky when ready.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 480,
+      "equipment": [
+        "Zip-top bag or glass dish",
+        "Refrigerator"
+      ]
+    },
+    {
+      "title": "Set up for slow baking",
+      "description": "Heat the oven to 300°F (150°C). Line a Dutch oven with banana leaves or foil, letting some overhang to wrap over the top. Add the stock to the pot, then nestle in the marinated pork and pour in any excess marinade. Tuck in bay leaves. Wrap leaves/foil over the pork and cover with the lid to trap moisture.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Oven",
+        "Dutch oven with lid",
+        "Tongs"
+      ]
+    },
+    {
+      "title": "Slow-bake until fork-tender",
+      "description": "Bake covered until the pork is very tender. Check toward the end: a fork should slide in with little resistance and the meat should shred easily with a twist; juices should run clear and glossy with an orange-red tint. For shreddable shoulder, the internal temperature should reach about 195–205°F (90–96°C) for collagen to break down.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 210,
+      "equipment": [
+        "Oven",
+        "Instant-read thermometer",
+        "Oven mitts"
+      ]
+    },
+    {
+      "title": "Rest, shred, and glaze",
+      "description": "Let the pork rest, covered, for 15 minutes so juices redistribute. Transfer to a sheet pan and shred with two forks, discarding bay leaves. Skim excess fat from the pot juices, then simmer the juices on the stovetop until slightly syrupy and they coat the back of a spoon. Fold enough reduction into the pork to make it glossy and juicy. Optional: spread the pork in an even layer and broil briefly until edges are sizzling and lightly crisp for extra texture.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 30,
+      "equipment": [
+        "Sheet pan",
+        "Forks or meat claws",
+        "Saucepan or the Dutch oven base",
+        "Stovetop",
+        "Spoon",
+        "Broiler (optional)"
+      ]
+    },
+    {
+      "title": "Make relish and serve",
+      "description": "While the pork bakes, prepare the Sour Orange & Tomato Relish (see sub-recipe). Wash produce under running water before cutting. Serve the hot, shredded pork piled on plates with a generous spoonful of the cool, bright relish. The contrast should be savory and citrusy with a clean, fresh snap from the tomatoes and jalapeño.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Mixing bowl",
+        "Spoon",
+        "Serving plates"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Achiote Sour Orange Marinade",
+      "ingredients": [
+        {
+          "name": "Achiote (annatto) paste",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 60,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Avocado oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 27,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 30,
+              "unit": "milliliters"
+            }
+          ],
+          "note": "For blooming the achiote"
+        },
+        {
+          "name": "Fresh sour orange juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 180,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 180,
+              "unit": "milliliters"
+            }
+          ],
+          "note": "If unavailable, use 2 parts orange juice + 1 part lime juice"
+        },
+        {
+          "name": "Fresh lime juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 30,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Apple cider vinegar",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 15,
+              "unit": "milliliters"
+            }
+          ],
+          "note": "Adds brightness and balances bitterness"
+        },
+        {
+          "name": "Garlic cloves, roughly chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 20,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 4,
+              "unit": "cloves"
+            }
+          ]
+        },
+        {
+          "name": "Ground cumin",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Dried oregano (Mexican if available)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Ground cinnamon",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 1,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoon"
+            }
+          ],
+          "note": "Warm background note"
+        },
+        {
+          "name": "Ground clove",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 0.5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Freshly ground black pepper",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoon"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Bloom the achiote",
+          "description": "Warm the avocado oil over low heat until it shimmers. Stir in the achiote paste and cook 30–60 seconds, stirring, until the oil turns bright brick-red and smells earthy—do not let it smoke or darken. This releases color and aroma.",
+          "activeTimeMinutes": 3,
+          "totalTimeMinutes": 3,
+          "equipment": [
+            "Small saucepan or skillet",
+            "Heatproof spatula",
+            "Stovetop"
+          ]
+        },
+        {
+          "title": "Blend",
+          "description": "Add the bloomed achiote oil to a blender with sour orange juice, lime juice, vinegar, garlic, cumin, oregano, cinnamon, clove, and black pepper. Blend until completely smooth and emulsified; the marinade should look glossy and pourable with no gritty bits.",
+          "activeTimeMinutes": 5,
+          "totalTimeMinutes": 5,
+          "equipment": [
+            "Blender",
+            "Measuring cups/spoons"
+          ]
+        },
+        {
+          "title": "Cool",
+          "description": "Let the marinade cool until it’s no warmer than room temperature so it doesn’t start cooking the pork on contact.",
+          "activeTimeMinutes": 1,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Heatproof container",
+            "Counter space"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sour Orange & Tomato Relish",
+      "ingredients": [
+        {
+          "name": "Cherry tomatoes, halved",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 300,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Red onion, finely diced",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 80,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Jalapeño, seeded if desired, finely chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 1,
+              "unit": "pepper"
+            }
+          ]
+        },
+        {
+          "name": "Fresh cilantro, chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "cup"
+            }
+          ]
+        },
+        {
+          "name": "Fresh sour orange juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 45,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 45,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Fresh lime juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 15,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 13.5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 15,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Honey",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 7,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoon"
+            }
+          ],
+          "note": "Balances sour orange’s bitter edge"
+        },
+        {
+          "name": "Sea salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 3,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Freshly ground black pepper",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 1,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "teaspoon"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Prep the vegetables",
+          "description": "Wash tomatoes, cilantro, jalapeño, and lime under running water. Halve the tomatoes, finely dice the red onion, and finely chop the jalapeño and cilantro. The tomatoes should look juicy but still hold their shape.",
+          "activeTimeMinutes": 10,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Colander",
+            "Cutting board",
+            "Chef’s knife"
+          ]
+        },
+        {
+          "title": "Mix and macerate",
+          "description": "In a bowl, combine tomatoes, onion, jalapeño, cilantro, sour orange juice, lime juice, olive oil, honey, salt, and pepper. Toss until the juices look slightly glossy and begin to pool. Let stand 10 minutes so the onions soften and the dressing lightly thickens and clings.",
+          "activeTimeMinutes": 5,
+          "totalTimeMinutes": 15,
+          "equipment": [
+            "Mixing bowl",
+            "Spoon"
+          ]
+        },
+        {
+          "title": "Taste and chill",
+          "description": "Taste and adjust—add a pinch more salt for pop, or a touch of honey if it’s too sharp. Chill until serving. The relish should taste bright and refreshing with a clean citrus finish.",
+          "activeTimeMinutes": 2,
+          "totalTimeMinutes": 2,
+          "equipment": [
+            "Refrigerator",
+            "Spoon"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 35,
+  "cookTimeMinutes": 240,
+  "totalTimeMinutes": 770,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Baked",
+      "Braised",
+      "Marinated",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic",
+      "Mild"
+    ],
+    "temperature": "Hot",
+    "theme": "Latin American Heritage"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "title": "West African Lamb Chili Stew",
+  "description": "This West African Lamb Chili Stew channels Pierre Thiam’s vibrant, health-forward approach, blending earthy lamb with bitter greens, warming spices, and a hint of chili—the spiced-bitter flavor profile shines through every bite. Featuring antioxidant-rich bitterleaf (or kale), fragrant West African spices, and a coconut oil base, this stew is layered, adaptively spiced, and deeply satisfying. The dish is hearty yet balanced, with a focus on natural ingredients and bold, brain-healthy flavors. Serve with fonio or brown rice for a nourishing meal that’s both traditional and modern.",
+  "ingredients": [
+    {
+      "name": "Lamb shoulder, boneless, cut into 2.5 cm (1-inch) cubes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 900,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 32,
+          "unit": "ounces"
+        }
+      ],
+      "note": "Choose well-marbled meat for best flavor"
+    },
+    {
+      "name": "Coconut oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 45,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 3,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Unrefined for more aroma, refined for higher smoke point"
+    },
+    {
+      "name": "Red onion, diced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 150,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, minced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 18,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 4,
+          "unit": "cloves"
+        }
+      ]
+    },
+    {
+      "name": "Fresh ginger, peeled and grated",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 16,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "tablespoon"
+        }
+      ]
+    },
+    {
+      "name": "Fresh Scotch bonnet or habanero chili, minced (seeded for less heat)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "piece"
+        }
+      ],
+      "note": "Adjust amount and heat level to taste"
+    },
+    {
+      "name": "Tomato paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 56,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Crushed tomatoes, unsalted",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 400,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "cups"
+        }
+      ]
+    },
+    {
+      "name": "Dried bitterleaf (Vernonia) or fresh kale, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 70,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "cups"
+        }
+      ],
+      "note": "If using dried, soak and rinse well to remove excess bitterness"
+    },
+    {
+      "name": "Red bell pepper, diced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Low-sodium beef or lamb stock",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 960,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 4,
+          "unit": "cups"
+        }
+      ]
+    },
+    {
+      "name": "Ground Guinea pepper (Grains of Selim) or black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground smoked paprika",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "leaves"
+        }
+      ]
+    },
+    {
+      "name": "Sea salt, fine",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 8,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Adjust to taste"
+    },
+    {
+      "name": "Fresh cilantro or parsley, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "For garnish"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare the aromatics",
+      "description": "Peel and dice the onion, rinse the bell pepper, and chop. Wash the greens (bitterleaf or kale) thoroughly under running water to remove grit or bitterness. Mince garlic, ginger, and chili finely—wear gloves when handling hot chilies, and wash hands thoroughly after. Set all aromatics aside, separating into bowls for easy access.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Cutting board",
+        "Chef's knife",
+        "Small bowls"
+      ]
+    },
+    {
+      "title": "Brown the lamb",
+      "description": "Heat coconut oil in a heavy-bottomed pot (such as a Dutch oven) over medium-high. When the oil shimmers and a piece of lamb sizzles on contact, add the lamb cubes in batches—do not overcrowd the pot. Brown on all sides, turning occasionally, until lamb develops deep golden edges and releases easily from the pan, about 5-7 minutes per batch. Transfer browned lamb to a plate; adjust heat and oil as needed between batches, and use your senses—listen for a lively sizzle, and watch for caramelized bits forming on the bottom.",
+      "activeTimeMinutes": 12,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Tongs",
+        "Slotted spoon",
+        "Plate"
+      ]
+    },
+    {
+      "title": "Build the flavor base",
+      "description": "Lower heat to medium. In the same pot, add onion and bell pepper; sauté, stirring and scraping up brown bits, until onions turn translucent and edges begin to caramelize. Add garlic, ginger, and chili. Stir constantly until fragrant (you should smell the spices bloom), about 1-2 minutes. Add tomato paste and cook, stirring, until the paste darkens slightly and sticks to the pot—this intensifies the umami and removes rawness.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Simmer the stew",
+      "description": "Return the browned lamb (and any juices) to the pot. Add crushed tomatoes, stock, bay leaves, Guinea pepper, smoked paprika, cumin, and salt. Stir well, scraping the bottom to incorporate all browned bits. Bring to a gentle simmer—look for small, lazy bubbles. Cover loosely and cook, adjusting heat as needed to maintain a simmer, until lamb is fork-tender and the broth has thickened and reduced. Stir occasionally, and skim off excess fat as desired. This can take 60-90 minutes; check every 20 minutes, taste for seasoning, and add a splash of water if the stew gets too thick.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 90,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Lid",
+        "Ladle",
+        "Spoon"
+      ]
+    },
+    {
+      "title": "Add the greens",
+      "description": "Add the rinsed and chopped bitterleaf (or kale) to the pot. Stir well, pressing greens into the stew. Simmer uncovered until greens are wilted, tender, and their bitterness has mellowed, about 8-12 minutes—taste and adjust seasoning, adding more salt or a splash of stock as needed. The greens should be vibrant but tender, not mushy. Remove bay leaves.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Spoon"
+      ]
+    },
+    {
+      "title": "Finish and serve",
+      "description": "Taste the stew and adjust for salt, heat, or acid as desired (a squeeze of lime can brighten it). The lamb should be juicy, break apart with a fork, and the broth thickened to coat a spoon. Ladle stew into bowls, garnish with chopped cilantro or parsley, and serve hot. Pair with fonio, brown rice, or millet for a complete meal.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Ladle",
+        "Serving bowls",
+        "Spoon"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 35,
+  "cookTimeMinutes": 117,
+  "totalTimeMinutes": 142,
+  "metadata": {
+    "primaryProtein": "OtherMeats",
+    "cookingMethod": [
+      "Braised",
+      "Pan-Seared/Sauteed"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Heavy",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "West African"
+  }
+}

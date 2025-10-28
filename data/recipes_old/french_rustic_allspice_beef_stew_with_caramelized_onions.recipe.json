@@ -1,0 +1,332 @@
+{
+  "title": "French Rustic Allspice Beef Stew with Caramelized Onions",
+  "description": "This French Rustic Allspice Beef Stew with Caramelized Onions channels Daniel Boulud’s signature blend of refined technique and deep comfort. Tender beef is gently braised with warming allspice, robust red wine, and antioxidant-rich herbs, all enveloped by a tapestry of slowly caramelized onions. The resulting stew is richly layered, with earthy undertones and a subtle sweetness, capturing the soul of French countryside cuisine. The use of avocado oil supports gentle, high-heat browning, while fresh parsley and thyme introduce vivid polyphenols and brightness. This recipe is comfort-forward, easily adaptable, and crafted to nourish both body and spirit.",
+  "ingredients": [
+    {
+      "name": "Beef chuck, cut into 2-inch cubes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1200,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 8,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Choose well-marbled beef for tenderness"
+    },
+    {
+      "name": "Yellow onions, sliced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 600,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 4,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Medium to large onions"
+    },
+    {
+      "name": "Carrots, peeled and cut into thick rounds",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 250,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Celery stalks, cut into thick slices",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "For high-heat browning; extra as needed"
+    },
+    {
+      "name": "Dry red wine",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 300,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 300,
+          "unit": "ml"
+        }
+      ],
+      "note": "Choose a full-bodied wine for depth"
+    },
+    {
+      "name": "Beef stock, low-sodium",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 750,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 750,
+          "unit": "ml"
+        }
+      ]
+    },
+    {
+      "name": "Whole allspice berries, lightly crushed",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 5,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 10,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Crush just before use for maximum aroma"
+    },
+    {
+      "name": "Fresh thyme sprigs",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 6,
+          "unit": "sprigs"
+        }
+      ]
+    },
+    {
+      "name": "Fresh flat-leaf parsley, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "cup"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, smashed",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 16,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 4,
+          "unit": "cloves"
+        }
+      ]
+    },
+    {
+      "name": "Tomato paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaf",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "leaf"
+        }
+      ]
+    },
+    {
+      "name": "Kosher salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 14,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Adjust to taste"
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Cremini or brown mushrooms, quartered",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 200,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 10,
+          "unit": "pieces"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Brown the Beef",
+      "description": "Pat the beef cubes dry with paper towels; dry surfaces help achieve a deep, caramelized crust. Season generously with kosher salt and black pepper. Heat a large Dutch oven over medium-high and add avocado oil. When the oil shimmers and a piece of beef sizzles instantly, add beef in batches (do not crowd the pan). Sear each side until deeply browned and a fond forms on the pan. Transfer browned beef to a plate. Adjust heat and oil as needed based on your stove and pot size.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Dutch oven",
+        "Tongs",
+        "Paper towels",
+        "Plate"
+      ]
+    },
+    {
+      "title": "Caramelize the Onions",
+      "description": "Lower heat to medium. Add sliced onions to the same Dutch oven, scraping up any fond. Stir frequently as onions soften, become translucent, and take on a deep golden color. Adjust heat lower if browning too fast. Onions are done when deeply golden with sweet, jammy edges—taste for sweetness. This process draws out natural sugars and builds stew depth. If onions start to stick, add a splash of water to loosen.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 30,
+      "equipment": [
+        "Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Build the Aromatic Base",
+      "description": "Add carrots, celery, garlic, and mushrooms to the caramelized onions. Sauté until vegetables soften and mushrooms release their moisture, edges begin to caramelize, and aromas become earthy and sweet. Stir in tomato paste and cook until it darkens and coats the vegetables, enhancing umami. Adjust seasoning as needed.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Deglaze and Simmer",
+      "description": "Pour in the red wine, scraping up any bits stuck to the bottom. Let simmer until wine reduces by about half and the aroma mellows. Add beef stock, allspice berries, thyme, bay leaf, and return seared beef with juices to the pot. Bring gently to a simmer, not a boil. Skim off any foam or impurities that rise to the surface. Cover and transfer to a low simmer on stove or in a 325°F (165°C) oven. Stew until beef is fork-tender and flakes easily, onions nearly melt, and broth takes on a silky, rich texture—usually 2.5 to 3 hours. Check every 30 minutes, stirring and adjusting liquid if needed (add a splash of water if too thick, uncover to reduce if too thin).",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 180,
+      "equipment": [
+        "Dutch oven",
+        "Ladle",
+        "Spoon"
+      ]
+    },
+    {
+      "title": "Finish and Serve",
+      "description": "Remove bay leaf and thyme stems. Taste stew and adjust seasoning with salt and pepper. Just before serving, stir in chopped parsley for freshness and a boost of polyphenols. Ladle into bowls, ensuring a mix of beef, vegetables, and broth. Serve hot, garnished with extra parsley if desired. Enjoy with rustic bread or root vegetable mash. Adapt liquid and seasoning to your preference—stew should be thick enough to coat a spoon but still spoonable. Let rest 10 minutes before serving to allow flavors to meld.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Ladle",
+        "Serving bowls",
+        "Chopping board",
+        "Knife"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 45,
+  "cookTimeMinutes": 180,
+  "totalTimeMinutes": 255,
+  "metadata": {
+    "primaryProtein": "Beef",
+    "cookingMethod": [
+      "Braised",
+      "Pan-Seared/Sauteed",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Heavy",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Fall",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Mild"
+    ],
+    "temperature": "Hot",
+    "theme": "French Rustic"
+  }
+}

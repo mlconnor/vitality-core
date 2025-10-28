@@ -1,0 +1,601 @@
+{
+  "title": "Roasted Lamb Shoulder with Chiles, Garlic & Sweet Onions",
+  "description": "Bone-in lamb shoulder is rubbed with a vibrant dried-chile and citrus paste, roasted low and slow over sweet onions, and finished with a bright herb-lime salsa. The dish leans into Mexican pantry staples—guajillo and ancho chiles, garlic, and citrus—for a Latin spice-bright profile that’s savory, tangy, and gently smoky. Healthy swaps include extra-virgin olive oil, plenty of onions, and a fresh herb finish to balance richness without heavy dairy.",
+  "ingredients": [
+    {
+      "name": "Bone-in lamb shoulder, trimmed of excess hard fat",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1800,
+          "unit": "grams"
+        }
+      ],
+      "note": "About 1 lamb shoulder, bone-in"
+    },
+    {
+      "name": "Kosher salt (for seasoning lamb)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Sweet onions, thickly sliced (about 1.25 cm/1/2-inch)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 600,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "large onions"
+        }
+      ]
+    },
+    {
+      "name": "Low-sodium chicken stock (or water)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 500,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 500,
+          "unit": "milliliters"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Extra-virgin olive oil (for searing)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 13.5,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 15,
+          "unit": "milliliters"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Season and marinate the lamb",
+      "description": "Pat the lamb dry with paper towels and sprinkle all over with the kosher salt and black pepper. Reserve 2–3 tablespoons of the Citrus-Chile Paste in a clean bowl for finishing (to avoid cross-contamination), then massage the remaining paste over the lamb, getting into crevices. Place in a nonreactive dish, cover, and refrigerate 4 hours (up to overnight). Keep raw lamb and its marinade separate from other foods; wash hands, boards, and tools in hot, soapy water after handling. The paste should cling in a thin, even layer and look brick-red and glossy.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 240,
+      "equipment": [
+        "Paper towels",
+        "Cutting board",
+        "Nonreactive baking dish or pan",
+        "Gloves (optional, for chile handling)",
+        "Plastic wrap or lid"
+      ]
+    },
+    {
+      "title": "Sear lamb and onions",
+      "description": "Heat a heavy Dutch oven over medium-high until the oil shimmers. Lay the onion slices in the pot and cook just until the edges take on spotty char and the surfaces turn translucent-sweet. Push onions to the sides and sear the lamb on all sides until a deep mahogany crust forms and it releases easily from the pot, 2–4 minutes per side. The pot should smell toasty—not acrid—and the fond (brown bits) should be dark but not burnt.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Dutch oven (oven-safe with lid)",
+        "Tongs",
+        "Stovetop",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Roast low and slow",
+      "description": "Nestle the lamb on the onions, add bay leaves, pour in the stock, and spoon in 2 tablespoons of the reserved clean Citrus-Chile Paste. Liquid should come 2–3 cm up the sides. Cover tightly and roast at 325°F/165°C until the lamb is fork-tender, the bone wiggles easily, and the onions have slumped into a jammy bed, about 2.5–3 hours depending on size and oven. Check once midway; if the pot looks dry, add a splash of water. Doneness cue: a fork twists in the shoulder with little resistance and juices run clear, not cloudy.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 180,
+      "equipment": [
+        "Oven preheated to 325°F/165°C",
+        "Dutch oven with lid",
+        "Ladle"
+      ]
+    },
+    {
+      "title": "Uncover to caramelize and reduce",
+      "description": "Remove the lid, increase oven to 425°F/220°C, and roast until the top is lightly caramelized and the juices reduce to a spoon-coating consistency. Baste once or twice with the pan juices. Visual cue: the surface glistens with small bubbling fat, edges are lacquered, and the liquid looks glossy and slightly syrupy, not watery.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 25,
+      "equipment": [
+        "Oven",
+        "Basting spoon"
+      ]
+    },
+    {
+      "title": "Rest, finish, and serve",
+      "description": "Transfer lamb to a board and rest 10–15 minutes so the fibers relax and juices redistribute. Spoon excess fat from the pot (save for roasting vegetables later if desired) and stir in the remaining reserved clean Citrus-Chile Paste to brighten the jus; simmer briefly if needed until it lightly coats the back of a spoon. Pull the lamb into large chunks or slice against the grain. Taste the onions and jus; adjust salt and acid with a squeeze of lime if desired. Serve hot over the sweet onions with Herb-Lime Salsa spooned on top. Wash any produce (limes, herbs) under running water before zesting or chopping.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Cutting board",
+        "Chef’s knife",
+        "Fat separator or spoon",
+        "Small saucepan (optional, for quick simmer)",
+        "Serving platter"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Citrus-Chile Paste",
+      "ingredients": [
+        {
+          "name": "Dried guajillo chiles, stemmed and seeded",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 6,
+              "unit": "pieces"
+            }
+          ]
+        },
+        {
+          "name": "Dried ancho chiles, stemmed and seeded",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 20,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 2,
+              "unit": "pieces"
+            }
+          ]
+        },
+        {
+          "name": "Garlic cloves, smashed",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 18,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 6,
+              "unit": "cloves"
+            }
+          ],
+          "note": "Crush and let rest 5–10 minutes to develop allicin before blending"
+        },
+        {
+          "name": "Ground cumin",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Ground coriander",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1.5,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Mexican oregano, dried",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Smoked paprika",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Fresh orange juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 120,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 120,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Fresh lime juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 30,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Apple cider vinegar",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 15,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 41,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 45,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Kosher salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 12,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Hot water (for soaking chiles)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 500,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 500,
+              "unit": "milliliters"
+            }
+          ],
+          "note": "For soaking; you will discard most of it"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Toast the chiles",
+          "description": "Heat a dry skillet over medium. Toast the guajillo and ancho pieces in batches, pressing with a spatula until they turn fragrant, slightly darken, and feel pliable—about 10–20 seconds per side. Do not let them blacken; bitter spots mean they’ve gone too far. Wear gloves to avoid chile oils on skin.",
+          "activeTimeMinutes": 5,
+          "totalTimeMinutes": 8,
+          "equipment": [
+            "Skillet",
+            "Spatula",
+            "Tongs",
+            "Gloves (recommended)"
+          ]
+        },
+        {
+          "title": "Soak until supple",
+          "description": "Transfer toasted chiles to a bowl and cover with hot water. Weight them down with a small plate so they stay submerged. Soak until soft and the edges no longer crack when bent, about 15 minutes. Drain, reserving a few tablespoons of soaking liquid in case you need to thin the paste.",
+          "activeTimeMinutes": 2,
+          "totalTimeMinutes": 15,
+          "equipment": [
+            "Heatproof bowl",
+            "Small plate",
+            "Strainer"
+          ]
+        },
+        {
+          "title": "Blend the paste",
+          "description": "In a blender, combine soaked chiles, rested garlic, cumin, coriander, Mexican oregano, smoked paprika, orange juice, lime juice, vinegar, olive oil, and salt. Blend, scraping down as needed, until very smooth and brick-red. The paste should flow slowly off a spoon and look glossy; add 1–3 tablespoons chile soaking liquid if too thick. Keep refrigerated and use within 5 days.",
+          "activeTimeMinutes": 8,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Blender",
+            "Rubber spatula",
+            "Measuring spoons/cups"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Herb-Lime Salsa",
+      "ingredients": [
+        {
+          "name": "Fresh cilantro (leaves and tender stems)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 20,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "cup, loosely packed"
+            }
+          ]
+        },
+        {
+          "name": "Fresh mint leaves",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 8,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "cup, loosely packed"
+            }
+          ]
+        },
+        {
+          "name": "Jalapeño, seeded for milder heat",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 12,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 1,
+              "unit": "medium pepper"
+            }
+          ]
+        },
+        {
+          "name": "Shallot (or red onion), finely chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 20,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 0.5,
+              "unit": "medium shallot"
+            }
+          ]
+        },
+        {
+          "name": "Fresh lime zest",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Fresh lime juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 30,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 27,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 30,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Apple cider vinegar",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 10,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Honey (optional, to round heat)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 6,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 5,
+              "unit": "milliliters"
+            }
+          ]
+        },
+        {
+          "name": "Sea salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.75,
+              "unit": "teaspoon"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Chop and mix",
+          "description": "Rinse herbs and jalapeño under running water and pat dry. Finely chop cilantro and mint (avoid over-processing to keep it bright), mince the jalapeño, and combine with shallot, lime zest, lime juice, olive oil, vinegar, honey (if using), and salt. Stir until it looks glossy and spoonable. Taste: it should be fresh, zippy, and slightly tangy with gentle heat; adjust salt or lime as needed.",
+          "activeTimeMinutes": 10,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Cutting board",
+            "Chef’s knife",
+            "Mixing bowl",
+            "Spoon"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 45,
+  "cookTimeMinutes": 225,
+  "totalTimeMinutes": 485,
+  "metadata": {
+    "primaryProtein": "OtherMeats",
+    "cookingMethod": [
+      "Marinated",
+      "Roasted",
+      "Braised"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic",
+      "Spicy"
+    ],
+    "temperature": "Hot",
+    "theme": "Mexican"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "title": "Sour Orange Marinated Pork with Achiote and Fire-Roasted Peppers",
+  "description": "This vibrant Spanish-Latin fusion dish, inspired by José Andrés, layers marinated pork shoulder with the tang of sour orange, earthy achiote, and sweet, fire-roasted peppers. The recipe balances Latin spice and bright citrus, infusing antioxidant-rich fresh herbs and peppers for both flavor and health. True to José Andrés's adaptive cooking style, each step prioritizes sensory cues and chef-like improvisation, guiding you toward a succulent, aromatic pork entree that celebrates bold flavors and mindful ingredient choices.",
+  "ingredients": [
+    {
+      "name": "Pork shoulder (boneless, skinless)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 900,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "pounds"
+        }
+      ],
+      "note": "Trim excess fat, cut into 4-5 cm chunks"
+    },
+    {
+      "name": "Sour orange juice (freshly squeezed preferred)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 180,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.75,
+          "unit": "cups"
+        }
+      ],
+      "note": "If unavailable, combine equal parts orange and lime juice"
+    },
+    {
+      "name": "Achiote paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Look for pure achiote, not pre-seasoned mixes"
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 18,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "High smoke point, ideal for searing and roasting"
+    },
+    {
+      "name": "Garlic cloves (fresh)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 3,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Crushed or finely minced"
+    },
+    {
+      "name": "Sweet smoked paprika (pimentón de la Vera)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 8,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Red bell pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 180,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Washed, cored, and quartered"
+    },
+    {
+      "name": "Yellow bell pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 180,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Washed, cored, and quartered"
+    },
+    {
+      "name": "Red onion",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 100,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 0.5,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Peeled and sliced into thick wedges"
+    },
+    {
+      "name": "Fresh oregano leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Chopped; substitute marjoram if needed"
+    },
+    {
+      "name": "Fresh cilantro leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.25,
+          "unit": "cups"
+        }
+      ],
+      "note": "Roughly chopped, reserve some for garnish"
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaf",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 0.5,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "pieces"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare the sour orange achiote marinade",
+      "description": "In a non-reactive bowl, combine the sour orange juice, achiote paste, crushed garlic, smoked paprika, cumin, half of the chopped oregano, and half of the chopped cilantro. Whisk until the achiote dissolves fully and the mixture turns a vivid orange-red. Taste and adjust salt or citrus to your liking—the marinade should taste boldly tangy, slightly earthy, and aromatic. Wash your hands well after handling achiote and citrus.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 8,
+      "equipment": [
+        "Non-reactive mixing bowl",
+        "Whisk",
+        "Citrus juicer (if using fresh fruit)",
+        "Measuring spoons"
+      ]
+    },
+    {
+      "title": "Marinate the pork",
+      "description": "Add the pork chunks to the bowl, turning to coat evenly in the marinade. Massage the marinade gently into the meat with clean hands or a spatula. Cover and refrigerate for at least 1 hour, ideally up to 4 hours for deeper flavor. If short on time, let the pork marinate at room temperature for 30 minutes but keep it cool, and never exceed 2 hours unrefrigerated. Always wash hands, utensils, and surfaces that touch raw pork.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 65,
+      "equipment": [
+        "Mixing bowl (from previous step)",
+        "Spatula or clean hands",
+        "Plastic wrap or lid for bowl"
+      ]
+    },
+    {
+      "title": "Fire-roast the peppers and onion",
+      "description": "Preheat a grill, broiler, or grill pan until very hot. Place the washed, quartered peppers and onion wedges directly onto the hot grates or under the broiler. Cook, turning occasionally, until the skins are blistered and blackened in spots, and the flesh is just tender—use tongs to peek and rotate for even charring. The aroma should be smoky and sweet. Transfer charred vegetables to a bowl and cover with a plate or wrap; let steam for 5-10 minutes to loosen skins. Once cool enough to handle, peel off most of the blackened skin with your fingers, but leave a few charred bits for flavor. Slice into strips. Taste for seasoning and sprinkle lightly with salt if desired.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 25,
+      "equipment": [
+        "Grill or broiler (or grill pan)",
+        "Tongs",
+        "Large bowl",
+        "Plate or wrap for covering"
+      ]
+    },
+    {
+      "title": "Sear the marinated pork",
+      "description": "Remove pork from the marinade, letting excess liquid drip off. Pat the pieces dry with paper towels—this helps with browning. Heat avocado oil in a heavy skillet or Dutch oven over medium-high until it shimmers and a piece of pork sizzles on contact. Add pork in a single layer, working in batches if needed to avoid crowding. Sear on all sides until deep golden brown with caramelized edges, 2–4 minutes per side. You should hear an active sizzle and see fond (browned bits) forming. Transfer browned pork to a plate; repeat with remaining pieces, adding oil if needed. Do not rush or move the pork too often—the goal is a flavorful crust.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Heavy skillet or Dutch oven",
+        "Tongs",
+        "Paper towels",
+        "Plate"
+      ]
+    },
+    {
+      "title": "Braise the pork",
+      "description": "Return all pork to the skillet. Pour in reserved marinade and add the bay leaf. If needed, add a splash of water or more orange juice so liquid comes about one-third up the pork. Bring to a gentle simmer, cover, and braise over low heat. Cook, turning pork occasionally, until fork-tender and easily shredded, and the liquid reduces to a glossy, deeply colored sauce—this may take 50–80 minutes depending on your pot and heat, so check occasionally and add a splash of water if drying out. The pork is done when a fork meets little resistance and the interior is moist, not dry. Taste the sauce and adjust citrus or salt. Discard bay leaf.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 70,
+      "equipment": [
+        "Heavy skillet or Dutch oven (from previous step)",
+        "Lid",
+        "Fork"
+      ]
+    },
+    {
+      "title": "Finish and assemble",
+      "description": "Gently fold the roasted pepper and onion strips into the braised pork, letting them warm through in the sauce for 2–3 minutes. The final dish should be vibrant, with the sauce thick enough to coat the pork and peppers. Sprinkle with remaining fresh cilantro and oregano. Serve hot with your choice of accompaniments—rice, tortillas, or crusty bread. Taste again right before serving and add a splash of fresh citrus or olive oil for extra brightness if desired.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 8,
+      "equipment": [
+        "Spoon or spatula",
+        "Serving platter or individual plates"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 43,
+  "cookTimeMinutes": 123,
+  "totalTimeMinutes": 196,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Marinated",
+      "Pan-Seared/Sauteed",
+      "Braised",
+      "Grilled"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Spanish-Latin Fusion"
+  }
+}

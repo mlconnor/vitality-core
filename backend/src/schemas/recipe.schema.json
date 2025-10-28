@@ -1,222 +1,97 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "properties": {
-    "title": {
-      "type": "string",
-      "minLength": 1,
-      "description": "The name of the recipe"
-    },
-    "description": {
-      "type": "string",
-      "minLength": 1,
-      "description": "A brief overview or description of the recipe"
-    },
-    "ingredients": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1,
-            "description": "The name or description of the ingredient"
-          },
-          "measurements": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": ["weight", "volume", "count"],
-                  "description": "The category of the measurement (e.g., weight, volume, count)"
-                },
-                "value": {
-                  "type": "number",
-                  "minimum": 0,
-                  "description": "The numerical quantity of the measurement"
-                },
-                "unit": {
-                  "type": "string",
-                  "minLength": 1,
-                  "description": "The unit of measurement (e.g., grams, cups, pieces)"
-                }
-              },
-              "required": ["type", "value", "unit"]
-            },
-            "minItems": 1,
-            "contains": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "const": "weight"
-                },
-                "unit": {
-                  "const": "grams"
-                }
-              },
-              "required": ["type", "unit"]
-            },
-            "description": "List of measurements for the ingredient. Must include at least one entry where type='weight' and unit='grams' (this can be an estimate, e.g., 150 for 1 apple)."
-          },
-          "note": {
-            "type": "string",
-            "description": "Optional additional information about the ingredient"
-          }
-        },
-        "required": ["name", "measurements"]
-      },
-      "minItems": 1,
-      "description": "List of ingredients required for the recipe"
-    },
-    "instructions": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "description": "Optional heading for the instruction step"
-          },
-          "description": {
-            "type": "string",
-            "minLength": 1,
-            "description": "The detailed instruction for this step"
-          },
-          "activeTimeMinutes": {
-            "type": "number",
-            "minimum": 0,
-            "description": "Time spent actively performing the step, in minutes"
-          },
-          "totalTimeMinutes": {
-            "type": "number",
-            "minimum": 0,
-            "description": "Total time for the step, including passive time (e.g., cooking or resting), in minutes"
-          },
-          "equipment": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "minLength": 1,
-              "description": "A piece of equipment needed for this step"
-            },
-            "description": "List of equipment required for this step"
-          }
-        },
-        "required": ["description", "activeTimeMinutes", "totalTimeMinutes", "equipment"]
-      },
-      "minItems": 1,
-      "description": "List of instruction steps to prepare the recipe"
-    },
-    "servings": {
-      "type": "number",
-      "minimum": 1,
-      "description": "The number of servings the recipe yields"
-    },
-    "prepTimeMinutes": {
-      "type": "number",
-      "minimum": 0,
-      "description": "Total active preparation time for the recipe, in minutes (sum of activeTimeMinutes for non-cooking steps)"
-    },
-    "cookTimeMinutes": {
-      "type": "number",
-      "minimum": 0,
-      "description": "Total cooking time for the recipe, in minutes (sum of totalTimeMinutes for cooking steps)"
-    },
-    "totalTimeMinutes": {
-      "type": "number",
-      "minimum": 0,
-      "description": "Total time from start to finish for the recipe, in minutes (sum of totalTimeMinutes from all instruction steps)"
-    },
-    "metadata": {
+  "$defs": {
+    "ingredient": {
       "type": "object",
       "properties": {
-        "primaryProtein": {
-          "type": "string",
-          "description": "Main protein source in the dish, or 'None' for non-entrees.",
-          "enum": ["Beef", "Chicken", "OtherMeats", "Pasta", "Pork", "Seafood", "Turkey", "Vegetarian", "None"]
-        },
-        "cookingMethod": {
-          "type": "array",
-          "description": "Primary cooking or preparation methods used in the dish (e.g., 'Grilled', 'Baked').",
-          "items": {
-            "type": "string",
-            "enum": [
-              "Grilled", "Roasted", "Fried", "StirFry", "Pan-Seared/Sauteed",
-              "Baked", "Steamed", "Blended", "Boiled", "Braised",
-              "Poached", "Smoked", "Fermented", "Pickled", "Whipped",
-              "Emulsified", "Reduced", "Infused", "Marinated", "Pureed"
-            ]
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "dishCategory": {
-          "type": "string",
-          "description": "The category or type of dish (e.g., 'Entree', 'Dessert').",
-          "enum": [
-            "Entree", "Side", "Starch", "Salad", "Dessert",
-            "Beverage", "Sauce", "Appetizer", "Soup/Stew", "Snack",
-            "Bread", "Pasta", "GrainBowl", "Sandwich/Wrap", "Tacos/Burritos",
-            "Casserole", "Other"
-          ]
-        },
-        "weight": {
-          "type": "string",
-          "description": "How heavy or light the dish feels.",
-          "enum": ["Heavy", "Medium", "Light"]
-        },
-        "prepTime": {
-          "type": "string",
-          "description": "Time required to prepare and cook the dish.",
-          "enum": ["Quick", "Moderate", "Long"]
-        },
-        "complexity": {
-          "type": "string",
-          "description": "Skill or effort required to prepare the dish.",
-          "enum": ["Simple", "Intermediate", "Advanced"]
-        },
-        "seasonality": {
-          "type": "string",
-          "description": "Seasonal alignment of the dish.",
-          "enum": ["Spring", "Summer", "Fall", "Winter", "Year-Round"]
-        },
-        "flavorProfile": {
-          "type": "array",
-          "description": "Dominant flavor characteristic(s) of the dish.",
-          "items": {
-            "type": "string",
-            "enum": ["Mild", "Savory/Umami", "Spicy", "Sweet/Savory", "Tangy/Acidic"]
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "temperature": {
-          "type": "string",
-          "description": "Serving temperature of the dish.",
-          "enum": ["Hot", "Cold", "Room Temp"]
-        },
-        "theme": {
+        "name": {
           "type": "string",
           "minLength": 1,
-          "description": "Cultural or regional theme of the dish, focusing on a country, region, or cuisine style for consistency (e.g., Mediterranean, American Southwestern, Chinese, Italian Tuscan)."
+          "description": "The name or description of the ingredient"
+        },
+        "measurements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["weight", "volume", "count"],
+                "description": "The category of the measurement (e.g., weight, volume, count)"
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0,
+                "description": "The numerical quantity of the measurement"
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The unit of measurement (e.g., grams, cups, pieces)"
+              }
+            },
+            "required": ["type", "value", "unit"]
+          },
+          "minItems": 1,
+          "contains": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "weight"
+              },
+              "unit": {
+                "const": "grams"
+              }
+            },
+            "required": ["type", "unit"]
+          },
+          "description": "List of measurements for the ingredient. Must include at least one entry where type='weight' and unit='grams' (this can be an estimate, e.g., 150 for 1 apple)."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional additional information about the ingredient"
         }
       },
-      "required": [
-        "primaryProtein", "cookingMethod", "dishCategory", "weight", "prepTime", "complexity",
-        "seasonality", "flavorProfile", "temperature", "theme"
-      ],
-      "additionalProperties": false,
-      "description": "Optional metadata providing additional categorization and details about the recipe."
+      "required": ["name", "measurements"],
+      "description": "A single ingredient with its measurements and optional notes"
+    },
+    "instruction": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Optional heading for the instruction step"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The detailed instruction for this step"
+        },
+        "activeTimeMinutes": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Time spent actively performing the step, in minutes"
+        },
+        "totalTimeMinutes": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Total time for the step, including passive time (e.g., cooking or resting), in minutes"
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A piece of equipment needed for this step"
+          },
+          "description": "List of equipment required for this step"
+        }
+      },
+      "required": ["description", "activeTimeMinutes", "totalTimeMinutes", "equipment"],
+      "description": "A single instruction step for preparing the recipe or sub-recipe"
     }
   },
-  "required": ["title", "description", "ingredients", "instructions", "servings", "prepTimeMinutes", "cookTimeMinutes", "totalTimeMinutes"]
-}
-
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
   "properties": {
     "title": {
       "type": "string",
@@ -230,100 +105,44 @@
     },
     "ingredients": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1,
-            "description": "The name or description of the ingredient"
-          },
-          "measurements": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "enum": ["weight", "volume", "count"],
-                  "description": "The category of the measurement (e.g., weight, volume, count)"
-                },
-                "value": {
-                  "type": "number",
-                  "minimum": 0,
-                  "description": "The numerical quantity of the measurement"
-                },
-                "unit": {
-                  "type": "string",
-                  "minLength": 1,
-                  "description": "The unit of measurement (e.g., grams, cups, pieces)"
-                }
-              },
-              "required": ["type", "value", "unit"]
-            },
-            "minItems": 1,
-            "contains": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "const": "weight"
-                },
-                "unit": {
-                  "const": "grams"
-                }
-              },
-              "required": ["type", "unit"]
-            },
-            "description": "List of measurements for the ingredient. Must include at least one entry where type='weight' and unit='grams' (this can be an estimate, e.g., 150 for 1 apple)."
-          },
-          "note": {
-            "type": "string",
-            "description": "Optional additional information about the ingredient"
-          }
-        },
-        "required": ["name", "measurements"]
-      },
+      "items": { "$ref": "#/$defs/ingredient" },
       "minItems": 1,
       "description": "List of ingredients required for the recipe"
     },
     "instructions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/instruction" },
+      "minItems": 1,
+      "description": "List of instruction steps to prepare the recipe"
+    },
+    "subRecipes": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
           "title": {
             "type": "string",
-            "description": "Optional heading for the instruction step"
-          },
-          "description": {
-            "type": "string",
             "minLength": 1,
-            "description": "The detailed instruction for this step"
+            "description": "The name of the sub-recipe (e.g., 'Tomato Sauce')"
           },
-          "activeTimeMinutes": {
-            "type": "number",
-            "minimum": 0,
-            "description": "Time spent actively performing the step, in minutes"
-          },
-          "totalTimeMinutes": {
-            "type": "number",
-            "minimum": 0,
-            "description": "Total time for the step, including passive time (e.g., cooking or resting), in minutes"
-          },
-          "equipment": {
+          "ingredients": {
             "type": "array",
-            "items": {
-              "type": "string",
-              "minLength": 1,
-              "description": "A piece of equipment needed for this step"
-            },
-            "description": "List of equipment required for this step"
+            "items": { "$ref": "#/$defs/ingredient" },
+            "minItems": 1,
+            "description": "List of ingredients required for the sub-recipe"
+          },
+          "instructions": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/instruction" },
+            "minItems": 1,
+            "description": "List of instruction steps to prepare the sub-recipe"
           }
         },
-        "required": ["description", "activeTimeMinutes", "totalTimeMinutes", "equipment"]
+        "required": ["title", "ingredients", "instructions"],
+        "additionalProperties": false,
+        "description": "A sub-recipe that is prepared independently and used in the main recipe"
       },
-      "minItems": 1,
-      "description": "List of instruction steps to prepare the recipe"
+      "description": "List of sub-recipes that are prepared independently and used in the main recipe"
     },
     "servings": {
       "type": "number",

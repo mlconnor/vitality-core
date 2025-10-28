@@ -1,0 +1,2559 @@
+{
+  "summary": {
+    "total_ingredients": 685,
+    "missing_ingredients_count": 236,
+    "total_missing_references": 748,
+    "analyzed_date": "2025-10-21T21:07:07.799Z"
+  },
+  "missing_ingredients": [
+    {
+      "missing_item": "cream",
+      "usage_count": 82,
+      "referenced_by": [
+        "angelica",
+        "anise, star",
+        "apples",
+        "apricots",
+        "artichokes",
+        "bananas",
+        "blueberries",
+        "Brazilian cuisine",
+        "brussels sprouts",
+        "cauliflower",
+        "celery root",
+        "cherries",
+        "chestnuts",
+        "chicken",
+        "chocolate / cocoa",
+        "chocolate, white",
+        "clams",
+        "coffee and espresso",
+        "dates",
+        "Eastern European cuisines",
+        "figs, fresh",
+        "French cuisine",
+        "French cuisine, Northern",
+        "German cuisine",
+        "ginger",
+        "honey",
+        "lamb",
+        "lavender",
+        "leeks",
+        "lemongrass",
+        "lobster",
+        "macadamia nuts",
+        "maple syrup",
+        "mint",
+        "mushrooms - chanterelles",
+        "mussels",
+        "nutmeg",
+        "oysters",
+        "parsnips",
+        "passion fruit",
+        "pasta",
+        "peaches",
+        "peas",
+        "plums",
+        "plums, dried",
+        "pork",
+        "potatoes",
+        "raspberries",
+        "rhubarb",
+        "scallops",
+        "shellfish",
+        "strawberries",
+        "vanilla",
+        "veal",
+        "veal chop",
+        "veal tenderloin",
+        "vodka",
+        "walnuts",
+        "watercress",
+        "watermelon",
+        "zucchini"
+      ],
+      "potential_matches": [
+        "cheese, cream",
+        "cream cheese",
+        "cream, sour"
+      ]
+    },
+    {
+      "missing_item": "chocolate",
+      "usage_count": 34,
+      "referenced_by": [
+        "almonds",
+        "bananas",
+        "cherries",
+        "chocolate / cocoa",
+        "coffee and espresso",
+        "Cuban Cuisine",
+        "dates",
+        "ginger",
+        "lamb",
+        "maple syrup",
+        "mascarpone",
+        "mint",
+        "oranges",
+        "pears",
+        "plums, dried"
+      ],
+      "potential_matches": [
+        "chocolate / cocoa",
+        "chocolate, white"
+      ]
+    },
+    {
+      "missing_item": "lemon juice",
+      "usage_count": 26,
+      "referenced_by": [
+        "avocados",
+        "bass, striped",
+        "broccoli",
+        "brussels sprouts",
+        "carrots",
+        "chard",
+        "chickpeas",
+        "eggplant",
+        "gin",
+        "Italian cuisine",
+        "mackerel",
+        "Moroccan cuisine",
+        "mushrooms - porcini / cepes / king bolete",
+        "oregano",
+        "parsley",
+        "Portuguese cuisine",
+        "salmon",
+        "salmon, smoked",
+        "scallops",
+        "scotch",
+        "skate",
+        "spinach",
+        "trout, smoked",
+        "watermelon"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "butter",
+      "usage_count": 24,
+      "referenced_by": [
+        "artichokes",
+        "Belgian cuisine",
+        "clams",
+        "corn",
+        "fiddlehead ferns",
+        "French cuisine",
+        "lobster",
+        "maple syrup",
+        "mushrooms - chanterelles",
+        "parsley",
+        "parsnips",
+        "pumpkin",
+        "radishes",
+        "rosemary",
+        "rum",
+        "scallops",
+        "skate",
+        "sole",
+        "sorrel",
+        "squash, winter",
+        "turbot"
+      ],
+      "potential_matches": [
+        "beans, butter",
+        "butter, brown",
+        "buttermilk"
+      ]
+    },
+    {
+      "missing_item": "figs",
+      "usage_count": 23,
+      "referenced_by": [
+        "almonds",
+        "cheese, roquefort",
+        "chicken",
+        "figs, fresh",
+        "honeydew",
+        "liver, calf’s",
+        "mascarpone",
+        "pasta",
+        "peaches",
+        "pork loin",
+        "quail"
+      ],
+      "potential_matches": [
+        "figs, dried",
+        "figs, fresh"
+      ]
+    },
+    {
+      "missing_item": "red wine",
+      "usage_count": 20,
+      "referenced_by": [
+        "beef",
+        "beef - oxtails",
+        "beef - short ribs",
+        "beef - steak: in general",
+        "duck",
+        "eggs and egg-based dishes",
+        "lamb",
+        "pears",
+        "plums",
+        "rabbit",
+        "squid",
+        "strawberries",
+        "sunchokes",
+        "venison"
+      ],
+      "potential_matches": [
+        "vinegar, red wine"
+      ]
+    },
+    {
+      "missing_item": "coconut",
+      "usage_count": 19,
+      "referenced_by": [
+        "almonds",
+        "bananas",
+        "basil",
+        "cherries",
+        "chicken",
+        "coconut and coconut milk",
+        "fruit, tropical",
+        "macadamia nuts",
+        "mangoes",
+        "passion fruit",
+        "pineapples",
+        "pomegranates",
+        "snapper",
+        "squash, butternut",
+        "squash, kabocha",
+        "vodka"
+      ],
+      "potential_matches": [
+        "coconut and coconut milk"
+      ]
+    },
+    {
+      "missing_item": "risotto",
+      "usage_count": 18,
+      "referenced_by": [
+        "lamb",
+        "radicchio",
+        "ramps",
+        "rice, arborio or carnaroli",
+        "squash, butternut"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "curry",
+      "usage_count": 16,
+      "referenced_by": [
+        "basil",
+        "bass, striped",
+        "cauliflower",
+        "clams",
+        "coriander",
+        "monkfish",
+        "mussels",
+        "pomegranates",
+        "pork",
+        "pumpkin",
+        "shellfish",
+        "Thai cuisine",
+        "venison"
+      ],
+      "potential_matches": [
+        "curry leaves",
+        "curry powder and sauces"
+      ]
+    },
+    {
+      "missing_item": "rice",
+      "usage_count": 16,
+      "referenced_by": [
+        "black-eyed peas",
+        "chicken",
+        "chocolate, white",
+        "cinnamon",
+        "coconut and coconut milk",
+        "Eastern European cuisines",
+        "Greek cuisine",
+        "kaffir limes and kaffir lime leaf",
+        "Latin American cuisine",
+        "mangoes",
+        "Mexican cuisine",
+        "pork shoulder",
+        "saffron",
+        "Spanish cuisine"
+      ],
+      "potential_matches": [
+        "rice, white",
+        "rice, arborio or carnaroli",
+        "rice, basmati"
+      ]
+    },
+    {
+      "missing_item": "coffee",
+      "usage_count": 15,
+      "referenced_by": [
+        "almonds",
+        "cherries",
+        "chocolate / cocoa",
+        "coffee and espresso",
+        "mushrooms - porcini / cepes / king bolete",
+        "vodka",
+        "walnuts"
+      ],
+      "potential_matches": [
+        "coffee and espresso"
+      ]
+    },
+    {
+      "missing_item": "eggs",
+      "usage_count": 13,
+      "referenced_by": [
+        "asparagus",
+        "eggs and egg-based dishes",
+        "Greek cuisine",
+        "pasta",
+        "Portuguese cuisine",
+        "truffles, white"
+      ],
+      "potential_matches": [
+        "eggs and egg-based dishes",
+        "eggs, frittata",
+        "eggs, hard-boiled"
+      ]
+    },
+    {
+      "missing_item": "morel mushrooms",
+      "usage_count": 12,
+      "referenced_by": [
+        "asparagus",
+        "crayfish",
+        "fiddlehead ferns",
+        "lobster",
+        "peas",
+        "rice, arborio or carnaroli",
+        "veal tenderloin"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "chanterelle mushrooms",
+      "usage_count": 10,
+      "referenced_by": [
+        "bacon",
+        "chicken",
+        "lobster",
+        "polenta",
+        "quail",
+        "rice, arborio or carnaroli",
+        "scallops",
+        "veal chop"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "herbs",
+      "usage_count": 9,
+      "referenced_by": [
+        "Belgian cuisine",
+        "chorizo",
+        "fiddlehead ferns",
+        "fish",
+        "French cuisine",
+        "Vietnamese cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "red pepper flakes",
+      "usage_count": 9,
+      "referenced_by": [
+        "broccoli",
+        "broccoli rabe",
+        "cauliflower",
+        "chard",
+        "Italian cuisine",
+        "pasta"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "brown sugar",
+      "usage_count": 8,
+      "referenced_by": [
+        "apples",
+        "cabbage, red",
+        "Indonesian cuisine",
+        "onions",
+        "pineapples",
+        "pumpkin",
+        "shrimp"
+      ],
+      "potential_matches": [
+        "sugar"
+      ]
+    },
+    {
+      "missing_item": "peanuts",
+      "usage_count": 8,
+      "referenced_by": [
+        "apples",
+        "bananas",
+        "Indonesian cuisine",
+        "pork",
+        "scallops",
+        "Thai cuisine"
+      ],
+      "potential_matches": [
+        "nuts",
+        "peanuts and peanut butter"
+      ]
+    },
+    {
+      "missing_item": "vinaigrette",
+      "usage_count": 8,
+      "referenced_by": [
+        "asparagus",
+        "beans, green",
+        "duck",
+        "leeks",
+        "pears",
+        "quail",
+        "tuna"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "lime juice",
+      "usage_count": 8,
+      "referenced_by": [
+        "avocados",
+        "jicama",
+        "shrimp",
+        "sweet potatoes",
+        "tequila",
+        "vodka"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "porcini",
+      "usage_count": 8,
+      "referenced_by": [
+        "mushrooms - porcini / cepes / king bolete"
+      ],
+      "potential_matches": [
+        "mushrooms - porcini / cepes / king bolete",
+        "oil, porcini"
+      ]
+    },
+    {
+      "missing_item": "cayenne",
+      "usage_count": 7,
+      "referenced_by": [
+        "asparagus",
+        "cayenne, ground",
+        "chickpeas",
+        "coriander",
+        "corn",
+        "cumin",
+        "shrimp"
+      ],
+      "potential_matches": [
+        "cayenne, ground"
+      ]
+    },
+    {
+      "missing_item": "chicken stock",
+      "usage_count": 7,
+      "referenced_by": [
+        "Chinese cuisine",
+        "fennel",
+        "peas",
+        "pumpkin",
+        "scallops",
+        "sorrel",
+        "squash, winter"
+      ],
+      "potential_matches": [
+        "chicken"
+      ]
+    },
+    {
+      "missing_item": "dijon mustard",
+      "usage_count": 6,
+      "referenced_by": [
+        "bass, striped",
+        "mackerel",
+        "mussels",
+        "salmon",
+        "shrimp",
+        "veal chop"
+      ],
+      "potential_matches": [
+        "mustard"
+      ]
+    },
+    {
+      "missing_item": "mayonnaise",
+      "usage_count": 6,
+      "referenced_by": [
+        "celery root",
+        "chicken",
+        "lobster",
+        "paprika, smoked"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "white wine",
+      "usage_count": 6,
+      "referenced_by": [
+        "clams",
+        "fish",
+        "halibut",
+        "mussels",
+        "salmon"
+      ],
+      "potential_matches": [
+        "vinegar, white wine"
+      ]
+    },
+    {
+      "missing_item": "oil",
+      "usage_count": 5,
+      "referenced_by": [
+        "asparagus, white",
+        "Caribbean cuisines",
+        "mustard"
+      ],
+      "potential_matches": [
+        "almond oil",
+        "avocado oil",
+        "eggs, hard-boiled"
+      ]
+    },
+    {
+      "missing_item": "lemon zest",
+      "usage_count": 5,
+      "referenced_by": [
+        "blueberries",
+        "parsley",
+        "sweet potatoes"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "bread crumbs",
+      "usage_count": 5,
+      "referenced_by": [
+        "cauliflower",
+        "pasta",
+        "squash, butternut"
+      ],
+      "potential_matches": [
+        "rum"
+      ]
+    },
+    {
+      "missing_item": "mace",
+      "usage_count": 5,
+      "referenced_by": [
+        "cinnamon",
+        "garam masala",
+        "German cuisine",
+        "Indian cuisine",
+        "pork"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "aioli",
+      "usage_count": 5,
+      "referenced_by": [
+        "clams",
+        "crab",
+        "monkfish",
+        "squid",
+        "tuna"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "jalapeño chile",
+      "usage_count": 5,
+      "referenced_by": [
+        "corn",
+        "crab",
+        "cucumbers",
+        "shrimp",
+        "tuna"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pepper",
+      "usage_count": 5,
+      "referenced_by": [
+        "ginger",
+        "Middle Eastern cuisine",
+        "Russian cuisine",
+        "turmeric",
+        "venison"
+      ],
+      "potential_matches": [
+        "bell peppers",
+        "black pepper",
+        "chile peppers"
+      ]
+    },
+    {
+      "missing_item": "chiles",
+      "usage_count": 4,
+      "referenced_by": [
+        "avocados",
+        "chocolate / cocoa",
+        "shrimp",
+        "squid"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "coconut milk",
+      "usage_count": 4,
+      "referenced_by": [
+        "basil, thai",
+        "cilantro",
+        "coconut and coconut milk",
+        "Thai cuisine"
+      ],
+      "potential_matches": [
+        "coconut and coconut milk"
+      ]
+    },
+    {
+      "missing_item": "turnips",
+      "usage_count": 4,
+      "referenced_by": [
+        "carrots",
+        "duck",
+        "lamb"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "carrot juice",
+      "usage_count": 4,
+      "referenced_by": [
+        "crayfish",
+        "rum",
+        "scallops",
+        "vodka"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "orange juice",
+      "usage_count": 4,
+      "referenced_by": [
+        "crayfish",
+        "Cuban Cuisine",
+        "gin",
+        "tomatoes"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "caraway",
+      "usage_count": 4,
+      "referenced_by": [
+        "Eastern European cuisines",
+        "German cuisine",
+        "vodka"
+      ],
+      "potential_matches": [
+        "caraway seeds"
+      ]
+    },
+    {
+      "missing_item": "miso",
+      "usage_count": 4,
+      "referenced_by": [
+        "grapefruit",
+        "salmon",
+        "tuna",
+        "turbot"
+      ],
+      "potential_matches": [
+        "miso and miso soup"
+      ]
+    },
+    {
+      "missing_item": "brandy",
+      "usage_count": 4,
+      "referenced_by": [
+        "lobster",
+        "plums, dried",
+        "seafood"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pork chop",
+      "usage_count": 4,
+      "referenced_by": [
+        "pork - chops"
+      ],
+      "potential_matches": [
+        "pork"
+      ]
+    },
+    {
+      "missing_item": "orange zest",
+      "usage_count": 3,
+      "referenced_by": [
+        "almonds",
+        "anise, star",
+        "cheese, goat - fresh"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "armagnac",
+      "usage_count": 3,
+      "referenced_by": [
+        "apples",
+        "plums, dried"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dark chocolate",
+      "usage_count": 3,
+      "referenced_by": [
+        "apples",
+        "chocolate, white",
+        "passion fruit"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "red onions",
+      "usage_count": 3,
+      "referenced_by": [
+        "avocados",
+        "lettuce, romaine",
+        "watermelon"
+      ],
+      "potential_matches": [
+        "onions"
+      ]
+    },
+    {
+      "missing_item": "oatmeal",
+      "usage_count": 3,
+      "referenced_by": [
+        "bananas",
+        "oatmeal / oats"
+      ],
+      "potential_matches": [
+        "oatmeal / oats"
+      ]
+    },
+    {
+      "missing_item": "sherry",
+      "usage_count": 3,
+      "referenced_by": [
+        "beans, black",
+        "rosemary",
+        "seafood"
+      ],
+      "potential_matches": [
+        "vinegar, sherry"
+      ]
+    },
+    {
+      "missing_item": "wild mushrooms",
+      "usage_count": 3,
+      "referenced_by": [
+        "beans, white",
+        "pasta",
+        "pork shoulder"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "green tea",
+      "usage_count": 3,
+      "referenced_by": [
+        "coconut and coconut milk",
+        "Moroccan cuisine",
+        "yuzu fruit"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pernod",
+      "usage_count": 3,
+      "referenced_by": [
+        "figs, fresh",
+        "lobster",
+        "zucchini"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "shiso",
+      "usage_count": 3,
+      "referenced_by": [
+        "flounder",
+        "tuna"
+      ],
+      "potential_matches": [
+        "shiso leaf"
+      ]
+    },
+    {
+      "missing_item": "wine",
+      "usage_count": 3,
+      "referenced_by": [
+        "French cuisine",
+        "rosemary"
+      ],
+      "potential_matches": [
+        "vinegar, ice wine",
+        "vinegar, red wine",
+        "vinegar, rice wine"
+      ]
+    },
+    {
+      "missing_item": "cointreau",
+      "usage_count": 3,
+      "referenced_by": [
+        "gin",
+        "tequila"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "phyllo dough",
+      "usage_count": 3,
+      "referenced_by": [
+        "Greek cuisine",
+        "Moroccan cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "kaffir lime",
+      "usage_count": 3,
+      "referenced_by": [
+        "kaffir limes and kaffir lime leaf",
+        "scallops",
+        "watermelon"
+      ],
+      "potential_matches": [
+        "kaffir limes and kaffir lime leaf"
+      ]
+    },
+    {
+      "missing_item": "portobello mushrooms",
+      "usage_count": 3,
+      "referenced_by": [
+        "mushrooms - portobello",
+        "spinach"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "green apple",
+      "usage_count": 3,
+      "referenced_by": [
+        "seafood",
+        "shrimp",
+        "watercress"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "green anise",
+      "usage_count": 2,
+      "referenced_by": [
+        "almonds",
+        "figs, fresh"
+      ],
+      "potential_matches": [
+        "anise"
+      ]
+    },
+    {
+      "missing_item": "meringue",
+      "usage_count": 2,
+      "referenced_by": [
+        "apricots",
+        "grapefruit"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "jerusalem artichoke",
+      "usage_count": 2,
+      "referenced_by": [
+        "artichokes, jerusalem"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "sesame",
+      "usage_count": 2,
+      "referenced_by": [
+        "asparagus",
+        "tuna"
+      ],
+      "potential_matches": [
+        "oil, sesame",
+        "sesame oil",
+        "sesame seeds, black"
+      ]
+    },
+    {
+      "missing_item": "sea salt",
+      "usage_count": 2,
+      "referenced_by": [
+        "avocados",
+        "octopus"
+      ],
+      "potential_matches": [
+        "salt"
+      ]
+    },
+    {
+      "missing_item": "oats",
+      "usage_count": 2,
+      "referenced_by": [
+        "bananas",
+        "vodka"
+      ],
+      "potential_matches": [
+        "oatmeal / oats"
+      ]
+    },
+    {
+      "missing_item": "clam broth",
+      "usage_count": 2,
+      "referenced_by": [
+        "bass, striped",
+        "chorizo"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "green bell peppers",
+      "usage_count": 2,
+      "referenced_by": [
+        "beans, black",
+        "Cuban Cuisine"
+      ],
+      "potential_matches": [
+        "bell peppers"
+      ]
+    },
+    {
+      "missing_item": "spring onions",
+      "usage_count": 2,
+      "referenced_by": [
+        "beans, fava",
+        "chicken"
+      ],
+      "potential_matches": [
+        "onions"
+      ]
+    },
+    {
+      "missing_item": "porcini mushrooms",
+      "usage_count": 2,
+      "referenced_by": [
+        "beef",
+        "lobster"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "currants",
+      "usage_count": 2,
+      "referenced_by": [
+        "bell peppers",
+        "oatmeal / oats"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "port",
+      "usage_count": 2,
+      "referenced_by": [
+        "blueberries",
+        "pork"
+      ],
+      "potential_matches": [
+        "mushrooms - portobello",
+        "Portuguese cuisine"
+      ]
+    },
+    {
+      "missing_item": "duck fat",
+      "usage_count": 2,
+      "referenced_by": [
+        "cabbage, red",
+        "scallops"
+      ],
+      "potential_matches": [
+        "duck"
+      ]
+    },
+    {
+      "missing_item": "ricotta salata cheese",
+      "usage_count": 2,
+      "referenced_by": [
+        "cabbage, red",
+        "eggplant"
+      ],
+      "potential_matches": [
+        "cheese"
+      ]
+    },
+    {
+      "missing_item": "bread",
+      "usage_count": 2,
+      "referenced_by": [
+        "cheese, ricotta",
+        "radishes"
+      ],
+      "potential_matches": [
+        "sweetbreads"
+      ]
+    },
+    {
+      "missing_item": "tahini",
+      "usage_count": 2,
+      "referenced_by": [
+        "chickpeas",
+        "eggplant"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "red onion",
+      "usage_count": 2,
+      "referenced_by": [
+        "cucumbers",
+        "ham"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "noodles",
+      "usage_count": 2,
+      "referenced_by": [
+        "Eastern European cuisines",
+        "rabbit"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "peppercorns",
+      "usage_count": 2,
+      "referenced_by": [
+        "fennel seeds",
+        "venison"
+      ],
+      "potential_matches": [
+        "corn"
+      ]
+    },
+    {
+      "missing_item": "stock",
+      "usage_count": 2,
+      "referenced_by": [
+        "French cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "red peppers",
+      "usage_count": 2,
+      "referenced_by": [
+        "Georgian Cuisine",
+        "Spanish cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "earl grey tea",
+      "usage_count": 2,
+      "referenced_by": [
+        "gin",
+        "scotch"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "blood orange",
+      "usage_count": 2,
+      "referenced_by": [
+        "halibut",
+        "rhubarb"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "fruit",
+      "usage_count": 2,
+      "referenced_by": [
+        "honey",
+        "Indian cuisine"
+      ],
+      "potential_matches": [
+        "fruit, dried",
+        "fruit, fresh",
+        "fruit, tropical"
+      ]
+    },
+    {
+      "missing_item": "wine vinegar",
+      "usage_count": 2,
+      "referenced_by": [
+        "Italian cuisine"
+      ],
+      "potential_matches": [
+        "vinegar"
+      ]
+    },
+    {
+      "missing_item": "kaffir lime leaf",
+      "usage_count": 2,
+      "referenced_by": [
+        "kaffir limes and kaffir lime leaf"
+      ],
+      "potential_matches": [
+        "kaffir limes and kaffir lime leaf"
+      ]
+    },
+    {
+      "missing_item": "pomegranate seeds",
+      "usage_count": 2,
+      "referenced_by": [
+        "Middle Eastern cuisine",
+        "venison"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "chanterelles",
+      "usage_count": 2,
+      "referenced_by": [
+        "mushrooms - chanterelles"
+      ],
+      "potential_matches": [
+        "mushrooms - chanterelles"
+      ]
+    },
+    {
+      "missing_item": "madeira",
+      "usage_count": 2,
+      "referenced_by": [
+        "pineapples",
+        "sweetbreads"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "white truffle oil",
+      "usage_count": 2,
+      "referenced_by": [
+        "polenta",
+        "vinegar, balsamic"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "port wine",
+      "usage_count": 2,
+      "referenced_by": [
+        "pork loin",
+        "rhubarb"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pomegranate juice",
+      "usage_count": 2,
+      "referenced_by": [
+        "scallops",
+        "tequila"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "gremolata",
+      "usage_count": 2,
+      "referenced_by": [
+        "veal",
+        "veal shanks"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "achiote",
+      "usage_count": 1,
+      "referenced_by": [
+        "achiote seeds"
+      ],
+      "potential_matches": [
+        "achiote seeds"
+      ]
+    },
+    {
+      "missing_item": "sour orange",
+      "usage_count": 1,
+      "referenced_by": [
+        "achiote seeds"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "maple",
+      "usage_count": 1,
+      "referenced_by": [
+        "anise, star"
+      ],
+      "potential_matches": [
+        "maple syrup"
+      ]
+    },
+    {
+      "missing_item": "milk",
+      "usage_count": 1,
+      "referenced_by": [
+        "anise, star"
+      ],
+      "potential_matches": [
+        "buttermilk",
+        "cheese, cow’s milk",
+        "cheese, goat’s milk"
+      ]
+    },
+    {
+      "missing_item": "milk chocolate",
+      "usage_count": 1,
+      "referenced_by": [
+        "anise, star"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "lemon confit",
+      "usage_count": 1,
+      "referenced_by": [
+        "apples"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "ras el hanout",
+      "usage_count": 1,
+      "referenced_by": [
+        "apples"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "yams",
+      "usage_count": 1,
+      "referenced_by": [
+        "apples"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "moscato d’asti",
+      "usage_count": 1,
+      "referenced_by": [
+        "apricots"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "cherries, dried",
+      "usage_count": 1,
+      "referenced_by": [
+        "apricots, dried"
+      ],
+      "potential_matches": [
+        "cherries"
+      ]
+    },
+    {
+      "missing_item": "jalapeño chiles",
+      "usage_count": 1,
+      "referenced_by": [
+        "avocados"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "egg",
+      "usage_count": 1,
+      "referenced_by": [
+        "bacon"
+      ],
+      "potential_matches": [
+        "cheese, taleggio",
+        "eggplant",
+        "eggs and egg-based dishes"
+      ]
+    },
+    {
+      "missing_item": "hamachi tuna",
+      "usage_count": 1,
+      "referenced_by": [
+        "basil"
+      ],
+      "potential_matches": [
+        "ham",
+        "tuna"
+      ]
+    },
+    {
+      "missing_item": "chutney",
+      "usage_count": 1,
+      "referenced_by": [
+        "bass, black"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "poblano chiles",
+      "usage_count": 1,
+      "referenced_by": [
+        "beans, pinto"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "root vegetables",
+      "usage_count": 1,
+      "referenced_by": [
+        "beef - short ribs"
+      ],
+      "potential_matches": [
+        "vegetables"
+      ]
+    },
+    {
+      "missing_item": "chianti",
+      "usage_count": 1,
+      "referenced_by": [
+        "beef - steak: in general"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "cremini mushrooms",
+      "usage_count": 1,
+      "referenced_by": [
+        "beef - steak: in general"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "béchamel sauce",
+      "usage_count": 1,
+      "referenced_by": [
+        "Belgian cuisine"
+      ],
+      "potential_matches": [
+        "ham"
+      ]
+    },
+    {
+      "missing_item": "crème de cassis",
+      "usage_count": 1,
+      "referenced_by": [
+        "blackberries"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "ham hocks",
+      "usage_count": 1,
+      "referenced_by": [
+        "black-eyed peas"
+      ],
+      "potential_matches": [
+        "ham"
+      ]
+    },
+    {
+      "missing_item": "egg yolks",
+      "usage_count": 1,
+      "referenced_by": [
+        "Brazilian cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "roasted red bell peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "cheese, feta"
+      ],
+      "potential_matches": [
+        "bell peppers"
+      ]
+    },
+    {
+      "missing_item": "quince paste",
+      "usage_count": 1,
+      "referenced_by": [
+        "cheese, manchego"
+      ],
+      "potential_matches": [
+        "quince"
+      ]
+    },
+    {
+      "missing_item": "ricotta",
+      "usage_count": 1,
+      "referenced_by": [
+        "cheese, ricotta"
+      ],
+      "potential_matches": [
+        "cheese, ricotta"
+      ]
+    },
+    {
+      "missing_item": "prosecco",
+      "usage_count": 1,
+      "referenced_by": [
+        "cheese, ricotta"
+      ],
+      "potential_matches": [
+        "rose"
+      ]
+    },
+    {
+      "missing_item": "kirsch",
+      "usage_count": 1,
+      "referenced_by": [
+        "cherries"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dry red wine",
+      "usage_count": 1,
+      "referenced_by": [
+        "cherries"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "sweet vermouth",
+      "usage_count": 1,
+      "referenced_by": [
+        "cherries"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "andouille sausage",
+      "usage_count": 1,
+      "referenced_by": [
+        "chicken"
+      ],
+      "potential_matches": [
+        "sage"
+      ]
+    },
+    {
+      "missing_item": "galangal",
+      "usage_count": 1,
+      "referenced_by": [
+        "chicken"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pink peppercorns",
+      "usage_count": 1,
+      "referenced_by": [
+        "chicken"
+      ],
+      "potential_matches": [
+        "corn"
+      ]
+    },
+    {
+      "missing_item": "dry white wine",
+      "usage_count": 1,
+      "referenced_by": [
+        "chicken"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "rice wine",
+      "usage_count": 1,
+      "referenced_by": [
+        "Chinese cuisine"
+      ],
+      "potential_matches": [
+        "vinegar, rice wine"
+      ]
+    },
+    {
+      "missing_item": "praline",
+      "usage_count": 1,
+      "referenced_by": [
+        "chocolate / cocoa"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "seeds",
+      "usage_count": 1,
+      "referenced_by": [
+        "chocolate / cocoa"
+      ],
+      "potential_matches": [
+        "achiote seeds",
+        "caraway seeds",
+        "fennel seeds"
+      ]
+    },
+    {
+      "missing_item": "graham crackers",
+      "usage_count": 1,
+      "referenced_by": [
+        "chocolate / cocoa"
+      ],
+      "potential_matches": [
+        "ham"
+      ]
+    },
+    {
+      "missing_item": "marshmallows",
+      "usage_count": 1,
+      "referenced_by": [
+        "chocolate / cocoa"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "tea",
+      "usage_count": 1,
+      "referenced_by": [
+        "cloves"
+      ],
+      "potential_matches": [
+        "beef - steak: in general",
+        "beef - steak: chuck",
+        "beef - steak: filet mignon"
+      ]
+    },
+    {
+      "missing_item": "cepes",
+      "usage_count": 1,
+      "referenced_by": [
+        "cod"
+      ],
+      "potential_matches": [
+        "mushrooms - porcini / cepes / king bolete"
+      ]
+    },
+    {
+      "missing_item": "green tomatoes",
+      "usage_count": 1,
+      "referenced_by": [
+        "crab"
+      ],
+      "potential_matches": [
+        "tomatoes"
+      ]
+    },
+    {
+      "missing_item": "raspberry vinegar",
+      "usage_count": 1,
+      "referenced_by": [
+        "crab"
+      ],
+      "potential_matches": [
+        "vinegar"
+      ]
+    },
+    {
+      "missing_item": "snow peas",
+      "usage_count": 1,
+      "referenced_by": [
+        "crab"
+      ],
+      "potential_matches": [
+        "peas"
+      ]
+    },
+    {
+      "missing_item": "tartar sauce",
+      "usage_count": 1,
+      "referenced_by": [
+        "crab, soft-shell"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "citrus juice",
+      "usage_count": 1,
+      "referenced_by": [
+        "Cuban Cuisine"
+      ],
+      "potential_matches": [
+        "citrus"
+      ]
+    },
+    {
+      "missing_item": "rice vinegar",
+      "usage_count": 1,
+      "referenced_by": [
+        "cucumbers"
+      ],
+      "potential_matches": [
+        "vinegar"
+      ]
+    },
+    {
+      "missing_item": "green peppercorns",
+      "usage_count": 1,
+      "referenced_by": [
+        "duck"
+      ],
+      "potential_matches": [
+        "corn"
+      ]
+    },
+    {
+      "missing_item": "smoked whitefish",
+      "usage_count": 1,
+      "referenced_by": [
+        "eggs and egg-based dishes"
+      ],
+      "potential_matches": [
+        "fish"
+      ]
+    },
+    {
+      "missing_item": "pinkelwurst",
+      "usage_count": 1,
+      "referenced_by": [
+        "eggs and egg-based dishes"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "kobe beef",
+      "usage_count": 1,
+      "referenced_by": [
+        "escalar"
+      ],
+      "potential_matches": [
+        "beef"
+      ]
+    },
+    {
+      "missing_item": "sambuca",
+      "usage_count": 1,
+      "referenced_by": [
+        "fennel"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "szechuan peppercorns",
+      "usage_count": 1,
+      "referenced_by": [
+        "five-spice powder"
+      ],
+      "potential_matches": [
+        "corn",
+        "szechuan pepper"
+      ]
+    },
+    {
+      "missing_item": "ume",
+      "usage_count": 1,
+      "referenced_by": [
+        "flounder"
+      ],
+      "potential_matches": [
+        "legumes"
+      ]
+    },
+    {
+      "missing_item": "konbu seaweed",
+      "usage_count": 1,
+      "referenced_by": [
+        "flounder"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "egg yolk",
+      "usage_count": 1,
+      "referenced_by": [
+        "French cuisine, Southern"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "poached egg",
+      "usage_count": 1,
+      "referenced_by": [
+        "frisée"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dried chiles",
+      "usage_count": 1,
+      "referenced_by": [
+        "garam masala"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "fenugreek (blue)",
+      "usage_count": 1,
+      "referenced_by": [
+        "Georgian Cuisine"
+      ],
+      "potential_matches": [
+        "fenugreek"
+      ]
+    },
+    {
+      "missing_item": "sauerbraten",
+      "usage_count": 1,
+      "referenced_by": [
+        "German cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "apple brandy",
+      "usage_count": 1,
+      "referenced_by": [
+        "gin"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "seaweed",
+      "usage_count": 1,
+      "referenced_by": [
+        "grapefruit"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "fromage blanc",
+      "usage_count": 1,
+      "referenced_by": [
+        "grapefruit"
+      ],
+      "potential_matches": [
+        "cheese, fromage blanc"
+      ]
+    },
+    {
+      "missing_item": "grape leaves",
+      "usage_count": 1,
+      "referenced_by": [
+        "Greek cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "black olives",
+      "usage_count": 1,
+      "referenced_by": [
+        "halibut"
+      ],
+      "potential_matches": [
+        "olives"
+      ]
+    },
+    {
+      "missing_item": "summer savory",
+      "usage_count": 1,
+      "referenced_by": [
+        "herbes de provence"
+      ],
+      "potential_matches": [
+        "savory",
+        "summer"
+      ]
+    },
+    {
+      "missing_item": "honeydew melon",
+      "usage_count": 1,
+      "referenced_by": [
+        "honeydew"
+      ],
+      "potential_matches": [
+        "honey",
+        "honeydew"
+      ]
+    },
+    {
+      "missing_item": "pork fat",
+      "usage_count": 1,
+      "referenced_by": [
+        "Hungarian cuisine"
+      ],
+      "potential_matches": [
+        "pork"
+      ]
+    },
+    {
+      "missing_item": "bonito flakes",
+      "usage_count": 1,
+      "referenced_by": [
+        "Japanese cuisine"
+      ],
+      "potential_matches": [
+        "bonito flakes, dried"
+      ]
+    },
+    {
+      "missing_item": "kelp",
+      "usage_count": 1,
+      "referenced_by": [
+        "Japanese cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "smoked sausage",
+      "usage_count": 1,
+      "referenced_by": [
+        "kale"
+      ],
+      "potential_matches": [
+        "sage"
+      ]
+    },
+    {
+      "missing_item": "lamb chop",
+      "usage_count": 1,
+      "referenced_by": [
+        "lamb, chops"
+      ],
+      "potential_matches": [
+        "lamb"
+      ]
+    },
+    {
+      "missing_item": "peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "Latin American cuisine"
+      ],
+      "potential_matches": [
+        "bell peppers",
+        "chile peppers",
+        "chile peppers, anaheim"
+      ]
+    },
+    {
+      "missing_item": "mesclun greens",
+      "usage_count": 1,
+      "referenced_by": [
+        "lettuces - mesclun greens"
+      ],
+      "potential_matches": [
+        "greens",
+        "lettuces - mesclun greens"
+      ]
+    },
+    {
+      "missing_item": "burnt honey",
+      "usage_count": 1,
+      "referenced_by": [
+        "limes"
+      ],
+      "potential_matches": [
+        "honey"
+      ]
+    },
+    {
+      "missing_item": "dungeness crab",
+      "usage_count": 1,
+      "referenced_by": [
+        "lovage"
+      ],
+      "potential_matches": [
+        "crab"
+      ]
+    },
+    {
+      "missing_item": "stinging nettles",
+      "usage_count": 1,
+      "referenced_by": [
+        "lovage"
+      ],
+      "potential_matches": [
+        "gin"
+      ]
+    },
+    {
+      "missing_item": "sherry vinaigrette",
+      "usage_count": 1,
+      "referenced_by": [
+        "mâche"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "sushi rice",
+      "usage_count": 1,
+      "referenced_by": [
+        "mangoes"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "fresh goat cheese",
+      "usage_count": 1,
+      "referenced_by": [
+        "marjoram"
+      ],
+      "potential_matches": [
+        "cheese",
+        "goat cheese"
+      ]
+    },
+    {
+      "missing_item": "tomato sauce",
+      "usage_count": 1,
+      "referenced_by": [
+        "marjoram"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "espresso",
+      "usage_count": 1,
+      "referenced_by": [
+        "mascarpone"
+      ],
+      "potential_matches": [
+        "coffee and espresso"
+      ]
+    },
+    {
+      "missing_item": "ladyfingers",
+      "usage_count": 1,
+      "referenced_by": [
+        "mascarpone"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dried spearmint",
+      "usage_count": 1,
+      "referenced_by": [
+        "Moroccan cuisine"
+      ],
+      "potential_matches": [
+        "mint"
+      ]
+    },
+    {
+      "missing_item": "jalapeño peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "octopus"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "tomato water",
+      "usage_count": 1,
+      "referenced_by": [
+        "oil, avocado"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "vidalia onions",
+      "usage_count": 1,
+      "referenced_by": [
+        "onions, sweet"
+      ],
+      "potential_matches": [
+        "onions"
+      ]
+    },
+    {
+      "missing_item": "tapioca",
+      "usage_count": 1,
+      "referenced_by": [
+        "oysters"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "muscadet",
+      "usage_count": 1,
+      "referenced_by": [
+        "oysters"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "ice wine",
+      "usage_count": 1,
+      "referenced_by": [
+        "passion fruit"
+      ],
+      "potential_matches": [
+        "vinegar, ice wine",
+        "vinegar, rice wine"
+      ]
+    },
+    {
+      "missing_item": "stridoli",
+      "usage_count": 1,
+      "referenced_by": [
+        "pasta"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pesto",
+      "usage_count": 1,
+      "referenced_by": [
+        "pasta"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "orange liqueur",
+      "usage_count": 1,
+      "referenced_by": [
+        "peaches"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "bitter greens",
+      "usage_count": 1,
+      "referenced_by": [
+        "pears"
+      ],
+      "potential_matches": [
+        "greens",
+        "lettuces - bitter greens and chicories"
+      ]
+    },
+    {
+      "missing_item": "swiss chard stems",
+      "usage_count": 1,
+      "referenced_by": [
+        "pickles"
+      ],
+      "potential_matches": [
+        "chard",
+        "swiss chard"
+      ]
+    },
+    {
+      "missing_item": "raw beets",
+      "usage_count": 1,
+      "referenced_by": [
+        "pickles"
+      ],
+      "potential_matches": [
+        "beets"
+      ]
+    },
+    {
+      "missing_item": "ice cream",
+      "usage_count": 1,
+      "referenced_by": [
+        "pineapples"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "sauternes",
+      "usage_count": 1,
+      "referenced_by": [
+        "plums, dried"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pickled ginger",
+      "usage_count": 1,
+      "referenced_by": [
+        "pomelos"
+      ],
+      "potential_matches": [
+        "gin",
+        "ginger"
+      ]
+    },
+    {
+      "missing_item": "bay leaves",
+      "usage_count": 1,
+      "referenced_by": [
+        "pork shoulder"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "chipotle peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "pork shoulder"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "plantains",
+      "usage_count": 1,
+      "referenced_by": [
+        "pork shoulder"
+      ],
+      "potential_matches": [
+        "plantains, green",
+        "plantains, sweet"
+      ]
+    },
+    {
+      "missing_item": "piri piri peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "Portuguese cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "amaretti cookie crumbs",
+      "usage_count": 1,
+      "referenced_by": [
+        "pumpkin"
+      ],
+      "potential_matches": [
+        "rum"
+      ]
+    },
+    {
+      "missing_item": "allspice or cinnamon",
+      "usage_count": 1,
+      "referenced_by": [
+        "quatre épices"
+      ],
+      "potential_matches": [
+        "allspice",
+        "cinnamon"
+      ]
+    },
+    {
+      "missing_item": "black and/or white pepper",
+      "usage_count": 1,
+      "referenced_by": [
+        "quatre épices"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "reduced balsamic vinegar",
+      "usage_count": 1,
+      "referenced_by": [
+        "radicchio"
+      ],
+      "potential_matches": [
+        "balsamic vinegar",
+        "vinegar"
+      ]
+    },
+    {
+      "missing_item": "speck",
+      "usage_count": 1,
+      "referenced_by": [
+        "ramps"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "caramelized sugar",
+      "usage_count": 1,
+      "referenced_by": [
+        "rhubarb"
+      ],
+      "potential_matches": [
+        "caramel",
+        "sugar"
+      ]
+    },
+    {
+      "missing_item": "zucchini blossoms",
+      "usage_count": 1,
+      "referenced_by": [
+        "rice, arborio or carnaroli"
+      ],
+      "potential_matches": [
+        "zucchini"
+      ]
+    },
+    {
+      "missing_item": "cream/milk",
+      "usage_count": 1,
+      "referenced_by": [
+        "rose"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "coconut water",
+      "usage_count": 1,
+      "referenced_by": [
+        "rum"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "tropical fruits",
+      "usage_count": 1,
+      "referenced_by": [
+        "rum"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "stuffing",
+      "usage_count": 1,
+      "referenced_by": [
+        "sage"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "vermouth",
+      "usage_count": 1,
+      "referenced_by": [
+        "salmon"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pumpernickel-rye blini",
+      "usage_count": 1,
+      "referenced_by": [
+        "salmon, smoked"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "scrambled eggs",
+      "usage_count": 1,
+      "referenced_by": [
+        "salmon, smoked"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dashi",
+      "usage_count": 1,
+      "referenced_by": [
+        "scallops"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "japanese mushrooms",
+      "usage_count": 1,
+      "referenced_by": [
+        "scallops"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "edamame",
+      "usage_count": 1,
+      "referenced_by": [
+        "scallops"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "salmon roe",
+      "usage_count": 1,
+      "referenced_by": [
+        "scallops"
+      ],
+      "potential_matches": [
+        "salmon"
+      ]
+    },
+    {
+      "missing_item": "tamarind syrup",
+      "usage_count": 1,
+      "referenced_by": [
+        "scotch"
+      ],
+      "potential_matches": [
+        "tamarind"
+      ]
+    },
+    {
+      "missing_item": "tahini paste",
+      "usage_count": 1,
+      "referenced_by": [
+        "sesame seeds, white"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "cepes mushrooms",
+      "usage_count": 1,
+      "referenced_by": [
+        "shrimp"
+      ],
+      "potential_matches": [
+        "mushrooms"
+      ]
+    },
+    {
+      "missing_item": "curry powder",
+      "usage_count": 1,
+      "referenced_by": [
+        "shrimp"
+      ],
+      "potential_matches": [
+        "curry powder and sauces"
+      ]
+    },
+    {
+      "missing_item": "old bay seasoning",
+      "usage_count": 1,
+      "referenced_by": [
+        "shrimp"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "pistachio nuts",
+      "usage_count": 1,
+      "referenced_by": [
+        "shrimp"
+      ],
+      "potential_matches": [
+        "nuts"
+      ]
+    },
+    {
+      "missing_item": "ketchup",
+      "usage_count": 1,
+      "referenced_by": [
+        "shrimp"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "romesco sauce",
+      "usage_count": 1,
+      "referenced_by": [
+        "snapper"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "roasted red peppers",
+      "usage_count": 1,
+      "referenced_by": [
+        "Spanish cuisine"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "sweet curry",
+      "usage_count": 1,
+      "referenced_by": [
+        "squash, kabocha"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "grand marnier",
+      "usage_count": 1,
+      "referenced_by": [
+        "strawberries"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "herring",
+      "usage_count": 1,
+      "referenced_by": [
+        "sunchokes"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "chorizo sausage",
+      "usage_count": 1,
+      "referenced_by": [
+        "sweet potatoes"
+      ],
+      "potential_matches": [
+        "chorizo",
+        "sage"
+      ]
+    },
+    {
+      "missing_item": "garlic chives",
+      "usage_count": 1,
+      "referenced_by": [
+        "tomatoes"
+      ],
+      "potential_matches": [
+        "chives",
+        "garlic"
+      ]
+    },
+    {
+      "missing_item": "truffles",
+      "usage_count": 1,
+      "referenced_by": [
+        "truffles, white"
+      ],
+      "potential_matches": [
+        "truffles, black",
+        "truffles, pacific northwest",
+        "truffles, white"
+      ]
+    },
+    {
+      "missing_item": "marsala wine",
+      "usage_count": 1,
+      "referenced_by": [
+        "veal"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "white balsamic vinegar",
+      "usage_count": 1,
+      "referenced_by": [
+        "vinegar, balsamic"
+      ],
+      "potential_matches": [
+        "balsamic vinegar",
+        "vinegar"
+      ]
+    },
+    {
+      "missing_item": "whole grain mustard",
+      "usage_count": 1,
+      "referenced_by": [
+        "vinegar, balsamic"
+      ],
+      "potential_matches": [
+        "mustard"
+      ]
+    },
+    {
+      "missing_item": "kahlúa",
+      "usage_count": 1,
+      "referenced_by": [
+        "vodka"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "beef consommé",
+      "usage_count": 1,
+      "referenced_by": [
+        "vodka"
+      ],
+      "potential_matches": [
+        "beef"
+      ]
+    },
+    {
+      "missing_item": "celery leaf",
+      "usage_count": 1,
+      "referenced_by": [
+        "vodka"
+      ],
+      "potential_matches": [
+        "celery"
+      ]
+    },
+    {
+      "missing_item": "maraschino liqueur",
+      "usage_count": 1,
+      "referenced_by": [
+        "vodka"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "dried fruits",
+      "usage_count": 1,
+      "referenced_by": [
+        "whiskey"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "orange curaçao",
+      "usage_count": 1,
+      "referenced_by": [
+        "whiskey"
+      ],
+      "potential_matches": []
+    },
+    {
+      "missing_item": "yuzu",
+      "usage_count": 1,
+      "referenced_by": [
+        "yuzu fruit"
+      ],
+      "potential_matches": [
+        "yuzu fruit"
+      ]
+    }
+  ]
+}

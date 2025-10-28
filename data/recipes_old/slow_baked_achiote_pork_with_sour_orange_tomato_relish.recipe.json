@@ -1,0 +1,362 @@
+{
+  "title": "Slow-Baked Achiote Pork with Sour Orange & Tomato Relish",
+  "description": "This dish embodies Chef Ray Garcia's Latin American Heritage style—layering vibrant, spice-driven flavors with a health-conscious approach. Pork shoulder is gently marinated in achiote and citrus, slow-baked for melting tenderness and deep color, then paired with a bright, antioxidant-rich tomato relish featuring sour orange and fresh herbs. The recipe leans on natural, whole foods and brain-boosting ingredients like fresh herbs, tomatoes, and citrus, using avocado oil for its high smoke point and subtle flavor. Adaptable sensory cues guide each step, inviting you to cook as Ray does: with intuition, curiosity, and respect for tradition.",
+  "ingredients": [
+    {
+      "name": "Pork shoulder (boneless, skinless)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1200,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 2.6,
+          "unit": "pounds"
+        }
+      ],
+      "note": "Trim excess fat but leave some for flavor and moisture"
+    },
+    {
+      "name": "Achiote paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 60,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 4,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Sour orange juice (or mix 2 parts orange to 1 part lime juice)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 120,
+          "unit": "milliliters"
+        }
+      ],
+      "note": "If using fresh citrus, wash thoroughly before juicing"
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, minced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 18,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 6,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Fresh oregano, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Antioxidant-rich; rinse and pat dry before chopping"
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Banana leaves or parchment paper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        }
+      ],
+      "note": "Banana leaves impart subtle aroma and tradition; parchment as alternative"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prep the Pork and Marinade",
+      "description": "Pat the pork shoulder dry with paper towels, then cut into large chunks (about 3–4 inches each) for more flavor penetration. In a large bowl, whisk together achiote paste, sour orange juice, avocado oil, minced garlic, oregano, ground cumin, sea salt, and black pepper until a loose marinade forms. Add pork, tossing well to coat every surface. Cover and marinate in the fridge for at least 4 hours, preferably overnight for the deepest flavor. Wash hands and utensils thoroughly after handling raw pork.",
+      "activeTimeMinutes": 20,
+      "totalTimeMinutes": 260,
+      "equipment": [
+        "Large bowl",
+        "Whisk",
+        "Knife",
+        "Cutting board",
+        "Plastic wrap or cover"
+      ]
+    },
+    {
+      "title": "Prepare for Baking",
+      "description": "Preheat your oven to 300°F (150°C). Line a heavy baking dish with banana leaves (or parchment); overlap leaves so they fully cover bottom and sides, leaving overhang to wrap pork. Arrange marinated pork and all marinade juices in the dish. Fold leaves or parchment over to enclose, then cover tightly with foil. This creates gentle, aromatic steam for tender pork. For more pronounced flavor, add a few extra oregano sprigs or a squeeze of citrus over the top before sealing.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Baking dish (3–4 quart)",
+        "Banana leaves or parchment",
+        "Aluminum foil"
+      ]
+    },
+    {
+      "title": "Slow-Bake the Pork",
+      "description": "Bake the pork, wrapped and sealed, until it is fork-tender and shreds easily with gentle pressure—look for juices that run clear and meat that flakes apart with little resistance. Start checking after 2.5 hours; total time may vary based on your oven and pork size. Internal temperature should reach at least 145°F (63°C) for safety, but optimal tenderness may be closer to 190–200°F (88–93°C). Taste a small piece for seasoning, adding salt if needed. Let pork rest, still wrapped, for 15–20 minutes before shredding to retain juices.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 210,
+      "equipment": [
+        "Oven",
+        "Tongs",
+        "Meat thermometer (optional)"
+      ]
+    },
+    {
+      "title": "Shred and Crisp (Optional)",
+      "description": "Unwrap and transfer pork to a large platter or rimmed baking sheet. Shred with two forks, discarding large pieces of fat. For extra texture, spread shredded pork in an even layer and return to a hot oven or broiler for 5–8 minutes until edges become browned and crispy—watch closely to avoid burning. Drizzle with some reserved pan juices to keep meat moist and flavorful.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Large platter or rimmed baking sheet",
+        "Forks",
+        "Oven or broiler"
+      ]
+    },
+    {
+      "title": "Serve with Tomato Relish",
+      "description": "Pile the pork onto a serving platter and spoon over generous amounts of the tomato relish (see sub-recipe). Garnish with extra fresh herbs if desired. Serve hot, encouraging guests to taste and add more relish for brightness or a squeeze of citrus for extra zing. The pork should be succulent, slightly smoky from the achiote, and balanced by the tangy, herbaceous relish.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Serving platter",
+        "Spoon"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Sour Orange & Tomato Relish",
+      "ingredients": [
+        {
+          "name": "Heirloom tomatoes, diced",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 320,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 2,
+              "unit": "pieces"
+            }
+          ],
+          "note": "Choose ripe, brightly colored tomatoes for best flavor and antioxidant content"
+        },
+        {
+          "name": "Red onion, finely diced",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 40,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 0.25,
+              "unit": "pieces"
+            }
+          ]
+        },
+        {
+          "name": "Sour orange juice (or mix of orange and lime juice)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "tablespoons"
+            }
+          ]
+        },
+        {
+          "name": "Fresh cilantro, chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "tablespoons"
+            }
+          ],
+          "note": "Rinse and dry before chopping"
+        },
+        {
+          "name": "Avocado oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 8,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Sea salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoon"
+            }
+          ]
+        },
+        {
+          "name": "Freshly ground black pepper",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 0.5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "teaspoon"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "description": "Wash tomatoes and cilantro thoroughly under running water. Dice tomatoes into small cubes, discarding excess seeds if desired for a less watery relish. Combine tomatoes, red onion, sour orange juice, avocado oil, cilantro, sea salt, and black pepper in a bowl. Stir gently until just combined. Taste and adjust seasoning or citrus as needed for a bright, refreshing balance. Let sit for at least 10 minutes before serving to allow flavors to meld; relish should be juicy, tangy, and herbaceous with a touch of richness from the oil.",
+          "activeTimeMinutes": 10,
+          "totalTimeMinutes": 20,
+          "equipment": [
+            "Mixing bowl",
+            "Knife",
+            "Cutting board",
+            "Spoon"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 60,
+  "cookTimeMinutes": 240,
+  "totalTimeMinutes": 300,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Baked",
+      "Marinated"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Latin American Heritage"
+  }
+}

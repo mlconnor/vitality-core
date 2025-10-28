@@ -1,0 +1,378 @@
+{
+  "title": "Spicy Lamb Stew with Garlic and Onions",
+  "description": "This aromatic lamb stew channels Yotam Ottolenghi’s vibrant Middle Eastern Mezze style, layering bold Mediterranean flavors with a focus on fresh herbs, warming spices, and whole-food ingredients. Tender lamb simmers with sweet onions, a generous amount of garlic, chili, and a medley of antioxidant-rich herbs. A splash of pomegranate molasses and a finishing drizzle of extra-virgin olive oil add brightness and depth, while smoky paprika and cumin underscore the stew’s earthy, spicy character. The result is a flexible, health-conscious dish that’s deeply savory, satisfying, and perfect for sharing with mezze. Adaptable and forgiving, this stew encourages you to taste, adjust, and let the sensory cues guide you to Mediterranean perfection.",
+  "ingredients": [
+    {
+      "name": "Lamb shoulder, boneless, trimmed and cut into 2.5 cm cubes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 900,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "shoulder"
+        }
+      ],
+      "note": "Choose grass-fed lamb if available for deeper flavor and higher omega-3 content."
+    },
+    {
+      "name": "Yellow onions, sliced into thick crescents",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 350,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "medium onions"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, smashed and roughly chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 45,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 8,
+          "unit": "cloves"
+        }
+      ],
+      "note": "Use fresh, firm garlic for best flavor and bioactive compounds."
+    },
+    {
+      "name": "Fresh red chili, deseeded and finely chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium chili"
+        }
+      ],
+      "note": "Adjust quantity for preferred heat."
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Chosen for high smoke point and neutral flavor."
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Smoked paprika",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground coriander",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Cinnamon stick",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "stick"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "leaves"
+        }
+      ]
+    },
+    {
+      "name": "Pomegranate molasses",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 18,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "tablespoon"
+        }
+      ],
+      "note": "Adds brightness and subtle sweetness."
+    },
+    {
+      "name": "Tomato paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Low-sodium chicken or lamb broth",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 720,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 3,
+          "unit": "cups"
+        }
+      ]
+    },
+    {
+      "name": "Fresh parsley, leaves and tender stems, coarsely chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 20,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "cup"
+        }
+      ],
+      "note": "Loaded with polyphenols for brain health."
+    },
+    {
+      "name": "Fresh cilantro, coarsely chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.25,
+          "unit": "cup"
+        }
+      ]
+    },
+    {
+      "name": "Lemon zest",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "lemon"
+        }
+      ],
+      "note": "Wash lemon thoroughly before zesting."
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Or to taste."
+    },
+    {
+      "name": "Freshly cracked black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Extra-virgin olive oil, for finishing",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare and Brown the Lamb",
+      "description": "Pat the lamb cubes dry with paper towels to promote good browning. Season generously with salt and pepper. In a large heavy-bottomed pot or Dutch oven, heat avocado oil over medium-high until it shimmers. Sear lamb in batches, turning as each side develops a rich golden-brown crust and releases easily from the pan—don’t rush; the aroma will deepen as browning progresses. Transfer browned lamb to a plate. If needed, add a splash more oil between batches.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Large Dutch oven or heavy-bottomed pot",
+        "Tongs",
+        "Paper towels",
+        "Plate"
+      ]
+    },
+    {
+      "title": "Sauté Aromatics",
+      "description": "Reduce heat to medium. Add onions and a pinch of salt to the pot, stirring to pick up any flavorful browned bits from the bottom. Sauté until onions soften, turn translucent, and begin to caramelize at the edges—look for a deep golden hue and sweet aroma. Add chopped garlic and chili, continuing to stir for another minute, just until fragrant (avoid browning the garlic). Use your senses: the onions should be meltingly soft and the garlic aromatic but not burnt.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Add Spices and Tomato Paste",
+      "description": "Sprinkle cumin, smoked paprika, ground coriander, and add the cinnamon stick and bay leaves. Stir constantly, letting the spices bloom until their aroma intensifies and the onions are coated in a rusty-red sheen. Add the tomato paste, stirring for 1-2 minutes until it darkens slightly and melds with the spices—this step builds depth. Adjust heat as needed to avoid scorching.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Deglaze and Simmer",
+      "description": "Pour in broth and pomegranate molasses, scraping up any browned bits. Return the browned lamb and any juices to the pot. Bring to a gentle simmer; adjust heat to maintain a slow, steady bubble. Skim any foam or excess fat that rises. Cover loosely and cook, checking every 30 minutes, until lamb is fork-tender and onions have nearly melted into the sauce—this may take 75–90 minutes depending on your lamb and equipment. Taste and adjust salt, pepper, or broth if needed. The stew is ready when the lamb can be broken apart with a spoon and the sauce is rich and slightly thickened.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 90,
+      "equipment": [
+        "Dutch oven",
+        "Ladle",
+        "Spoon"
+      ]
+    },
+    {
+      "title": "Finish and Serve",
+      "description": "Remove cinnamon stick and bay leaves. Stir in lemon zest, parsley, and cilantro, adjusting the amount to taste. Let the stew rest, uncovered, off the heat for 10 minutes (this allows flavors to meld and sauce to thicken slightly). Taste and season as needed. Serve in shallow bowls, drizzling with extra-virgin olive oil just before eating. Garnish with extra fresh herbs if desired. Enjoy hot, with flatbread or rice, and encourage guests to finish with a squeeze of lemon for extra brightness.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Microplane or zester",
+        "Serving bowls",
+        "Ladle"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 37,
+  "cookTimeMinutes": 125,
+  "totalTimeMinutes": 147,
+  "metadata": {
+    "primaryProtein": "OtherMeats",
+    "cookingMethod": [
+      "Braised",
+      "Pan-Seared/Sauteed",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Spicy"
+    ],
+    "temperature": "Hot",
+    "theme": "Middle Eastern Mezze"
+  }
+}

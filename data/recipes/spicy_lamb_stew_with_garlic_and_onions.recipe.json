@@ -1,0 +1,549 @@
+{
+  "title": "Spicy Lamb Stew with Garlic and Onions",
+  "description": "A warming Middle Eastern-style lamb stew layered with garlic, onions, and aromatic spices. The flavors lean Mediterranean: cumin, coriander, paprika, and a touch of cinnamon bloom in olive oil, tomatoes, and pomegranate molasses for depth and gentle sweetness. Chickpeas and fresh herbs add fiber and brightness. Finished with lemon and optional herby yogurt, this dish is bold yet balanced, nourishing, and easy to make with pantry-friendly ingredients.",
+  "ingredients": [
+    {
+      "name": "Boneless lamb shoulder, trimmed and cut into 1.5-inch chunks",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 900,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "pounds"
+        }
+      ],
+      "note": "Pat dry for better searing"
+    },
+    {
+      "name": "Kosher salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        }
+      ],
+      "note": "Plus more to taste"
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 3,
+          "unit": "grams"
+        }
+      ]
+    },
+    {
+      "name": "Extra-virgin olive oil, divided",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 60,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 4,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "For searing and finishing"
+    },
+    {
+      "name": "Yellow onions, thinly sliced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 600,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, finely chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 8,
+          "unit": "cloves"
+        }
+      ],
+      "note": "Crush and rest 5–10 minutes after chopping for best flavor"
+    },
+    {
+      "name": "Fresh red chile (Fresno or red jalapeño), thinly sliced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Remove seeds/ribs for less heat; wear gloves and wash hands/board after handling"
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Ground coriander",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Sweet paprika",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Aleppo pepper or red pepper flakes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Adjust to taste"
+    },
+    {
+      "name": "Ground cinnamon",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoons"
+        }
+      ]
+    },
+    {
+      "name": "Tomato paste",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 50,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 3,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Canned diced tomatoes (no added salt)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 400,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "can"
+        }
+      ]
+    },
+    {
+      "name": "Low-sodium vegetable or chicken stock",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 500,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "cups"
+        }
+      ]
+    },
+    {
+      "name": "Cooked chickpeas, drained and rinsed",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 250,
+          "unit": "grams"
+        }
+      ],
+      "note": "About the drained yield from one 400 g can"
+    },
+    {
+      "name": "Pomegranate molasses",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 20,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "tablespoon"
+        }
+      ]
+    },
+    {
+      "name": "Bay leaves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "leaves"
+        }
+      ]
+    },
+    {
+      "name": "Fresh lemon juice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "tablespoon"
+        }
+      ],
+      "note": "Add at the end to brighten"
+    },
+    {
+      "name": "Fresh mint leaves, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        }
+      ]
+    },
+    {
+      "name": "Fresh parsley or cilantro, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        }
+      ]
+    },
+    {
+      "name": "Sumac, for finishing",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        }
+      ],
+      "note": "Optional but recommended"
+    },
+    {
+      "name": "Water, as needed",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 60,
+          "unit": "grams"
+        }
+      ],
+      "note": "To loosen sauce if it reduces too much"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prep aromatics",
+      "description": "Wash onions, chiles, and herbs under cool running water. Slice onions and chiles; finely chop garlic and let it rest 5–10 minutes to develop flavor. Wear gloves when handling chiles and wash your cutting board and hands after. Pat lamb dry with paper towels so it browns well.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Chef's knife",
+        "Cutting board",
+        "Bowls",
+        "Gloves",
+        "Paper towels"
+      ]
+    },
+    {
+      "title": "Sear the lamb",
+      "description": "Heat half the olive oil in a heavy pot until it shimmers and a piece of lamb sizzles on contact. Season lamb with salt and pepper and sear in batches, leaving space between pieces. Brown on at least two sides until a deep mahogany crust forms and the fond (brown bits) builds on the pot; the lamb should release easily when well-seared. Transfer browned lamb to a plate.",
+      "activeTimeMinutes": 12,
+      "totalTimeMinutes": 18,
+      "equipment": [
+        "Dutch oven or heavy pot with lid",
+        "Tongs",
+        "Plate",
+        "Stovetop"
+      ]
+    },
+    {
+      "title": "Sweat onions and garlic",
+      "description": "Lower heat to medium, add remaining olive oil, then the sliced onions and a pinch of salt. Cook, stirring and scraping up fond, until onions turn soft, glossy, and lightly golden at the edges. Add garlic and fresh chile; cook just until fragrant and no longer raw-smelling, about 30–60 seconds, avoiding browning to prevent bitterness.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Bloom spices and tomato paste",
+      "description": "Stir in cumin, coriander, paprika, Aleppo pepper, cinnamon, and tomato paste. Cook, stirring, until the spices smell toasty and the paste darkens to a brick red and starts to stick slightly. If it threatens to scorch, add a splash of water to loosen.",
+      "activeTimeMinutes": 3,
+      "totalTimeMinutes": 4,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon",
+        "Measuring spoons"
+      ]
+    },
+    {
+      "title": "Build the braising base",
+      "description": "Add diced tomatoes, stock, pomegranate molasses, and bay leaves. Scrape the bottom to fully dissolve the fond. The mixture should look unified and lightly thickened with small bubbles at the edges. Return the browned lamb and any juices to the pot and bring to a gentle simmer.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon",
+        "Measuring cup"
+      ]
+    },
+    {
+      "title": "Braise until tender",
+      "description": "Cover and maintain a very gentle simmer—just occasional lazy bubbles. Cook until the lamb is fork-tender and yields with light pressure; pieces should pull apart easily but not shred to mush. Skim excess fat from the surface as it rises. Adjust heat as needed to keep it from boiling hard.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 110,
+      "equipment": [
+        "Dutch oven or heavy pot with lid",
+        "Ladle or spoon for skimming",
+        "Fork"
+      ]
+    },
+    {
+      "title": "Finish with chickpeas, herbs, and lemon",
+      "description": "Stir in the drained chickpeas and simmer uncovered until the stew thickens enough to coat the back of a spoon. If too thick, add a splash of water; if thin, keep simmering to reduce. Off heat, stir in lemon juice, most of the mint and parsley/cilantro, and a drizzle of olive oil. Taste and adjust salt, pepper, heat, and acidity.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon",
+        "Ladle"
+      ]
+    },
+    {
+      "title": "Rest and serve",
+      "description": "Let the stew rest 10 minutes so juices settle and flavors round out. Serve hot, topped with remaining herbs and a pinch of sumac. If using the herb yogurt, spoon it over each bowl just before serving. Keep dairy garnishes cold until serving.",
+      "activeTimeMinutes": 2,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Ladle",
+        "Bowls",
+        "Spoon"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Herb-Lemon Yogurt (Optional)",
+      "ingredients": [
+        {
+          "name": "Greek yogurt (whole milk)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 170,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.75,
+              "unit": "cups"
+            }
+          ]
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Lemon zest",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            }
+          ],
+          "note": "From about 1/2 lemon"
+        },
+        {
+          "name": "Fresh lemon juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Fresh mint, finely chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 6,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Fresh parsley, finely chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 6,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Kosher salt",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Mix and chill",
+          "description": "In a bowl, whisk yogurt with olive oil, lemon zest, and lemon juice until smooth and thick but spoonable. Fold in mint and parsley and season with salt. The yogurt should taste bright and creamy with a fresh lemon aroma. Keep chilled until serving and refrigerate leftovers promptly.",
+          "activeTimeMinutes": 5,
+          "totalTimeMinutes": 5,
+          "equipment": [
+            "Mixing bowl",
+            "Whisk",
+            "Microplane or zester",
+            "Measuring spoons"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 17,
+  "cookTimeMinutes": 169,
+  "totalTimeMinutes": 194,
+  "metadata": {
+    "primaryProtein": "OtherMeats",
+    "cookingMethod": [
+      "Braised",
+      "Pan-Seared/Sauteed",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Spicy",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Middle Eastern Mezze"
+  }
+}

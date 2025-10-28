@@ -1,0 +1,313 @@
+{
+  "title": "Persian Allspice-Braised Beef with Onions",
+  "description": "This warming Persian Allspice-Braised Beef with Onions is inspired by Najmieh Batmanglij’s signature approach to Persian home cooking: aromatic, layered, and deeply spiced, yet always inviting adaptation. Tender beef is gently braised with sweet onions, earthy allspice, turmeric, and a touch of saffron, creating a stew that’s both comforting and vibrant. The recipe uses avocado oil for its high smoke point and health benefits, while fresh herbs and pomegranate arils (rich in antioxidants) lend brightness and balance to the dish. This entree encapsulates the Middle Eastern spiced profile, blending tradition with thoughtful ingredient choices for a dish that’s as nourishing as it is flavorful.",
+  "ingredients": [
+    {
+      "name": "Beef chuck, cut into large cubes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1000,
+          "unit": "grams"
+        },
+        {
+          "type": "weight",
+          "value": 2.2,
+          "unit": "pounds"
+        }
+      ],
+      "note": "Choose well-marbled beef for tenderness"
+    },
+    {
+      "name": "Large yellow onions, thinly sliced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 600,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 3,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Onions provide sweetness and depth"
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Can substitute with ghee for a more traditional flavor"
+    },
+    {
+      "name": "Garlic cloves, finely minced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 18,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 4,
+          "unit": "pieces"
+        }
+      ]
+    },
+    {
+      "name": "Ground allspice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 5,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground turmeric",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground cinnamon",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Kosher salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 8,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "teaspoon"
+        }
+      ],
+      "note": "Adjust to taste during cooking"
+    },
+    {
+      "name": "Whole dried limes (limoo amani), pierced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 14,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Adds signature Persian tang; can substitute with juice of 1 fresh lime"
+    },
+    {
+      "name": "Water or low-sodium beef broth",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 720,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 3,
+          "unit": "cups"
+        }
+      ]
+    },
+    {
+      "name": "Saffron, finely ground and steeped in 2 tbsp hot water",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 0.25,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ],
+      "note": "Optional, but adds color and aroma"
+    },
+    {
+      "name": "Fresh parsley, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "For garnish, high in polyphenols"
+    },
+    {
+      "name": "Pomegranate arils",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.25,
+          "unit": "cup"
+        }
+      ],
+      "note": "Optional, for garnish and antioxidants"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare Ingredients",
+      "description": "Wash your hands and all produce thoroughly under running water. Pat the beef dry with paper towels to encourage browning. Slice onions thinly, mince garlic, and measure out spices and liquids. If using dried limes, pierce them several times with a sharp knife to help infuse flavor. Steep saffron in hot water if using. Gather all ingredients and equipment before you begin for a smooth workflow.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Cutting board",
+        "Sharp knife",
+        "Small bowl",
+        "Paper towels"
+      ]
+    },
+    {
+      "title": "Brown the Beef",
+      "description": "Heat avocado oil in a heavy-bottomed pot (such as a Dutch oven) over medium-high until shimmering. Working in batches so as not to crowd the pan, add beef cubes in a single layer. Let them sear undisturbed until deeply browned on at least two sides—look for a dark, caramelized crust and listen for a lively sizzle. Adjust heat if needed to avoid burning, and turn beef with tongs when it releases easily. Remove browned pieces to a plate as you go.",
+      "activeTimeMinutes": 12,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Tongs",
+        "Plate"
+      ]
+    },
+    {
+      "title": "Soften Onions & Aromatics",
+      "description": "Add sliced onions to the same pot (add a splash more oil if needed). Stir, scraping up browned bits from the bottom. Cook, stirring frequently, until onions soften and begin to turn golden with caramelized edges—adjust heat as necessary to avoid scorching. Add minced garlic and sauté briefly until fragrant, about 1 minute. Use your senses: onions should be sweet-smelling and meltingly tender, garlic should not brown.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Bloom Spices",
+      "description": "Sprinkle allspice, turmeric, cinnamon, and black pepper over the onions. Stir constantly for about 1 minute, until the spices release their aroma and coat the onions, turning the mixture a golden hue. The kitchen should smell deeply fragrant; if the spices threaten to stick or scorch, lower the heat and add a splash of water.",
+      "activeTimeMinutes": 2,
+      "totalTimeMinutes": 2,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Deglaze and Simmer",
+      "description": "Return browned beef and any juices to the pot. Sprinkle in salt. Add pierced dried limes and pour in water or broth, scraping up any remaining fond from the bottom. Bring to a gentle simmer. Once simmering, lower heat to maintain a steady, gentle bubble—adjust as needed based on your stove. Cover with the lid slightly ajar and cook until beef is very tender and flakes easily with a fork, onions have almost melted into the sauce, and the braising liquid is flavorful and slightly reduced. If using saffron, stir it in during the last 20 minutes. Skim fat as needed. Check seasoning and adjust salt, pepper, or acid (a squeeze of lime) to taste.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 120,
+      "equipment": [
+        "Dutch oven or heavy pot",
+        "Lid",
+        "Ladle",
+        "Fork"
+      ]
+    },
+    {
+      "title": "Garnish and Serve",
+      "description": "Transfer braised beef and onions to a large serving platter, spooning plenty of sauce over the top. Sprinkle generously with chopped parsley and pomegranate arils for color, freshness, and antioxidants. Serve hot, with steamed basmati rice or flatbread if desired. Encourage diners to taste and adjust with more fresh herbs or lime to their liking.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Serving platter",
+        "Spoon"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 29,
+  "cookTimeMinutes": 137,
+  "totalTimeMinutes": 169,
+  "metadata": {
+    "primaryProtein": "Beef",
+    "cookingMethod": [
+      "Braised",
+      "Pan-Seared/Sauteed"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Persian"
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "title": "Chile Tomato Ragout with Toasted Peanuts",
+  "description": "Bright, spicy, and deeply aromatic, this Chile Tomato Ragout draws on José Andrés's Spanish-Latin fusion spirit—melding earthy Spanish olive oil with the lively punch of Latin chiles and tomatoes. The ragout is finished with a flourish of toasted peanuts, a nod to both Spanish and Latin American pantry staples, adding depth, crunch, and brain-healthy polyphenols. Fresh herbs and a squeeze of lime keep the flavors high and vibrant, while avocado oil ensures a clean, robust base perfect for high-heat sautéing. Naturally adaptable and rooted in whole ingredients, this dish celebrates the Latin Spice-Bright profile by layering heat, tang, and freshness in every bite.",
+  "ingredients": [
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 24,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "High smoke point, heart-healthy fats"
+    },
+    {
+      "name": "Yellow onion, finely chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 120,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ],
+      "note": "Sweet Spanish or yellow onion preferred"
+    },
+    {
+      "name": "Red bell pepper, diced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 110,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Garlic cloves, minced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 12,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 3,
+          "unit": "cloves"
+        }
+      ]
+    },
+    {
+      "name": "Fresh jalapeño, minced (seeds removed for less heat)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ]
+    },
+    {
+      "name": "Smoked Spanish paprika (pimentón de la Vera)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 3,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ],
+      "note": "Adds complex, smoky backbone"
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Canned fire-roasted tomatoes",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 400,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1.5,
+          "unit": "cups"
+        }
+      ],
+      "note": "No salt added preferred"
+    },
+    {
+      "name": "Fresh ripe tomatoes, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 250,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "medium"
+        }
+      ],
+      "note": "Peak-season tomatoes if possible"
+    },
+    {
+      "name": "Chipotle chile in adobo, chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "whole"
+        }
+      ],
+      "note": "Adjust amount for preferred spice"
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.75,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 1,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.25,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Fresh cilantro, chopped (plus extra for garnish)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.25,
+          "unit": "cup"
+        }
+      ],
+      "note": "Rich in polyphenols"
+    },
+    {
+      "name": "Lime, juiced",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "medium"
+        }
+      ],
+      "note": "Adds brightness and acidity"
+    },
+    {
+      "name": "Dry-roasted unsalted peanuts, roughly chopped",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.33,
+          "unit": "cup"
+        }
+      ],
+      "note": "Adds crunch, depth, and healthy fats"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prepare produce and aromatics",
+      "description": "Wash the tomatoes, bell pepper, and jalapeño thoroughly under running water. Finely chop the onion, bell pepper, garlic, jalapeño, and fresh tomatoes. Mince the chipotle chile. Keep all prepped ingredients separated and ready to go. This mise en place makes the cooking process smooth and allows you to adjust ingredient quantities based on size and your taste preferences.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Chef's knife",
+        "Cutting board",
+        "Small bowl"
+      ]
+    },
+    {
+      "title": "Toast the peanuts",
+      "description": "Heat a dry skillet over medium heat. Add the peanuts and toast, stirring frequently, until they are golden and fragrant, with a nutty aroma. Watch closely to avoid burning—remove from the pan once you see some deeper golden spots and smell a pronounced roasted scent. Allow to cool, then roughly chop. Set aside for garnish.",
+      "activeTimeMinutes": 3,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Small skillet",
+        "Wooden spoon",
+        "Knife"
+      ]
+    },
+    {
+      "title": "Sauté aromatics",
+      "description": "Heat avocado oil in a wide sauté pan or Dutch oven over medium-high heat. When the oil shimmers and easily coats the bottom, add the onion and bell pepper. Sauté, stirring frequently, until softened and edges are golden brown—about 5-7 minutes, but focus on the visual cues: the onions will turn translucent and sweet, while the peppers develop caramelized spots. Stir in the garlic and jalapeño, cooking just until fragrant and the garlic loses its raw edge. Adjust heat to prevent burning; your nose will tell you when the aromatics are ready.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Wide sauté pan or Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Build the ragout base",
+      "description": "Sprinkle in the smoked paprika and cumin, stirring for 30 seconds until the spices are deeply aromatic and the oil is tinged red. Add the chopped chipotle chile, fire-roasted tomatoes, and fresh tomatoes. Stir to combine and bring to a lively simmer. Use your spoon to break down the tomatoes as they cook and release their juices. Adjust the heat so the mixture simmers gently—look for small, steady bubbles rather than a rapid boil.",
+      "activeTimeMinutes": 3,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Wide sauté pan or Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Simmer and develop flavors",
+      "description": "Continue simmering the ragout, stirring occasionally and scraping the bottom to prevent sticking. Cook until the sauce thickens to a chunky, spoonable consistency and the tomatoes have broken down—about 10-15 minutes, but rely on visual cues: the mixture should reduce slightly, with bright oil pools forming and a concentrated, jammy texture. Taste and adjust seasoning with sea salt and black pepper. For a looser ragout, add a splash of water; for thicker, simmer longer. Taste and season as needed.",
+      "activeTimeMinutes": 2,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Wide sauté pan or Dutch oven",
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Finish with herbs and lime",
+      "description": "Remove the pan from heat. Stir in chopped cilantro and lime juice, folding gently to preserve the herbs' brightness. Taste and adjust with more lime or cilantro for your preferred acidity and freshness. The ragout should be tangy, spicy, and deeply aromatic with vibrant green flecks.",
+      "activeTimeMinutes": 2,
+      "totalTimeMinutes": 2,
+      "equipment": [
+        "Wooden spoon"
+      ]
+    },
+    {
+      "title": "Serve and garnish",
+      "description": "Spoon the chile tomato ragout into shallow bowls. Shower generously with toasted peanuts and extra cilantro. Serve hot, with crusty whole grain bread, rice, or roasted vegetables for a complete meal. Encourage diners to stir the peanuts into the ragout for bursts of crunch and flavor. Enjoy immediately while the flavors are bright and lively.",
+      "activeTimeMinutes": 3,
+      "totalTimeMinutes": 3,
+      "equipment": [
+        "Serving bowls",
+        "Spoon"
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 24,
+  "cookTimeMinutes": 38,
+  "totalTimeMinutes": 50,
+  "metadata": {
+    "primaryProtein": "Vegetarian",
+    "cookingMethod": [
+      "Pan-Seared/Sauteed",
+      "Reduced"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic",
+      "Spicy"
+    ],
+    "temperature": "Hot",
+    "theme": "Spanish-Latin Fusion"
+  }
+}

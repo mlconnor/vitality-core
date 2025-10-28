@@ -1,0 +1,319 @@
+{
+  "title": "Roasted Lamb Shoulder with Chiles, Garlic & Sweet Onions",
+  "description": "This Roasted Lamb Shoulder channels Ray Garcia’s Latin American heritage and his bold, Latin Spice-Bright flavor profile: layers of sweet roasted onions, smoky chiles, and deeply aromatic garlic infuse succulent lamb in a style that’s both vibrant and soulful. Avocado oil, fresh herbs, and whole spices offer a lively, health-conscious twist on a celebratory classic, with a focus on adaptability—taste, adjust, and roast to your taste. Polyphenol-rich herbs and antioxidant-laden chiles add both flavor and mind-body benefits, while the technique encourages sensory cooking: watch for golden caramelized edges and fork-tender meat, not just the clock. This dish is designed for festive gatherings and easy sharing.",
+  "ingredients": [
+    {
+      "name": "Lamb shoulder (bone-in, trimmed of excess fat)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2000,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 1,
+          "unit": "piece"
+        }
+      ],
+      "note": "Ask your butcher for a well-marbled cut; bone-in preferred for flavor."
+    },
+    {
+      "name": "Avocado oil",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 3,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "High smoke point, ideal for roasting; substitute extra-virgin olive oil for a milder finish if desired."
+    },
+    {
+      "name": "Sweet onions",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 400,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "medium"
+        }
+      ],
+      "note": "Quartered through the root for natural caramelization."
+    },
+    {
+      "name": "Fresh garlic cloves",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 8,
+          "unit": "cloves"
+        }
+      ],
+      "note": "Smashed with the side of a knife, skins removed."
+    },
+    {
+      "name": "Fresno or red jalapeño chiles",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 40,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ],
+      "note": "Seeded and sliced for mild heat; leave seeds for extra spice."
+    },
+    {
+      "name": "Dried guajillo or ancho chiles",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 16,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "medium"
+        }
+      ],
+      "note": "Stemmed, seeded, and torn into large pieces."
+    },
+    {
+      "name": "Fresh oregano (or 1/3 dried)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 6,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Roughly chopped for bursts of herbal flavor; rich in polyphenols."
+    },
+    {
+      "name": "Fresh cilantro (stems and leaves)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 10,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "cup"
+        }
+      ],
+      "note": "Reserve some leaves for garnish."
+    },
+    {
+      "name": "Fresh lime juice",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 30,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "note": "Adds bright acidity to balance the richness."
+    },
+    {
+      "name": "Sea salt",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 2,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Adjust to taste throughout the process."
+    },
+    {
+      "name": "Freshly ground black pepper",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoon"
+        }
+      ],
+      "note": "Freshly cracked for best aroma."
+    },
+    {
+      "name": "Ground cumin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 4,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Ground coriander",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 3,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.75,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Filtered water or low-sodium chicken broth",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 250,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "cup"
+        }
+      ],
+      "note": "Just enough to moisten the pan and encourage gentle braising."
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Prep the lamb and aromatics",
+      "description": "Pat the lamb shoulder dry with paper towels and let it come to room temperature (about 30 minutes for even roasting). Meanwhile, wash onions, chiles, cilantro, and oregano thoroughly under running water. Quarter the onions, smash the garlic, and prepare the chiles as desired for heat preference. Adjust prep based on ingredient size. Season lamb generously with sea salt, pepper, cumin, and coriander, rubbing spices into all crevices.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 45,
+      "equipment": [
+        "Paper towels",
+        "Chef's knife",
+        "Cutting board",
+        "Mixing bowl"
+      ]
+    },
+    {
+      "title": "Sear the lamb",
+      "description": "Heat a large, heavy ovenproof roasting pan or Dutch oven over medium-high heat. Add avocado oil and swirl until it shimmers. Sear lamb shoulder on all sides until a deep golden crust forms—listen for a lively sizzle, and adjust heat as needed to avoid burning. Use tongs to turn the lamb for even browning. Remove the lamb to a platter and pour off excess fat, leaving a thin layer in the pan.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 15,
+      "equipment": [
+        "Ovenproof roasting pan or Dutch oven",
+        "Tongs",
+        "Spatula"
+      ]
+    },
+    {
+      "title": "Build the flavor base",
+      "description": "In the same pan, add onions, smashed garlic, fresh and dried chiles. Stir to coat in the residual oil and spices, allowing onions to soften and edges to turn golden with a touch of charring—stir occasionally, scraping up any flavorful browned bits (fond). Return lamb shoulder atop the onion mixture.",
+      "activeTimeMinutes": 8,
+      "totalTimeMinutes": 12,
+      "equipment": [
+        "Wooden spoon",
+        "Ovenproof pan"
+      ]
+    },
+    {
+      "title": "Roast low and slow",
+      "description": "Preheat oven to 325°F (165°C). Pour water or chicken broth around the lamb (not over it), scatter oregano and most of the cilantro (reserve some for garnish) around the pan. Cover pan tightly with a lid or foil. Roast in the oven until the lamb is fork-tender and pulls away from the bone easily, with onions deeply caramelized and chiles soft—this can take 2.5–3 hours, depending on your oven and lamb size. Check for tenderness with a fork: if the meat resists, return to the oven, checking every 15–20 minutes. For safety, internal temperature should reach at least 145°F (63°C), but texture is your best guide.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 180,
+      "equipment": [
+        "Oven",
+        "Foil or tight-fitting lid",
+        "Meat thermometer (optional)",
+        "Fork"
+      ]
+    },
+    {
+      "title": "Rest and brighten",
+      "description": "Remove lamb from the oven and let rest, covered, for at least 15 minutes to relax the fibers and keep juices in. Spoon off excess fat if desired. Squeeze lime juice over the lamb and pan juices, taste, and adjust seasoning with salt or herbs as needed. The sauce should be rich, aromatic, and slightly tangy. If you like a thicker sauce, simmer the juices on the stove until they coat the back of a spoon, watching for a glossy, syrupy finish.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Spoon",
+        "Small saucepan (optional)"
+      ]
+    },
+    {
+      "title": "Serve",
+      "description": "Shred the lamb into large chunks with two forks or slice across the grain. Serve on a platter with the roasted onions, chiles, and plenty of pan juices. Scatter reserved cilantro over the top. Pair with warm tortillas, roasted vegetables, or fresh greens as desired. Taste, adjust, and enjoy—this dish is meant to be vibrant, adaptable, and shared.",
+      "activeTimeMinutes": 7,
+      "totalTimeMinutes": 10,
+      "equipment": [
+        "Forks",
+        "Serving platter"
+      ]
+    }
+  ],
+  "servings": 6,
+  "prepTimeMinutes": 40,
+  "cookTimeMinutes": 180,
+  "totalTimeMinutes": 282,
+  "metadata": {
+    "primaryProtein": "OtherMeats",
+    "cookingMethod": [
+      "Roasted",
+      "Braised",
+      "Pan-Seared/Sauteed"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Heavy",
+    "prepTime": "Long",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic",
+      "Spicy"
+    ],
+    "temperature": "Hot",
+    "theme": "Latin American Heritage"
+  }
+}

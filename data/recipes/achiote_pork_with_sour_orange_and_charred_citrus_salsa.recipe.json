@@ -1,0 +1,492 @@
+{
+  "title": "Achiote Pork with Sour Orange and Charred Citrus Salsa",
+  "description": "Lean pork tenderloin is marinated in a vivid achiote–sour orange recado, then seared and roasted until just rosy and juicy. A charred citrus salsa brings smoky brightness with orange, lime, jalapeño, and cilantro—classic Mexican regional balance of earthy spice and punchy acid. The dish is light yet satisfying, uses whole ingredients, and keeps oil modest for a healthier plate without losing flavor.",
+  "ingredients": [
+    {
+      "name": "Pork tenderloin",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 800,
+          "unit": "grams"
+        },
+        {
+          "type": "count",
+          "value": 2,
+          "unit": "pieces"
+        }
+      ],
+      "note": "2 small tenderloins, trim silver skin (about 350–450 g each)"
+    },
+    {
+      "name": "Avocado oil (for searing)",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 15,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 1,
+          "unit": "tablespoons"
+        }
+      ]
+    },
+    {
+      "name": "Flaky sea salt, for finishing",
+      "measurements": [
+        {
+          "type": "weight",
+          "value": 2,
+          "unit": "grams"
+        },
+        {
+          "type": "volume",
+          "value": 0.5,
+          "unit": "teaspoons"
+        }
+      ],
+      "note": "Optional"
+    }
+  ],
+  "instructions": [
+    {
+      "title": "Marinate the pork",
+      "description": "Prepare the Achiote Sour Orange Marinade (see sub-recipe). Pat the pork dry, then place in a shallow dish or zipper bag. Reserve 2 tablespoons of the finished marinade in a clean bowl before touching raw pork. Pour the remaining marinade over the pork, turn to coat, and massage it in so the surface is evenly stained brick-red. Cover and refrigerate 30 minutes up to overnight; rotate once for even contact. For food safety, keep chilled during the soak, and wash hands, board, and tools after handling raw pork. Pull the pork from the fridge 20 minutes before cooking so the chill comes off; surface should feel tacky, not wet.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 60,
+      "equipment": [
+        "Cutting board",
+        "Chef's knife",
+        "Measuring spoons",
+        "Mixing bowl",
+        "Zipper bag or shallow dish",
+        "Refrigerator"
+      ]
+    },
+    {
+      "title": "Make the Charred Citrus Salsa",
+      "description": "Wash all fruits and vegetables thoroughly under running water and dry well. Halve the citrus and preheat a grill pan or broiler; lightly oil the cut sides. Char the citrus cut side down until the edges blister, the flesh smells smoky-sweet, and juices sizzle in the pan—deep brown spots are good but avoid burning. Let cool until warm, then chop the citrus segments, catching juices. Mix with onion, jalapeño, cilantro, olive oil, and juice; season with salt. The salsa should be juicy, bright, and lightly bitter with a fresh citrus aroma; add a small pinch of honey only if it tastes harshly bitter.",
+      "activeTimeMinutes": 15,
+      "totalTimeMinutes": 20,
+      "equipment": [
+        "Grill pan or broiler",
+        "Tongs",
+        "Chef's knife",
+        "Citrus juicer",
+        "Mixing bowl",
+        "Spoon"
+      ]
+    },
+    {
+      "title": "Sear and roast",
+      "description": "Heat the oven to 425°F (220°C). Heat an oven-safe skillet over medium-high with the avocado oil until it shimmers and a drop of marinade sizzles on contact. Lift the pork from the marinade, letting excess drip off; discard used marinade. Sear all sides until a deep mahogany crust forms and the surface is fragrant and lightly sticky, about 1–2 minutes per side. Transfer the skillet to the oven and roast until the thickest part feels springy (not firm) and juices run clear with a faint pink sheen; an instant-read thermometer should read 145°F minimum. Brush with the reserved clean marinade in the last 2 minutes to glaze. Rest on a board 5–10 minutes; the juices should settle and meat look slightly rosy.",
+      "activeTimeMinutes": 10,
+      "totalTimeMinutes": 30,
+      "equipment": [
+        "Oven",
+        "Oven-safe skillet",
+        "Tongs",
+        "Instant-read thermometer",
+        "Brush (for glaze)"
+      ]
+    },
+    {
+      "title": "Slice and serve",
+      "description": "Slice the pork against the grain into 1 cm medallions; they should be juicy with a pale pink center and clear juices. Spoon charred citrus salsa over the top and finish with a pinch of flaky salt. Serve hot with simple sides like black beans or crisp cabbage salad if you like.",
+      "activeTimeMinutes": 5,
+      "totalTimeMinutes": 5,
+      "equipment": [
+        "Cutting board",
+        "Chef's knife",
+        "Serving platter"
+      ]
+    }
+  ],
+  "subRecipes": [
+    {
+      "title": "Achiote Sour Orange Marinade",
+      "ingredients": [
+        {
+          "name": "Achiote (annatto) paste",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 60,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 4,
+              "unit": "tablespoons"
+            }
+          ],
+          "note": "Store-bought paste for convenience"
+        },
+        {
+          "name": "Avocado or extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "tablespoons"
+            }
+          ]
+        },
+        {
+          "name": "Sour orange juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 120,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 120,
+              "unit": "milliliters"
+            }
+          ],
+          "note": "If unavailable, use 2 parts fresh orange juice + 1 part fresh lime juice"
+        },
+        {
+          "name": "Apple cider vinegar",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "tablespoons"
+            }
+          ]
+        },
+        {
+          "name": "Garlic cloves, minced",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 20,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 4,
+              "unit": "cloves"
+            }
+          ]
+        },
+        {
+          "name": "Ground cumin",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Dried Mexican oregano, crushed",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Ground allspice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 1,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "teaspoons"
+            }
+          ],
+          "note": "Optional"
+        },
+        {
+          "name": "Sea salt, fine",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            }
+          ]
+        },
+        {
+          "name": "Black pepper, ground",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 2,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Chipotle or árbol chile powder",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 1,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.25,
+              "unit": "teaspoons"
+            }
+          ],
+          "note": "Optional, for heat"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Bloom the achiote",
+          "description": "Warm the oil in a small pan over low heat until it shimmers. Add the achiote paste and mash for 30–60 seconds until the oil turns vivid red and smells earthy-nutty. Do not let it brown or smoke—if it does, start over to avoid bitterness.",
+          "activeTimeMinutes": 3,
+          "totalTimeMinutes": 3,
+          "equipment": [
+            "Small saucepan",
+            "Heatproof spatula"
+          ]
+        },
+        {
+          "title": "Finish the marinade",
+          "description": "Off the heat, whisk in sour orange juice, vinegar, garlic, cumin, oregano, allspice, salt, pepper, and chile powder until smooth. The marinade should thinly coat the back of a spoon and smell bright and citrusy with warm spice. Cool to room temperature before using with meat to avoid partial cooking.",
+          "activeTimeMinutes": 5,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Whisk",
+            "Mixing bowl",
+            "Measuring cups and spoons"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Charred Citrus Salsa",
+      "ingredients": [
+        {
+          "name": "Oranges",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 500,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 2,
+              "unit": "pieces"
+            }
+          ]
+        },
+        {
+          "name": "Lime",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 70,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 1,
+              "unit": "piece"
+            }
+          ]
+        },
+        {
+          "name": "Red onion, finely chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 80,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "cups"
+            }
+          ]
+        },
+        {
+          "name": "Jalapeño, minced (seed to taste)",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "count",
+              "value": 1,
+              "unit": "small"
+            }
+          ]
+        },
+        {
+          "name": "Fresh cilantro, chopped",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 10,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.5,
+              "unit": "cups"
+            }
+          ]
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 15,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "tablespoons"
+            }
+          ]
+        },
+        {
+          "name": "Fresh sour orange or lime juice",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 30,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 2,
+              "unit": "tablespoons"
+            }
+          ],
+          "note": "Adjust to taste for brightness"
+        },
+        {
+          "name": "Sea salt, fine",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 4,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 0.75,
+              "unit": "teaspoons"
+            }
+          ]
+        },
+        {
+          "name": "Honey",
+          "measurements": [
+            {
+              "type": "weight",
+              "value": 5,
+              "unit": "grams"
+            },
+            {
+              "type": "volume",
+              "value": 1,
+              "unit": "teaspoons"
+            }
+          ],
+          "note": "Optional, only if salsa tastes overly bitter"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Char the citrus",
+          "description": "Wash oranges and lime under running water and dry. Halve them. Preheat a grill pan (medium-high) or broiler. Lightly oil the cut faces and place cut side down until the edges blister and the flesh browns in spots and smells smoky-sweet; juices should sizzle. Avoid black, acrid patches.",
+          "activeTimeMinutes": 8,
+          "totalTimeMinutes": 12,
+          "equipment": [
+            "Grill pan or broiler",
+            "Tongs",
+            "Paper towels",
+            "Brush or spoon for oil"
+          ]
+        },
+        {
+          "title": "Chop and season",
+          "description": "When cool enough to handle, cut away any tough pith, roughly chop the citrus (catching all juices), and remove seeds. Combine with red onion, jalapeño, cilantro, olive oil, and citrus juice. Season with salt and taste: it should be bright, juicy, and lightly bitter with a clean citrus pop; add a small drizzle of honey only if needed. Keep chilled until serving.",
+          "activeTimeMinutes": 10,
+          "totalTimeMinutes": 10,
+          "equipment": [
+            "Chef's knife",
+            "Cutting board",
+            "Mixing bowl",
+            "Spoon"
+          ]
+        }
+      ]
+    }
+  ],
+  "servings": 4,
+  "prepTimeMinutes": 15,
+  "cookTimeMinutes": 50,
+  "totalTimeMinutes": 115,
+  "metadata": {
+    "primaryProtein": "Pork",
+    "cookingMethod": [
+      "Marinated",
+      "Pan-Seared/Sauteed",
+      "Roasted"
+    ],
+    "dishCategory": "Entree",
+    "weight": "Medium",
+    "prepTime": "Moderate",
+    "complexity": "Intermediate",
+    "seasonality": "Year-Round",
+    "flavorProfile": [
+      "Savory/Umami",
+      "Tangy/Acidic"
+    ],
+    "temperature": "Hot",
+    "theme": "Mexican Regional (Yucatán-inspired)"
+  }
+}
