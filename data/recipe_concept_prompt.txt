@@ -1,0 +1,421 @@
+The data you need for this task is as follows:
+
+===
+
+Flavor Profiles:
+  Comfort-forward:
+    Sweet: 3
+    Sour/Acid: 2
+    Salty: 7
+    Bitter: 2
+    Umami/Savory: 8
+    Creamy/Rich/Fatty: 9
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 4
+  Rich & Savoury:
+    Sweet: 2
+    Sour/Acid: 2
+    Salty: 7
+    Bitter: 1
+    Umami/Savory: 9
+    Creamy/Rich/Fatty: 9
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 5
+  Creamy & Mild:
+    Sweet: 3
+    Sour/Acid: 2
+    Salty: 5
+    Bitter: 1
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 10
+    Crunchy/Textural Contrast: 3
+    Spicy/Aromatic/Herbal: 3
+  Salty-Craveable:
+    Sweet: 2
+    Sour/Acid: 1
+    Salty: 9
+    Bitter: 1
+    Umami/Savory: 8
+    Creamy/Rich/Fatty: 8
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 3
+  Umami Bomb (Meaty Depth):
+    Sweet: 1
+    Sour/Acid: 2
+    Salty: 6
+    Bitter: 2
+    Umami/Savory: 10
+    Creamy/Rich/Fatty: 9
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 6
+  Fresh-bright:
+    Sweet: 3
+    Sour/Acid: 8
+    Salty: 4
+    Bitter: 3
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 5
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 7
+  Citrus-lifted:
+    Sweet: 4
+    Sour/Acid: 9
+    Salty: 3
+    Bitter: 2
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 4
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 6
+  Herbal-aromatic:
+    Sweet: 3
+    Sour/Acid: 6
+    Salty: 3
+    Bitter: 3
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 5
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 9
+  Clean & Light:
+    Sweet: 3
+    Sour/Acid: 7
+    Salty: 2
+    Bitter: 2
+    Umami/Savory: 4
+    Creamy/Rich/Fatty: 4
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 6
+  Pickled & Sharp:
+    Sweet: 2
+    Sour/Acid: 9
+    Salty: 4
+    Bitter: 2
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 4
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 6
+  Bitter-Greens Driven:
+    Sweet: 2
+    Sour/Acid: 5
+    Salty: 3
+    Bitter: 8
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 5
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 7
+  Dark & Cocoa-Like:
+    Sweet: 3
+    Sour/Acid: 2
+    Salty: 3
+    Bitter: 7
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 7
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 6
+  Spiced-Bitter:
+    Sweet: 2
+    Sour/Acid: 4
+    Salty: 4
+    Bitter: 7
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 8
+  Tannic/Tea-Like:
+    Sweet: 2
+    Sour/Acid: 3
+    Salty: 2
+    Bitter: 6
+    Umami/Savory: 4
+    Creamy/Rich/Fatty: 4
+    Crunchy/Textural Contrast: 3
+    Spicy/Aromatic/Herbal: 7
+  Earthy-Rooted:
+    Sweet: 3
+    Sour/Acid: 4
+    Salty: 3
+    Bitter: 6
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 6
+  Sweet-Savory Balance:
+    Sweet: 6
+    Sour/Acid: 4
+    Salty: 5
+    Bitter: 2
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 7
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 6
+  Natural-Sweet:
+    Sweet: 7
+    Sour/Acid: 3
+    Salty: 3
+    Bitter: 2
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 4
+    Spicy/Aromatic/Herbal: 5
+  Sweet-Spicy:
+    Sweet: 6
+    Sour/Acid: 4
+    Salty: 4
+    Bitter: 3
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 8
+  Sweet-Sour Contrast:
+    Sweet: 7
+    Sour/Acid: 7
+    Salty: 4
+    Bitter: 2
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 7
+  Caramelized-Rich:
+    Sweet: 6
+    Sour/Acid: 3
+    Salty: 5
+    Bitter: 2
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 8
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 5
+  Mediterranean Aromatic:
+    Sweet: 3
+    Sour/Acid: 5
+    Salty: 4
+    Bitter: 3
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 8
+  Middle Eastern Spiced:
+    Sweet: 3
+    Sour/Acid: 5
+    Salty: 5
+    Bitter: 4
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 7
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 9
+  Indian Spice-Layered:
+    Sweet: 3
+    Sour/Acid: 4
+    Salty: 5
+    Bitter: 5
+    Umami/Savory: 8
+    Creamy/Rich/Fatty: 7
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 9
+  East Asian Umami-Light:
+    Sweet: 2
+    Sour/Acid: 6
+    Salty: 4
+    Bitter: 2
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 7
+  Latin Spice-Bright:
+    Sweet: 3
+    Sour/Acid: 8
+    Salty: 4
+    Bitter: 3
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 6
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 8
+  Crunchy-Contrast:
+    Sweet: 3
+    Sour/Acid: 4
+    Salty: 4
+    Bitter: 3
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 5
+    Crunchy/Textural Contrast: 9
+    Spicy/Aromatic/Herbal: 6
+  Silky-Cream Base:
+    Sweet: 3
+    Sour/Acid: 2
+    Salty: 4
+    Bitter: 2
+    Umami/Savory: 6
+    Creamy/Rich/Fatty: 10
+    Crunchy/Textural Contrast: 3
+    Spicy/Aromatic/Herbal: 5
+  Charred-Grilled:
+    Sweet: 2
+    Sour/Acid: 3
+    Salty: 5
+    Bitter: 4
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 7
+    Crunchy/Textural Contrast: 6
+    Spicy/Aromatic/Herbal: 6
+  Juicy-Fresh:
+    Sweet: 4
+    Sour/Acid: 7
+    Salty: 3
+    Bitter: 2
+    Umami/Savory: 5
+    Creamy/Rich/Fatty: 8
+    Crunchy/Textural Contrast: 5
+    Spicy/Aromatic/Herbal: 6
+  Layered-Complex:
+    Sweet: 4
+    Sour/Acid: 5
+    Salty: 5
+    Bitter: 3
+    Umami/Savory: 7
+    Creamy/Rich/Fatty: 8
+    Crunchy/Textural Contrast: 8
+    Spicy/Aromatic/Herbal: 9
+
+Chef Style Choices:
+  - Mediterranean fine dining
+  - Mediterranean rustic
+  - New Nordic
+  - Japanese Kaiseki
+  - Sushi bar
+  - Chinese regional (Sichuan, Cantonese, Hunan, Shanghai)
+  - Korean temple cuisine
+  - Thai street food
+  - Middle Eastern mezze
+  - Persian traditional
+  - Indian spice-layered (North, South)
+  - French haute cuisine
+  - French rustic
+  - Italian trattoria
+  - Spanish tapas
+  - Mexican regional (Oaxacan, Yucatecan)
+  - Latin American fusion
+  - Californian plant-forward
+  - Farm-to-table modern American
+
+Themes:
+  Mediterranean:
+    description: Herbaceous, citrus, olive oil, umami
+    chefs: [Ottolenghi, José Andrés, Jamie Oliver]
+    archetype: Mediterranean Aromatic
+  New Nordic:
+    description: Foraged, acidic, fermented, clean
+    chefs: [Redzepi, Sarah Britton, Tom Hunt]
+    archetype: [Clean & Light, Herbal-aromatic]
+  Ayurvedic Indian:
+    description: Warm spices, ghee, lentils, balance
+    chefs: [Madhur Jaffrey, Meera Sodha]
+    archetype: Indian Spice-Layered
+  Plant Based Global:
+    description: Earthy, nutty, root-veg, minimal sugar
+    chefs: [Ella Mills, Sarah Britton]
+    archetype: [Earthy-Rooted, Natural-Sweet]
+  Spanish Latin Fusion:
+    description: Smoked, chili-acid, tomato-rich
+    chefs: [José Andrés, Ray Garcia, Seamus Mullen]
+    archetype: Latin Spice-Bright
+  California Farm To Table:
+    description: Minimalist, fresh-picked, clean
+    chefs: [Alice Waters, Dan Barber]
+    archetype: [Fresh-bright, Clean & Light]
+  Anti Inflammatory:
+    description: Turmeric, ginger, omega-3s, no refined carbs
+    chefs: [Seamus Mullen, Jamie Oliver]
+    archetype: Anti-inflammatory Blend
+  African Heritage:
+    description: Spiced grains, okra, berbere, peanuts
+    chefs: [Bryant Terry, Pierre Thiam]
+    archetype: [Spiced-Bitter, Earthy-Rooted]
+  Asian Heritage:
+    description: Umami, ginger, garlic, soy, greens
+    chefs: [Meera Sodha, Madhur Jaffrey]
+    archetype: East Asian Umami-Light
+  Latin American Heritage:
+    description: Corn, beans, lime, squash, tamarind
+    chefs: [Ray Garcia, José Andrés]
+    archetype: [Latin Spice-Bright, Sweet-Sour Contrast]
+  Southern US Heritage:
+    description: Greens, cornmeal, smoked fish
+    chefs: [Bryant Terry]
+    archetype: [Comfort-forward, Earthy-Rooted]
+  Greek Island Ikaria:
+    description: Olives, lentils, herbs, bitter greens
+    chefs: [Diane Kochilas]
+    archetype: [Bitter-Greens Driven, Mediterranean Aromatic]
+  Japanese Washoku:
+    description: Miso, seaweed, dashi, pickled veg
+    chefs: [Nobu Matsuhisa, Nancy Singleton Hachisu]
+    archetype: [East Asian Umami-Light, Pickled & Sharp]
+  Chinese Regional:
+    description: Scallions, garlic, soy, bitter melon
+    chefs: [Fuchsia Dunlop]
+    archetype: [Pickled & Sharp, East Asian Umami-Light]
+  Korean Temple Cuisine:
+    description: Fermented, sesame, lotus root
+    chefs: [Jeong Kwan]
+    archetype: [Umami Bomb, Pickled & Sharp]
+  Thai Herbal:
+    description: Lemongrass, coconut, chili, lime leaf
+    chefs: [Jet Tila]
+    archetype: [Sweet-Spicy, Citrus-lifted]
+  West African:
+    description: Peanut, chili, greens, yam
+    chefs: [Pierre Thiam]
+    archetype: [Spiced-Bitter, Earthy-Rooted]
+  Persian:
+    description: Rose, saffron, lime, walnuts, herbs
+    chefs: [Najmieh Batmanglij]
+    archetype: Middle Eastern Spiced
+
+=======
+
+Affinities:
+
+cayenne + coriander + cumin + garlic
+celery + carrots + onions (aka mirepoix)
+celery + tarragon + vinegar
+celery root + cream + potatoes + vinegar
+celery root + lemon + mayonnaise + mustard
+chard + bell peppers + pecorino cheese + eggplant
+chard + red pepper flakes + lemon juice
+feta cheese + chicken + mint
+feta cheese + roasted red bell peppers + mint
+feta cheese + salad greens + mint
+goat cheese + almonds + honey + pears
+goat cheese + cherries + thyme
+goat cheese + fennel seeds + orange zest + pasta
+goat cheese + honey + persimmons
+goat cheese + pancetta + shallots
+Gorgonzola + mint + walnuts
+manchego cheese + almonds + quince paste
+mozzarella cheese + basil + olive oil + tomatoes
+mozzarella cheese + olives + prosciutto 
+ricotta + bread + honey + Prosecco 
+Roquefort cheese + figs + pears
+cherries + almonds + cream + kirsch + vanilla
+cherries + chocolate + walnuts
+cherries + coconut + custard
+cherries + coffee + cream 
+cherries + goat cheese + ice wine vinegar + black pepper + thyme
+cherries + honey + pistachios + yogurt
+cherries + mint + vanilla
+
+=======
+
+I am building recipes that are good for metabolic and brain health. i want to do this by creating recipe concepts for flavor affinities created by the Flavor Bible, and determining which cuisine, chefs, and flavor profiles are a fit.
+
+For each of the affinities provided, output between 1 and 5 recipe concepts. with a record similar to the following
+
+- affinity: striped bass + bacon + sauerkraut
+   chef: chef name (from above)
+   theme: such as Mediterranean
+   flavor_profile: such as Citrus-lifted
+   course: one of Appetizer, Bread, Beverage, Breakfast, Cereal & Oatmeal, Dessert, Entree, Entree - Meal, Entree - Salad, Entree - Soup, Fruit salad, Pizza, Salad, Salad Dressing, Sandwich, Snack, Appetizer Soup, Spice Mix/Rub & Marinade, Starch, Vegetable, Stock & Sauce
+   recipe_name: ...
+
+Guidelines
+- The recipes name should reflect food that would be eaten in the theme
+- The recipes should be healthy and good for metabolic and brain health but also taste good and be familiar
+- Try to product recipes that have available ingredients, not too exotic, or difficuult or time consuming to prepare

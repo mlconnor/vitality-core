@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vitality System Architecture</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      background: #111;
+      margin: 0;
+      min-height: 100vh;
+      display: block;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      pointer-events: none;
+      z-index: -1;
+      background-image: 
+        linear-gradient(rgba(36, 230, 255, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(36, 230, 255, 0.15) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.7;
+      animation: grid-pulse 10s ease-in-out infinite;
+    }
+
+    @keyframes grid-pulse {
+       0%, 100% { opacity: 0.7; }
+       50% { opacity: 1; }
+    }
+    .arch-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 13px;
+      margin: 8px 0;
+      width: 100vw;
+      max-width: 1350px;
+      justify-items: center;
+    }
+    .category-box {
+      background: rgba(10, 26, 31, 0.95);
+      border: 2.5px solid #24e6ff;
+      border-radius: 18px;
+      box-shadow: 0 0 14px #24e6ff44, 0 0 0 2px #24e6ff22 inset;
+      padding: 7px 12px 7px 12px;
+      min-width: 210px;
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-bottom: 6px;
+      filter: none;
+    }
+    .category-title {
+      color: #24e6ff;
+      font-size: 1em;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      margin-bottom: 2px;
+      text-shadow: none;
+      filter: none;
+      text-align: left;
+      width: 100%;
+      padding-left: 2px;
+    }
+    .category-underline {
+      width: 100%;
+      height: 1.5px;
+      background: linear-gradient(90deg, #24e6ff88 60%, transparent 100%);
+      margin-bottom: 7px;
+      border: none;
+    }
+    .components-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      justify-content: center;
+    }
+    .component-box {
+      background: rgba(36, 230, 255, 0.08);
+      border: 1.5px solid #24e6ff;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 0.82em;
+      font-weight: 500;
+      width: 100px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3px;
+      margin: 0;
+      box-shadow: 0 0 8px #24e6ff55, 0 0 0 1.5px #24e6ff22 inset;
+      filter: none;
+      transition: background 0.18s, color 0.18s, border 0.18s, box-shadow 0.18s;
+      user-select: text;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    .component-box:hover {
+      background: #24e6ff22;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 12px #24e6ffcc, 0 0 0 2px #fff inset;
+    }
+    /* Glow filter for SVG (optional, for future icons) */
+    /* svg {
+      display: none;
+    } */
+    .container {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      justify-content: center;
+      width: 100vw;
+      max-width: 1350px;
+      margin: 0 auto;
+    }
+    .info-panel {
+      width: 250px;
+      height: 320px;
+      background: #0a1a1f;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(36, 230, 255, 0.5);
+      display: flex;
+      flex-direction: column;
+      font-family: 'Courier New', monospace;
+      margin-top: 12px;
+      margin-right: 18px;
+      z-index: 10;
+    }
+    .info-header {
+      background: #1c3940;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .info-button {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      margin-right: 5px;
+      display: inline-block;
+    }
+    .close { background: #24e6ff; }
+    .minimize { background: #5bfcff; }
+    .maximize { background: #1ac7e6; }
+    .info-title {
+      color: #24e6ff;
+      font-size: 11px;
+      margin-left: 8px;
+    }
+    .info-body {
+      flex: 1;
+      background: #051015;
+      color: #24e6ff;
+      padding: 8px;
+      overflow-y: auto;
+      font-size: 11px;
+      line-height: 1.35;
+      white-space: pre-wrap;
+    }
+    .page-title {
+      width: 100%;
+      text-align: center;
+      color: #24e6ff;
+      font-size: 1.15em;
+      font-family: 'Arial', sans-serif;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-top: 24px;
+      margin-bottom: 18px;
+      text-shadow: 0 0 2px #24e6ff44, 0 0 1px #fff;
+      filter: drop-shadow(0 0 1.5px #24e6ff22);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-title">Food Service Agent Platform</div>
+  <div class="container">
+    <div class="arch-container" id="arch-container"></div>
+    <div class="info-panel">
+      <div class="info-header">
+        <span class="info-button close"></span>
+        <span class="info-button minimize"></span>
+        <span class="info-button maximize"></span>
+        <span class="info-title">Component Info</span>
+      </div>
+      <div class="info-body" id="info-output">Click a component to see details.</div>
+    </div>
+  </div>
+  <script>
+    // JSON data for categories and components
+    const architectureData = [
+      {
+        category: "Core Universal",
+        components: [
+          { name: "Recipe Agent", description: "Generates scalable, customizable recipes with substitutions. Auto-scales recipes for batch sizes (50-500+ servings), suggests substitutions for cost, availability, or dietary needs, incorporates flavor profiles and cultural adaptations, and optimizes recipes for prep time and waste reduction." },
+          { name: "Menu Pattern Creation Agent", description: "Designs reusable menu templates and cycles. Creates 21-28 day menu cycles, balances variety, cost, and nutritional requirements, incorporates themed days (Meatless Monday, etc.), and provides regional adaptation for cultural preferences." },
+          { name: "Menu Building Agent", description: "Assembles complete menus from patterns, recipes, and constraints. Provides AI optimization for budget/nutrition trade-offs, automatic shopping list generation, multi-country nutrition template switching, and compliance validation across regions." },
+          { name: "Foods In Season Agent", description: "Tracks regional produce availability and pricing. Auto-switches by country/region code, provides harvest disruption predictions, farm-to-table sourcing recommendations, and price forecasting with alternatives." },
+          { name: "Food Production Agent", description: "Optimizes kitchen workflows for large-scale preparation. Provides step-by-step production guides, staffing and equipment scheduling, yield calculations and portion control, and just-in-time inventory coordination." },
+          { name: "Food Safety Agent", description: "General food safety oversight with regional HACCP compliance. Features temperature monitoring and logging, contamination risk prediction, virtual staff training modules, and cross-border recall harmonization." },
+          { name: "Receiving Agent", description: "Manages inbound shipments with quality verification. Provides digital inspection checklists, photo documentation and damage assessment, auto-rejection of non-compliant items, and regional documentation requirements." }
+        ]
+      },
+      {
+        category: "US Nutrition",
+        components: [
+          { name: "US Seniors Nutrition Agent", description: "Tailored nutrition for US elderly care facilities following USDA MyPlate for Seniors. Features soft-texture foods for dysphagia, calcium/vitamin D optimization, and drug-food interaction flagging." },
+          { name: "US Hospitals Nutrition Agent", description: "Therapeutic diets for US hospital patients following Joint Commission therapeutic diets. Provides cardiac, renal, diabetic diet planning, TPN/enteral formula calculations, and patient-specific personalization." },
+          { name: "US Universities Nutrition Agent", description: "Campus dining nutrition for US universities following USDA Dietary Guidelines. Features athlete performance optimization, plant-based and multicultural options, and student feedback integration." },
+          { name: "USDA Nutrition Analysis Agent", description: "Comprehensive nutritional analysis using USDA FoodData Central database. Features automated macro/micronutrient calculations, allergen identification, portion size standardization, and complete nutritional labeling for all menu items and recipes." }
+        ]
+      },
+      {
+        category: "US Compliance",
+        components: [
+          { name: "US Seniors Compliance Agent", description: "Regulatory compliance for US senior care following CMS F-tags and state health codes. Provides inspection report generation, recall alert monitoring, and HACCP plan validation." },
+          { name: "US Hospitals Compliance Agent", description: "Hospital food service compliance following CMS Conditions of Participation. Features Joint Commission audit simulation, allergen labeling verification, and medical waste protocols." },
+          { name: "US Universities Compliance Agent", description: "Campus food service regulatory compliance following FDA, USDA, and ADA requirements. Provides calorie labeling compliance, inclusivity verification (halal, kosher), and outbreak response protocols." }
+        ]
+      },
+      {
+        category: "US Supply Chain",
+        components: [
+          { name: "Sysco Ordering Agent", description: "Automated ordering from Sysco US. Features automated catalog ordering, bulk pricing negotiations, and delivery tracking via Sysco API integration." },
+          { name: "US Foods Ordering Agent", description: "Integration with US Foods distribution network. Features real-time inventory availability, regional warehouse routing, digital order guides, and promotional pricing alerts." },
+          { name: "Performance Food Group (PFG) Agent", description: "PFG multi-brand ordering (Performance Foodservice, Vistar, Eby-Brown). Features consolidated invoicing, specialty product sourcing, and small-format delivery optimization." },
+          { name: "Gordon Food Service Agent", description: "GFS store pickup and delivery coordination. Features cash-and-carry pricing integration, same-day pickup scheduling, and GFS brand product recommendations." },
+          { name: "Shamrock Foods Agent", description: "Western US distributor automation (AZ, CA, NV, NM). Features fresh produce specialization, dairy direct sourcing, and rapid replenishment for high-volume operations." }
+        ]
+      },
+      {
+        category: "France Nutrition",
+        components: [
+          { name: "France Seniors Nutrition Agent", description: "Elderly nutrition following ANSES elderly recommendations. Features cuisine adaptée (texture-modified), Mediterranean diet integration, and French social security compliance." },
+          { name: "France Hospitals Nutrition Agent", description: "Therapeutic hospital diets in France following HAS therapeutic protocols. Features régime hyposodé (low-salt diets), French EHR system integration, and hospital sterilization standards." },
+          { name: "France Universities Nutrition Agent", description: "CROUS student dining nutrition planning following PNNS national nutrition plan. Features CROUS student dining optimization, veggie-heavy menu planning, and allergy tracking for students." }
+        ]
+      },
+      {
+        category: "France Compliance",
+        components: [
+          { name: "France Seniors Compliance Agent", description: "EHPAD and EU compliance for French senior care following EU Reg 852/2004 and EHPAD standards. Features French-language inspection reports, HACCP equivalence audits, and DGAL compliance monitoring." },
+          { name: "France Hospitals Compliance Agent", description: "HAS and ARS hospital kitchen compliance. Features EU allergen labeling (Reg 1169/2011), medical waste protocols, and hospital kitchen accreditation." },
+          { name: "France Universities Compliance Agent", description: "CROUS and EU campus food safety following DGAL and EU student food safety regulations. Features CROUS subsidy compliance, French allergen declaration, and campus food safety audits." }
+        ]
+      },
+      {
+        category: "France Supply Chain",
+        components: [
+          { name: "Pomona/Metro Ordering Agent", description: "French distributor ordering automation. Features French VAT calculations, terroir/seasonal sourcing, and Euro pricing optimization via Pomona and Metro distributor APIs." },
+          { name: "Transgourmet France Agent", description: "Transgourmet/Prodégros network integration. Features multi-format ordering (delivery + cash & carry), AOC/IGP product sourcing, regional depot optimization, and Passion Froid frozen specialist access." }
+        ]
+      },
+      {
+        category: "Canada Nutrition",
+        components: [
+          { name: "Canada Seniors Nutrition Agent", description: "Canadian elderly nutrition following Health Canada Seniors Nutrition and CFG. Features osteoporosis prevention focus, bilingual menu labeling, and Indigenous ingredient adaptation." },
+          { name: "Canada Hospitals Nutrition Agent", description: "Accreditation Canada hospital nutrition. Features IDDSI dysphagia framework, hypertension sodium management, and provincial health integration." },
+          { name: "Canada Universities Nutrition Agent", description: "Canadian campus dining nutrition following Health Canada campus guidelines. Features Indigenous and multicultural focus, athlete nutrition (Sport Canada), and allergy protocol management." }
+        ]
+      },
+      {
+        category: "Canada Compliance",
+        components: [
+          { name: "Canada Seniors Compliance Agent", description: "CFIA and provincial senior care compliance following CFIA and provincial LTCH acts. Features bilingual Quebec reporting, HACCP plan management, and Canadian recall monitoring." },
+          { name: "Canada Hospitals Compliance Agent", description: "Canadian hospital food service standards following Accreditation Canada. Features IPAC infection prevention, Samantha's Law allergen compliance, and provincial hospital standards." },
+          { name: "Canada Universities Compliance Agent", description: "CFIA campus food service compliance following CFIA and provincial education regulations. Features mandatory nutrition labeling, Indigenous food sovereignty, and liquor/food law compliance." }
+        ]
+      },
+      {
+        category: "Canada Supply Chain",
+        components: [
+          { name: "Sysco Canada/GFS Ordering Agent", description: "Canadian distributor ordering automation. Features CAD pricing and bilingual interface, regional sourcing (BC seafood, etc.), and cross-province logistics via Sysco Canada and GFS APIs." }
+        ]
+      },
+      {
+        category: "Global Orchestration",
+        components: [
+          { name: "Global Compliance Orchestrator Agent", description: "Central hub for multi-country operations. Features country detection and agent assembly, unified audit trail generation, cross-border regulation mapping, and Codex Alimentarius baseline normalization." },
+          { name: "International Supply Chain Harmonizer Agent", description: "Manages cross-border logistics and compliance. Features customs and tariff calculations, currency conversion, import regulation compliance, and supply disruption scenario planning." },
+          { name: "Bilingual Localization Agent", description: "Handles multi-language and cultural adaptation. Features real-time translation (EN/FR/ES), cultural nuance validation, regional formatting (dates, currencies), and legal terminology compliance." }
+        ]
+      }
+    ];
+
+    // Dynamically render the architecture
+    const archContainer = document.getElementById('arch-container');
+    architectureData.forEach(cat => {
+      const catBox = document.createElement('div');
+      catBox.className = 'category-box';
+      catBox.innerHTML = `
+        <div class="category-title">${cat.category}</div>
+        <div class="category-underline"></div>
+        <div class="components-list">
+          ${cat.components.map(comp => `<div class="component-box" data-description="${encodeURIComponent(comp.description)}">${comp.name}</div>`).join('')}
+        </div>
+      `;
+      archContainer.appendChild(catBox);
+    });
+  </script>
+  <script>
+    // Map components to categories for info panel (from architectureData)
+    const componentCategoryMap = {};
+    architectureData.forEach(cat => {
+      cat.components.forEach(comp => {
+        componentCategoryMap[comp.name] = { category: cat.category, description: comp.description };
+      });
+    });
+    // Add fade-in style for description
+    const style = document.createElement('style');
+    style.innerHTML = `.desc-fadein { opacity: 0; transition: opacity 1s; } .desc-fadein.visible { opacity: 1; }`;
+    document.head.appendChild(style);
+    // Wait for DOM to update
+    setTimeout(() => {
+      document.querySelectorAll('.component-box').forEach(box => {
+        box.style.cursor = 'pointer';
+        box.addEventListener('click', function() {
+          const name = this.textContent.trim();
+          const info = componentCategoryMap[name] || {};
+          const infoPanel = document.getElementById('info-output');
+          infoPanel.innerHTML = `<b>Component:</b> ${name}<br><b>Category:</b> ${info.category || ''}<br><b>Description:</b> <span id='desc-anim' class='desc-fadein'></span>`;
+          const descElem = document.getElementById('desc-anim');
+          if (!info.description) return;
+          descElem.textContent = info.description;
+          // Trigger fade-in
+          setTimeout(() => descElem.classList.add('visible'), 10);
+        });
+      });
+    }, 0);
+  </script>
+</body>
+</html>

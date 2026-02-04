@@ -1,0 +1,538 @@
+# Cursor for Food - Development Rules
+
+## Project Overview
+
+You are developing **Cursor for Food**, an AI-native commercial kitchen management platform that mirrors Cursor IDE's architecture but for food service operations. The system transforms commercial kitchen management from traditional CRUD operations into an intelligent, agent-driven command center.
+
+## Architecture Pattern
+
+The application follows Cursor's proven layout:
+- **Left Panel**: Entity tree (domain hierarchy instead of files)
+- **Top**: Omni-search (⌘K) for entities, commands, and AI queries
+- **Center**: Rich entity views with GUI editing
+- **Right Panel**: Agent chat with tools and context display
+
+## Technology Stack
+
+### Frontend
+- React 18 with TypeScript (strict mode)
+- TailwindCSS for styling
+- TanStack Query for data fetching
+- TanStack Table for data grids
+- Zustand for state management
+
+### Backend
+- Node.js with TypeScript
+- tRPC for type-safe API
+- Drizzle ORM with SQLite
+- Zod for validation
+
+### AI/Agent
+- Claude API (Anthropic) for LLM
+- Tool/function calling pattern
+- Hierarchical context aggregation (llm_notes)
+
+## Domain Knowledge
+
+Reference: `docs/FoodServiceManagement.md` (Payne-Palacio & Theis, 13th Edition)
+
+### Key Concepts
+
+1. **Standardized Recipes**
+   - AP (As Purchased): Weight before trimming
+   - EP (Edible Portion): Usable weight after prep
+   - Yield percent = EP / AP
+
+2. **Cycle Menus**
+   - Rotating menu (typically 3-4 weeks)
+   - Reduces planning overhead
+   - Enables forecasting
+
+3. **Therapeutic Diets**
+   - Regular, Diabetic, Renal, Low-Sodium, Cardiac
+   - Texture modifications: Regular, Mechanical Soft, Pureed
+   - Liquid consistency: Regular, Thickened, NPO
+
+4. **HACCP Food Safety**
+   - Critical Control Points (CCPs)
+   - Temperature logging
+   - Time/temperature abuse prevention
+
+5. **Inventory Management**
+   - Par levels (target stock)
+   - Reorder points (trigger for ordering)
+   - FIFO (First In, First Out)
+
+## Data Model
+
+### Schema Location
+`backend/src/db/schema/*.ts`
+
+### Key Tables
+- `tenants` - Multi-tenant root
+- `sites` - Physical locations
+- `stations` - Service points (grill, trayline, etc.)
+- `diners` - Customers/patients
+- `recipes` - Standardized recipes
+- `ingredients` - Food items
+- `cycle_menus` - Menu planning
+- `menu_items` - Menu placements
+- `diet_types` - Diet definitions
+
+### LLM Notes System
+Every major entity has an `llm_notes` field for hierarchical context:
+```
+Tenant → Site → Station → Cycle Menu → Menu Item
+```
+
+When working on an entity, aggregate llm_notes from ancestors into the agent's system prompt.
+
+## Code Conventions
+
+### TypeScript
+```typescript
+// Use strict types, avoid `any`
+// Prefer interfaces over types for object shapes
+interface Recipe {
+  recipeId: string;
+  recipeName: string;
+  // ...
+}
+
+// Use Zod for runtime validation
+const recipeSchema = z.object({
+  recipeId: z.string(),
+  recipeName: z.string().min(1),
+});
+```
+
+### React Components
+```typescript
+// Functional components with hooks
+// Props interface named ComponentProps
+interface RecipeViewProps {
+  recipeId: string;
+  onEdit?: () => void;
+}
+
+export function RecipeView({ recipeId, onEdit }: RecipeViewProps) {
+  // ...
+}
+```
+
+### API/Services
+```typescript
+// Use tRPC routers
+// Validate inputs with Zod
+export const recipeRouter = router({
+  getById: publicProcedure
+    .input(z.object({ id: z.string() }))
+    .query(async ({ input, ctx }) => {
+      // ...
+    }),
+});
+```
+
+### Database Queries
+```typescript
+// Use Drizzle ORM
+// Always filter by tenantId for operational data
+const diners = await db.query.diners.findMany({
+  where: eq(diners.tenantId, ctx.tenantId),
+});
+```
+
+## Agent Tool Pattern
+
+Tools follow MCP-style definitions:
+```typescript
+interface Tool<TInput, TOutput> {
+  name: string;
+  description: string;
+  inputSchema: z.ZodType<TInput>;
+  execute: (input: TInput, ctx: ExecutionContext) => Promise<TOutput>;
+}
+```
+
+### Core Tool Categories
+1. **Data Tools**: `db_query`, `db_get`, `db_create`, `db_update`
+2. **Algorithm Tools**: `recipe_scale`, `protein_spread`, `forecast_demand`
+3. **External Tools**: `weather_get`, `sysco_search`, `browser_navigate`
+
+## File Organization
+
+```
+vitality-core/
+├── backend/
+│   └── src/
+│       ├── db/schema/       # Drizzle schemas
+│       ├── services/        # Business logic
+│       ├── trpc/           # API routers
+│       ├── algorithms/     # Computation tools
+│       └── integrations/   # External services
+├── frontend/
+│   └── src/
+│       ├── components/     # React components
+│       ├── pages/          # Route pages
+│       ├── hooks/          # Custom hooks
+│       └── config/         # Entity configs
+├── docs/
+│   ├── cursor_for_food_system_design.md  # Main spec
+│   ├── algorithms.md       # Algorithm details
+│   └── FoodServiceManagement.md  # Reference
+└── data/                   # Sample data, recipes
+```
+
+## Testing
+
+- **Unit Tests**: Vitest for algorithms and utilities
+- **Integration Tests**: tRPC procedure testing
+- **E2E Tests**: Playwright for critical flows
+
+## Common Tasks
+
+### Adding a New Entity View
+1. Create component in `frontend/src/pages/`
+2. Add entity config in `frontend/src/config/entities.tsx`
+3. Add route in App.tsx
+4. Connect to tRPC queries
+
+### Adding a New Tool
+1. Define in `backend/src/algorithms/`
+2. Register with tool registry
+3. Add to agent's available tools
+4. Test with sample inputs
+
+### Adding llm_notes to an Entity
+1. Add `llmNotes: text('llm_notes')` to schema
+2. Create migration
+3. Update context aggregation service
+4. Add UI for editing notes
+
+## UI Design System
+
+### Design Philosophy
+The UI follows a **modern, dark-first aesthetic** inspired by professional developer tools like Cursor IDE. The design prioritizes:
+- **Calm professionalism**: Dark backgrounds reduce eye strain during long shifts
+- **Information density**: Kitchen managers need to see lots of data at once
+- **Clear hierarchy**: Important actions and status are immediately visible
+- **Subtle animations**: Smooth transitions that feel premium without being distracting
+
+### Color Palette
+
+**Primary Theme: Dark Slate + Emerald**
+```css
+/* CSS Variables (defined in index.css) */
+--background: 222.2 47.4% 11.2%;     /* Dark slate background */
+--foreground: 210 40% 98%;            /* Near-white text */
+--card: 222.2 47.4% 13%;              /* Slightly lighter cards */
+--primary: 160 84% 39%;               /* Emerald green accent */
+--muted: 217.2 32.6% 17.5%;           /* Muted backgrounds */
+--muted-foreground: 215 20.2% 65.1%; /* Secondary text */
+--border: 217.2 32.6% 20%;            /* Subtle borders */
+--destructive: 0 62.8% 50.6%;         /* Red for danger/delete */
+```
+
+**Status Colors**
+```typescript
+const statusConfig = {
+  Active: { color: 'text-emerald-400', bg: 'bg-emerald-500/10 border-emerald-500/20' },
+  Draft: { color: 'text-amber-400', bg: 'bg-amber-500/10 border-amber-500/20' },
+  Archived: { color: 'text-slate-400', bg: 'bg-slate-500/10 border-slate-500/20' },
+  Seasonal: { color: 'text-blue-400', bg: 'bg-blue-500/10 border-blue-500/20' },
+};
+```
+
+**Gradient Cards for Metrics**
+```tsx
+// Emerald for positive metrics (cost savings, efficiency)
+<Card className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border-emerald-500/20">
+
+// Blue for neutral/informational metrics
+<Card className="bg-gradient-to-br from-blue-500/10 to-blue-500/5 border-blue-500/20">
+
+// Amber for warnings or attention-needed metrics
+<Card className="bg-gradient-to-br from-amber-500/10 to-amber-500/5 border-amber-500/20">
+```
+
+### Component Library
+
+**Design System**: shadcn/ui (Radix primitives + TailwindCSS)
+- Components live in `frontend/src/components/ui/`
+- Use relative imports: `import { Button } from '../components/ui/button'`
+- Icons: lucide-react
+
+**Core Components**
+```typescript
+// Buttons
+<Button size="sm" className="bg-primary hover:bg-primary/90">Save</Button>
+<Button variant="outline" size="sm">Cancel</Button>
+<Button variant="ghost" size="icon" className="h-8 w-8">
+
+// Cards
+<Card className="bg-card/50 border-border">
+  <CardHeader className="pb-4">
+    <CardTitle className="text-base flex items-center gap-2">
+      <Icon className="w-4 h-4 text-primary" />
+      Section Title
+    </CardTitle>
+    <CardDescription>Optional description</CardDescription>
+  </CardHeader>
+  <CardContent>...</CardContent>
+</Card>
+
+// Form Fields (custom pattern)
+<FormField label="Field Name" icon={IconComponent} required hint="Helper text">
+  <Input className="bg-background/50" />
+</FormField>
+
+// Badges
+<Badge className={`${statusStyle.bg} ${statusStyle.color} border`}>
+  {status}
+</Badge>
+```
+
+### Layout Patterns
+
+**Page Structure**
+```tsx
+<div className="h-full flex flex-col bg-background">
+  {/* Header with back nav + actions */}
+  <header className="flex-shrink-0 border-b border-border bg-card/50 backdrop-blur-sm">
+    ...
+  </header>
+  
+  {/* Scrollable content */}
+  <ScrollArea className="flex-grow">
+    <div className="p-6">
+      {/* Content in grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        ...
+      </div>
+    </div>
+  </ScrollArea>
+</div>
+```
+
+**Tabbed Navigation**
+```tsx
+// Tab bar with animated underline
+<nav className="flex gap-1">
+  {tabs.map((tab) => (
+    <button className={`relative px-4 py-2.5 text-sm font-medium ...`}>
+      <Icon className="w-4 h-4" />
+      {tab.label}
+      {isActive && (
+        <motion.div
+          layoutId="activeTab"
+          className="absolute inset-x-0 -bottom-px h-0.5 bg-primary"
+        />
+      )}
+    </button>
+  ))}
+</nav>
+```
+
+**Entity Header Pattern**
+```tsx
+<div className="flex items-start gap-4">
+  {/* Icon box */}
+  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+    <ChefHat className="w-6 h-6 text-primary" />
+  </div>
+  
+  {/* Title + metadata */}
+  <div className="flex-grow">
+    <div className="flex items-center gap-3">
+      <h1 className="text-xl font-semibold">{name}</h1>
+      <Badge>Status</Badge>
+    </div>
+    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+      <span className="flex items-center gap-1">
+        <Icon className="w-3.5 h-3.5" />
+        Metadata
+      </span>
+    </div>
+  </div>
+</div>
+```
+
+### Animation Guidelines
+
+**Library**: motion (formerly framer-motion)
+```tsx
+import { motion, AnimatePresence } from 'motion/react';
+```
+
+**Standard Transitions**
+```tsx
+// Page/section entrance
+initial={{ opacity: 0, y: -20 }}
+animate={{ opacity: 1, y: 0 }}
+
+// Tab content switch
+<AnimatePresence mode="wait">
+  <motion.div
+    key={activeTab}
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -10 }}
+    transition={{ duration: 0.2 }}
+  >
+
+// Staggered list items
+initial={{ opacity: 0, x: -20 }}
+animate={{ opacity: 1, x: 0 }}
+transition={{ delay: index * 0.05 }}
+
+// Layout animations (tab underline)
+<motion.div layoutId="activeTab" transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+```
+
+### Icon Usage
+
+**Library**: lucide-react
+```tsx
+import { ChefHat, Clock, DollarSign, AlertTriangle } from 'lucide-react';
+```
+
+**Standard Sizes**
+- Navigation/headers: `w-4 h-4` or `w-5 h-5`
+- Card titles: `w-4 h-4 text-primary`
+- Inline with text: `w-3.5 h-3.5`
+- Large feature icons: `w-6 h-6` in icon boxes
+- Empty states: `w-12 h-12 opacity-20`
+
+**Icon Colors**
+```tsx
+// Primary accent (in headers, buttons)
+<Icon className="text-primary" />
+
+// Muted (secondary information)
+<Icon className="text-muted-foreground" />
+
+// Status-specific
+<AlertTriangle className="text-amber-400" />
+<CheckCircle2 className="text-emerald-400" />
+```
+
+### Form Design
+
+**Input Styling**
+```tsx
+<Input className="bg-background/50" placeholder="..." />
+<Textarea className="bg-background/50 min-h-[100px]" />
+<Select>
+  <SelectTrigger className="bg-background/50">
+    <SelectValue placeholder="Select..." />
+  </SelectTrigger>
+</Select>
+```
+
+**FormField Component Pattern**
+```tsx
+interface FormFieldProps {
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  required?: boolean;
+  children: React.ReactNode;
+  hint?: string;
+}
+
+function FormField({ label, icon: Icon, required, children, hint }: FormFieldProps) {
+  return (
+    <div className="space-y-2">
+      <label className="flex items-center gap-2 text-sm font-medium text-foreground/80">
+        {Icon && <Icon className="w-4 h-4 text-primary/60" />}
+        {label}
+        {required && <span className="text-red-400">*</span>}
+      </label>
+      {children}
+      {hint && <p className="text-xs text-muted-foreground">{hint}</p>}
+    </div>
+  );
+}
+```
+
+### Data Display
+
+**Tables**
+- Use AG Grid for complex data grids
+- Custom styling in index.css overrides AG Grid defaults
+- Green selection/hover states to match theme
+
+**List Items (Interactive)**
+```tsx
+<div className="group flex items-center gap-3 p-3 rounded-lg bg-background/30 
+               hover:bg-background/50 border border-transparent hover:border-border 
+               transition-all cursor-pointer">
+  <GripVertical className="w-4 h-4 text-muted-foreground/30 group-hover:text-muted-foreground" />
+  <span className="font-medium">{name}</span>
+  <Button className="opacity-0 group-hover:opacity-100 transition-opacity">...</Button>
+</div>
+```
+
+**Empty States**
+```tsx
+<div className="text-center py-12 text-muted-foreground">
+  <Package className="w-12 h-12 mx-auto mb-4 opacity-20" />
+  <p>No items found</p>
+  <p className="text-sm">Click "Add" to get started</p>
+</div>
+```
+
+### Spacing & Typography
+
+**Spacing Scale** (TailwindCSS)
+- Page padding: `p-6`
+- Card content: `px-6` (via CardContent)
+- Grid gaps: `gap-6` (large), `gap-4` (medium), `gap-2` (small)
+- Inline element gaps: `gap-1` to `gap-3`
+
+**Typography**
+- Page titles: `text-xl font-semibold` or `text-2xl font-bold`
+- Card titles: `text-base` with `font-medium` or `font-semibold`
+- Body text: Default (inherits from Tailwind)
+- Secondary text: `text-sm text-muted-foreground`
+- Hints/captions: `text-xs text-muted-foreground`
+- Monospace (codes, costs): `font-mono`
+
+### Responsive Design
+
+**Breakpoint Strategy**
+```tsx
+// Single column on mobile, two columns on large screens
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+// Full width spanning on larger grids
+<Card className="lg:col-span-2">
+
+// Responsive grid for metrics
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+```
+
+### Do's and Don'ts
+
+**DO:**
+- Use `bg-card/50` for cards (semi-transparent)
+- Add `backdrop-blur-sm` to sticky headers
+- Include icons with form labels and section headers
+- Use `transition-all` or `transition-colors` for hover states
+- Group related actions in `DropdownMenu`
+- Show loading states with `Loader2` spinner
+
+**DON'T:**
+- Use pure white backgrounds (too harsh)
+- Mix multiple accent colors in one view
+- Skip animations for page/tab transitions
+- Use inline styles (use Tailwind classes)
+- Forget hover/focus states on interactive elements
+- Leave empty states unstyled
+
+## Reference Documents
+
+- **System Design**: `docs/cursor_for_food_system_design.md`
+- **Algorithms**: `docs/algorithms.md`
+- **Textbook**: `docs/FoodServiceManagement.md`
+- **Current Schema**: `backend/src/db/schema/`
+
