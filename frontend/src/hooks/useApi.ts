@@ -225,3 +225,23 @@ export function useDeleteFoodCategories() {
   return useDeleteMutation('foodCategory');
 }
 
+export function useDeleteMealPeriods() {
+  return useDeleteMutation('mealPeriod');
+}
+
+export function useDeleteCycleMenus() {
+  return useDeleteMutation('cycleMenu');
+}
+
+export function useDeleteSingleUseMenus() {
+  return useDeleteMutation('singleUseMenu');
+}
+
+export function useDeleteInventory() {
+  return useDeleteMutation('inventory');
+}
+
+export function useDeletePurchaseOrders() {
+  return useDeleteMutation('purchaseOrder');
+}
+

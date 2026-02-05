@@ -18,6 +18,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Settings,
   HeartPulse,
@@ -42,7 +43,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
-import { useApiMutation, useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiMutation, useApiQuery, useCreateMutation, useUpdateMutation, useDeleteDiners } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { Controller, useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -109,6 +110,7 @@ export function DinerEditPage() {
 
   const createMutation = useCreateMutation<any>('diner');
   const updateMutation = useUpdateMutation<any>('diner');
+  const deleteMutation = useDeleteDiners();
   const changeDietMutation = useApiMutation<any, any>('diner.changeDiet');
 
   const form = useForm<DinerFormValues>({
@@ -167,6 +169,23 @@ export function DinerEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const name = `${form.getValues('firstName') || ''} ${form.getValues('lastName') || ''}`.trim() || 'this diner';
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${name}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/diners');
+    } catch (err) {
+      console.error('Failed to delete diner:', err);
+      alert('Failed to delete diner. They may have associated data.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -250,9 +269,17 @@ export function DinerEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Discharge
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Diner
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

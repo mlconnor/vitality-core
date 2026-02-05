@@ -16,6 +16,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Settings,
   DollarSign,
@@ -41,7 +42,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
-import { useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiQuery, useCreateMutation, useUpdateMutation, useDeleteCycleMenus } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { Controller, useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -108,6 +109,7 @@ export function CycleMenuEditPage() {
 
   const createMutation = useCreateMutation<any>('cycleMenu');
   const updateMutation = useUpdateMutation<any>('cycleMenu');
+  const deleteMutation = useDeleteCycleMenus();
 
   const form = useForm<CycleMenuFormValues>({
     resolver: zodResolver(CycleMenuFormSchema),
@@ -166,6 +168,22 @@ export function CycleMenuEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${form.getValues('cycleName') || 'this cycle menu'}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/cycle-menus');
+    } catch (err) {
+      console.error('Failed to delete cycle menu:', err);
+      alert('Failed to delete cycle menu. It may have associated menu items.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -247,9 +265,17 @@ export function CycleMenuEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Archive
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Cycle Menu
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

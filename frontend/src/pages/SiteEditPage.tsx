@@ -20,6 +20,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   Settings,
   FileText,
   LayoutGrid,
@@ -44,7 +45,7 @@ import { Badge } from '../components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { ScrollArea } from '../components/ui/scroll-area';
 import { TooltipProvider } from '../components/ui/tooltip';
-import { useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiQuery, useCreateMutation, useUpdateMutation, useDeleteSites } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import {
   formValuesToCreateInput,
@@ -107,6 +108,7 @@ export function SiteEditPage() {
 
   const createMutation = useCreateMutation<any>('site');
   const updateMutation = useUpdateMutation<any>('site');
+  const deleteMutation = useDeleteSites();
 
   const form = useForm<SiteFormValues>({
     resolver: zodResolver(SiteFormSchema),
@@ -190,6 +192,22 @@ export function SiteEditPage() {
       console.error('Failed to deactivate site:', err);
     }
   }, [isNew, id, updateMutation, form]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${form.getValues('siteName') || 'this site'}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/sites');
+    } catch (err) {
+      console.error('Failed to delete site:', err);
+      alert('Failed to delete site. It may have associated data.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   // Loading state (existing site only)
   if (!isNew && isLoading) {
@@ -276,12 +294,19 @@ export function SiteEditPage() {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     <DropdownMenuItem 
-                      className="text-destructive"
                       onClick={handleDeactivate}
                       disabled={isNew || form.watch('status') === 'Inactive'}
                     >
                       <Archive className="w-4 h-4 mr-2" />
                       {form.watch('status') === 'Inactive' ? 'Site Inactive' : 'Deactivate Site'}
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Site
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

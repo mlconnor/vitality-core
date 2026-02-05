@@ -16,6 +16,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Building2,
   Award,
@@ -43,7 +44,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
-import { useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiQuery, useCreateMutation, useUpdateMutation, useDeleteEmployees } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { Controller, useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -110,6 +111,7 @@ export function EmployeeEditPage() {
 
   const createMutation = useCreateMutation<any>('employee');
   const updateMutation = useUpdateMutation<any>('employee');
+  const deleteMutation = useDeleteEmployees();
 
   const form = useForm<EmployeeFormValues>({
     resolver: zodResolver(EmployeeFormSchema),
@@ -170,6 +172,23 @@ export function EmployeeEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const name = `${form.getValues('firstName') || ''} ${form.getValues('lastName') || ''}`.trim() || 'this employee';
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${name}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/employees');
+    } catch (err) {
+      console.error('Failed to delete employee:', err);
+      alert('Failed to delete employee. They may have associated data.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -253,9 +272,17 @@ export function EmployeeEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Terminate
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Employee
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

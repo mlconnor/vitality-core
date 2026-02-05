@@ -17,12 +17,12 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Settings,
   Package,
   Flame,
   Plus,
-  Trash2,
   DollarSign,
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
@@ -45,7 +45,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
-import { useApiMutation, useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiMutation, useApiQuery, useCreateMutation, useUpdateMutation, useDeleteRecipes } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { Controller, useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -117,6 +117,7 @@ export function RecipeEditPage() {
 
   const createMutation = useCreateMutation<any>('recipe');
   const updateMutation = useUpdateMutation<any>('recipe');
+  const deleteMutation = useDeleteRecipes();
   const addIngredientMutation = useApiMutation<any, any>('recipe.addIngredient');
   const removeIngredientMutation = useApiMutation<any, any>('recipe.removeIngredient');
 
@@ -192,6 +193,22 @@ export function RecipeEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${form.getValues('recipeName') || 'this recipe'}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/recipes');
+    } catch (err) {
+      console.error('Failed to delete recipe:', err);
+      alert('Failed to delete recipe. It may be used in menus.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -277,9 +294,17 @@ export function RecipeEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Archive
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Recipe
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

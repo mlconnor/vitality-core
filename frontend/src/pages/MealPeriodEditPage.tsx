@@ -16,6 +16,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Settings,
 } from 'lucide-react';
@@ -32,7 +33,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '../components/ui/dropdown-menu';
-import { useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiQuery, useCreateMutation, useUpdateMutation, useDeleteMealPeriods } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -93,6 +94,7 @@ export function MealPeriodEditPage() {
 
   const createMutation = useCreateMutation<any>('mealPeriod');
   const updateMutation = useUpdateMutation<any>('mealPeriod');
+  const deleteMutation = useDeleteMealPeriods();
 
   const form = useForm<MealPeriodFormValues>({
     resolver: zodResolver(MealPeriodFormSchema),
@@ -151,6 +153,22 @@ export function MealPeriodEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${form.getValues('mealPeriodName') || 'this meal period'}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/meal-periods');
+    } catch (err) {
+      console.error('Failed to delete meal period:', err);
+      alert('Failed to delete meal period. It may be used in menus.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -232,9 +250,17 @@ export function MealPeriodEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Archive
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Meal Period
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>

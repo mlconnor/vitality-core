@@ -16,6 +16,7 @@ import {
   AlertTriangle,
   MoreHorizontal,
   Archive,
+  Trash2,
   FileText,
   Settings,
   ShieldAlert,
@@ -40,7 +41,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../components/ui/select';
-import { useApiQuery, useCreateMutation, useUpdateMutation } from '../hooks/useApi';
+import { useApiQuery, useCreateMutation, useUpdateMutation, useDeleteDietTypes } from '../hooks/useApi';
 import { useAutosaveEntityForm } from '../hooks/useAutosaveEntityForm';
 import { Controller, useForm, useFormState, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -103,6 +104,7 @@ export function DietTypeEditPage() {
 
   const createMutation = useCreateMutation<any>('dietType');
   const updateMutation = useUpdateMutation<any>('dietType');
+  const deleteMutation = useDeleteDietTypes();
 
   const form = useForm<DietTypeFormValues>({
     resolver: zodResolver(DietTypeFormSchema),
@@ -161,6 +163,22 @@ export function DietTypeEditPage() {
     }
     autosave.flush();
   }, [isNew, form, autosave]);
+
+  // Handle delete action
+  const handleDelete = React.useCallback(async () => {
+    if (isNew || !id) return;
+    const confirmed = window.confirm(
+      `Are you sure you want to permanently delete "${form.getValues('dietTypeName') || 'this diet type'}"? This action cannot be undone.`
+    );
+    if (!confirmed) return;
+    try {
+      await deleteMutation.mutateAsync([id]);
+      navigate('/diet-types');
+    } catch (err) {
+      console.error('Failed to delete diet type:', err);
+      alert('Failed to delete diet type. It may be assigned to diners.');
+    }
+  }, [isNew, id, deleteMutation, form, navigate]);
 
   if (!isNew && isLoading) {
     return (
@@ -242,9 +260,17 @@ export function DietTypeEditPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem className="text-destructive">
+                    <DropdownMenuItem disabled={isNew}>
                       <Archive className="w-4 h-4 mr-2" />
                       Deactivate
+                    </DropdownMenuItem>
+                    <DropdownMenuItem 
+                      className="text-destructive"
+                      onClick={handleDelete}
+                      disabled={isNew}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      Delete Diet Type
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
