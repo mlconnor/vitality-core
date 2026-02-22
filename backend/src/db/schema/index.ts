@@ -84,6 +84,8 @@ export {
 export {
   mealPeriods,
   dietTypes,
+  governedNutrients,
+  dietRestrictions,
   cycleMenus,
   menuItems,
   menuPatterns,
@@ -94,6 +96,10 @@ export {
   type NewMealPeriod,
   type DietType,
   type NewDietType,
+  type GovernedNutrient,
+  type NewGovernedNutrient,
+  type DietRestriction,
+  type NewDietRestriction,
   type CycleMenu,
   type NewCycleMenu,
   type MenuItem,
@@ -151,6 +157,8 @@ export {
   siteIngredientPreferences,
   purchaseOrders,
   poLineItems,
+  orderGuides,
+  orderGuideItems,
   // Types
   type Vendor,
   type NewVendor,
@@ -164,6 +172,10 @@ export {
   type NewPurchaseOrder,
   type PoLineItem,
   type NewPoLineItem,
+  type OrderGuide,
+  type NewOrderGuide,
+  type OrderGuideItem,
+  type NewOrderGuideItem,
 } from './procurement';
 
 // ============================================================================

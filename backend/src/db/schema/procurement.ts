@@ -419,6 +419,346 @@ export const poLineItems = sqliteTable('po_line_items', {
   index('idx_po_line_items_ingredient').on(table.ingredientId),
 ]);
 
+// ============================================================================
+// TABLE: order_guides
+// 
+// NOTE ON ORIGIN: The order guide concept is NOT described in the Payne-Palacio
+// & Theis textbook. It comes from contemporary industry practice observed in
+// distributor platforms (Sysco, US Foods) and foodservice management software
+// (MealSuite, Grove Menus, etc.). In these systems, an order guide is a
+// curated, vendor-specific catalog of products that a site regularly orders.
+//
+// An order guide represents the persistent, reusable "shopping list" for a
+// specific site-vendor relationship. A site typically works with multiple
+// distributors (e.g., Sysco for broadline, a local vendor for produce, a
+// specialty vendor for bakery) and maintains a separate order guide for each.
+// When placing a weekly order, the kitchen manager opens the relevant guide,
+// reviews par levels and suggested quantities, adjusts as needed, and
+// generates a purchase order.
+//
+// The vendor_id FK links to the vendors table, where distributors are
+// represented with vendor_type = 'Broadline Distributor'. A single site may
+// have multiple order guides — one per vendor relationship — supporting the
+// common pattern of split purchasing across distributors.
+//
+// Relationship to other procurement tables:
+//   - product_specifications: Internal quality standards (what quality we
+//     expect). Order guide items may optionally reference a spec.
+//   - site_ingredient_preferences: Quality resolution layer (which spec for
+//     which site). Drives recipe costing; order guide adds vendor-specific
+//     ordering details (SKU, contracted price, pack size).
+//   - purchase_orders: Generated from order guide when an order is placed.
+//     The order guide is the template; the PO is the transaction.
+//
+// REQUIRED TENANT (tenant_id NOT NULL): Operational data isolated per tenant
+// ============================================================================
+export const orderGuides = sqliteTable('order_guides', {
+  /** Unique identifier for this order guide */
+  orderGuideId: text('order_guide_id').primaryKey(),
+  
+  /** Owning tenant (required for data isolation) */
+  tenantId: text('tenant_id').notNull().references(() => tenants.tenantId),
+  
+  /** 
+   * The site this order guide belongs to. Each physical location maintains
+   * its own set of order guides reflecting local vendor relationships,
+   * delivery schedules, and product preferences.
+   */
+  siteId: text('site_id').notNull().references(() => sites.siteId, { onDelete: 'cascade' }),
+  
+  /** 
+   * The vendor/distributor this guide is for. Links to the vendors table
+   * where distributors are tracked alongside all other supplier types.
+   * A site will typically have one order guide per active vendor
+   * relationship (e.g., one for Sysco, one for a local produce vendor).
+   */
+  vendorId: text('vendor_id').notNull().references(() => vendors.vendorId),
+  
+  /** 
+   * Human-readable name for this order guide, typically reflecting the
+   * vendor and optionally the ordering cadence or purpose.
+   * Examples: "Sysco Weekly Order", "Farm Fresh Produce", "Bakery Standing Order"
+   */
+  guideName: text('guide_name').notNull(),
+  
+  /** Optional longer description of the guide's scope or purpose */
+  description: text('description'),
+  
+  /** Date this order guide becomes active and orderable */
+  effectiveDate: text('effective_date').notNull(),
+  
+  /** 
+   * Date this order guide expires. NULL means the guide is current/ongoing
+   * with no planned end date. Used when vendor contracts have defined terms.
+   */
+  endDate: text('end_date'),
+  
+  /** Lifecycle status of this order guide */
+  status: text('status', { 
+    enum: ['Active', 'Inactive', 'Draft'] 
+  }).notNull().default('Draft'),
+  
+  /** 
+   * LLM-readable context for AI agent use. Aggregated with ancestor
+   * llm_notes (tenant → site) to give agents full operational context
+   * when helping with ordering decisions.
+   */
+  llmNotes: text('llm_notes'),
+  
+  /** Free-form notes for internal use */
+  notes: text('notes'),
+}, (table) => [
+  index('idx_order_guides_tenant').on(table.tenantId),
+  index('idx_order_guides_site').on(table.siteId),
+  index('idx_order_guides_vendor').on(table.vendorId),
+  index('idx_order_guides_status').on(table.status),
+  index('idx_order_guides_site_vendor').on(table.siteId, table.vendorId),
+]);
+
+// ============================================================================
+// TABLE: order_guide_items
+// 
+// NOTE ON ORIGIN: Like order_guides, this table is based on contemporary
+// industry practice from distributor ordering platforms and foodservice
+// management software, not the textbook.
+//
+// Each row represents a specific vendor product on an order guide — the
+// actual SKU a kitchen manager sees when placing an order. This captures
+// vendor-specific data that does not belong in the internal quality
+// specification layer (product_specifications):
+//   - Vendor item/SKU numbers (the distributor's own product code)
+//   - Contracted or quoted pricing tied to a vendor + item + time period
+//   - Site-specific par levels and suggested order quantities
+//   - Compliance and dietary flags relevant to senior care / healthcare
+//   - Substitute and replacement item tracking
+//
+// An order guide item may optionally link to:
+//   - ingredients: Our internal generic ingredient (e.g., "chicken breast").
+//     This connects vendor products back to recipes and inventory.
+//   - product_specifications: Our internal quality spec. This connects
+//     the vendor product to the quality standard it satisfies.
+//
+// These links are optional because some order guide items may not map to
+// an internal ingredient (e.g., cleaning supplies, disposables) or may
+// not have a formal spec written yet.
+//
+// Standing orders: Items like milk and bread that are automatically ordered
+// on a recurring schedule (as described in the textbook as "standing order"
+// purchasing) are flagged with is_standing_order = true and a fixed
+// standing_order_qty, so they can be auto-included in generated POs.
+// ============================================================================
+export const orderGuideItems = sqliteTable('order_guide_items', {
+  /** Unique identifier for this order guide line item */
+  itemId: text('item_id').primaryKey(),
+  
+  /** 
+   * The order guide this item belongs to. Cascade-deletes when the
+   * parent guide is removed.
+   */
+  orderGuideId: text('order_guide_id').notNull().references(() => orderGuides.orderGuideId, { onDelete: 'cascade' }),
+  
+  /** 
+   * Optional link to our internal ingredient. When set, connects this
+   * vendor product to recipe usage, inventory tracking, and cost
+   * analysis. NULL for non-food items (supplies, disposables, etc.)
+   * that don't appear in recipes.
+   */
+  ingredientId: text('ingredient_id').references(() => ingredients.ingredientId),
+  
+  /** 
+   * Optional link to our internal product specification. When set,
+   * indicates which quality standard this vendor product satisfies.
+   * Useful for verifying that ordered products meet the site's
+   * quality requirements defined in product_specifications.
+   */
+  specId: text('spec_id').references(() => productSpecifications.specId),
+  
+  /** 
+   * The vendor/distributor's own product code or SKU number.
+   * This is the identifier used when placing orders through the
+   * vendor's system (e.g., Sysco item number "1516236").
+   * Must be unique within an order guide.
+   */
+  vendorItemNumber: text('vendor_item_number').notNull(),
+  
+  /** 
+   * Full product name or description as it appears in the vendor's
+   * catalog. Should be detailed enough for unambiguous identification.
+   * Example: "Chicken Breast Boneless Skinless 4 oz IQF"
+   */
+  productDescription: text('product_description').notNull(),
+  
+  /** 
+   * Brand or manufacturer name. Often a preferred or contracted brand.
+   * Examples: "Tyson", "Sysco Classic", "House of Raeford"
+   */
+  brand: text('brand'),
+  
+  /** 
+   * Broad commodity grouping for organizing the order guide into
+   * logical sections, matching how distributors categorize products.
+   */
+  category: text('category', { 
+    enum: ['Proteins', 'Dairy', 'Produce', 'Frozen', 'Dry Goods', 
+           'Bakery', 'Beverages', 'Seafood', 'Deli', 
+           'Paper/Disposables', 'Cleaning/Chemical', 'Supplies', 'Other'] 
+  }),
+  
+  /** 
+   * More specific grouping within the category for finer organization.
+   * Free-text to allow vendor-specific taxonomy.
+   * Examples: "Poultry > Chicken", "Dairy > Cheese > Shredded"
+   */
+  subcategory: text('subcategory'),
+  
+  /** 
+   * How the product is packaged for sale. Describes the complete
+   * shipping/ordering unit.
+   * Examples: "4/5 lb bags", "6/#10 cans", "Case of 96/2 oz portions",
+   *           "40 lb case", "1/2 gal container"
+   */
+  packSize: text('pack_size').notNull(),
+  
+  /** 
+   * Unit of measure for ordering and pricing. References the shared
+   * units_of_measure table (e.g., CS for case, LB for pound, EA for each).
+   */
+  unitOfMeasure: text('unit_of_measure').notNull().references(() => unitsOfMeasure.unitId),
+  
+  /** 
+   * Current or contracted price per unit of measure. May reflect
+   * negotiated pricing, group purchasing organization (GPO) rates,
+   * or volume discount tiers. Updated when vendor pricing changes.
+   */
+  contractPrice: real('contract_price'),
+  
+  /** Date the current contract_price took effect (ISO 8601 date string) */
+  priceEffectiveDate: text('price_effective_date'),
+  
+  /** 
+   * Date the current contract_price expires. NULL means pricing is
+   * open-ended or subject to market fluctuation.
+   */
+  priceEndDate: text('price_end_date'),
+  
+  /** 
+   * Site-specific target stock level for this vendor product.
+   * When inventory drops below par, the item should be included
+   * in the next order. Expressed in the item's unit_of_measure.
+   * Overrides the generic par_level on the ingredients table because
+   * a site may stock the same ingredient from multiple vendors.
+   */
+  parLevel: real('par_level'),
+  
+  /** 
+   * Default order quantity to pre-populate when generating a purchase
+   * order from this guide. Kitchen managers adjust as needed based on
+   * current inventory and upcoming menu requirements.
+   */
+  suggestedOrderQty: real('suggested_order_qty'),
+  
+  /** 
+   * Comma-separated compliance and dietary suitability flags relevant
+   * to senior care and healthcare foodservice. Used to filter order
+   * guide items by dietary program requirements.
+   * Examples: "gluten-free,low-sodium,IDDSI-7,kosher,halal"
+   */
+  complianceFlags: text('compliance_flags'),
+  
+  /** 
+   * Comma-separated allergen codes identifying allergens present in
+   * this product. Uses the same allergen code format as the
+   * ingredients.allergen_flags field (e.g., "ALG-MILK,ALG-EGG,ALG-SOY").
+   */
+  allergenFlags: text('allergen_flags'),
+  
+  /** 
+   * Self-referencing FK to another item on any order guide that can
+   * serve as a substitute when this item is unavailable or when a
+   * lower-cost alternative is desired. Supports the common distributor
+   * practice of suggesting compliant swaps.
+   */
+  substituteItemId: text('substitute_item_id').references(() => orderGuideItems.itemId),
+  
+  /** 
+   * Whether this item is on a standing (automatic recurring) order.
+   * Standing orders are common for daily-delivery staples like milk
+   * and bread, as described in the textbook's purchasing methods.
+   * When true, this item is auto-included in generated POs at the
+   * standing_order_qty.
+   */
+  isStandingOrder: integer('is_standing_order', { mode: 'boolean' }).default(false),
+  
+  /** 
+   * Fixed quantity for standing orders. Only meaningful when
+   * is_standing_order = true. Represents the recurring quantity
+   * delivered on each scheduled delivery.
+   */
+  standingOrderQty: real('standing_order_qty'),
+  
+  /** 
+   * Number of business days between placing an order and expected
+   * delivery for this specific item. May differ from the vendor-level
+   * delivery_lead_time_days for special-order or long-lead items.
+   */
+  leadTimeDays: integer('lead_time_days'),
+  
+  /** 
+   * Whether this item qualifies for group purchasing organization (GPO)
+   * rebates or volume discount programs. Helps buyers prioritize
+   * contracted items for cost savings.
+   */
+  isRebateEligible: integer('is_rebate_eligible', { mode: 'boolean' }).default(false),
+  
+  /** 
+   * Whether the vendor has discontinued this product. Discontinued
+   * items remain on the guide for historical reference and to prompt
+   * the buyer to select a replacement.
+   */
+  isDiscontinued: integer('is_discontinued', { mode: 'boolean' }).default(false),
+  
+  /** 
+   * Self-referencing FK to the item that replaces this one if it has
+   * been discontinued. Enables automatic swap suggestions when
+   * generating POs from guides with discontinued items.
+   */
+  replacementItemId: text('replacement_item_id').references(() => orderGuideItems.itemId),
+  
+  /** 
+   * URL to a product photo or thumbnail. Used in digital order guide
+   * views for quick visual identification of products.
+   */
+  imageUrl: text('image_url'),
+  
+  /** 
+   * Display position within the order guide. Lower numbers appear first.
+   * Allows custom sorting beyond the default category grouping,
+   * reflecting the buyer's preferred ordering workflow.
+   */
+  sortOrder: integer('sort_order').default(0),
+  
+  /** Lifecycle status of this line item */
+  status: text('status', { 
+    enum: ['Active', 'Inactive', 'Discontinued'] 
+  }).notNull().default('Active'),
+  
+  /** 
+   * Site-specific or buyer-specific notes for this item.
+   * Examples: "Approved for puree diets", "Use only for heart-healthy menu",
+   *           "Seasonal — available Sept through March"
+   */
+  customNotes: text('custom_notes'),
+}, (table) => [
+  index('idx_og_items_guide').on(table.orderGuideId),
+  index('idx_og_items_ingredient').on(table.ingredientId),
+  index('idx_og_items_spec').on(table.specId),
+  index('idx_og_items_vendor_item').on(table.vendorItemNumber),
+  index('idx_og_items_category').on(table.category),
+  index('idx_og_items_status').on(table.status),
+  index('idx_og_items_discontinued').on(table.isDiscontinued),
+  index('idx_og_items_standing').on(table.isStandingOrder),
+]);
+
 // Type exports for use in application code
 export type Vendor = typeof vendors.$inferSelect;
 export type NewVendor = typeof vendors.$inferInsert;
@@ -432,4 +772,8 @@ export type PurchaseOrder = typeof purchaseOrders.$inferSelect;
 export type NewPurchaseOrder = typeof purchaseOrders.$inferInsert;
 export type PoLineItem = typeof poLineItems.$inferSelect;
 export type NewPoLineItem = typeof poLineItems.$inferInsert;
+export type OrderGuide = typeof orderGuides.$inferSelect;
+export type NewOrderGuide = typeof orderGuides.$inferInsert;
+export type OrderGuideItem = typeof orderGuideItems.$inferSelect;
+export type NewOrderGuideItem = typeof orderGuideItems.$inferInsert;
 
